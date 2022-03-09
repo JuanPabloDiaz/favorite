@@ -2,7 +2,7 @@
 
 # Udemy courses | 2021
 
-A variety of courses, assigments and many more activities develop using Udemy.com as my main source of information.
+A variety of courses, assigments and many more activities developed using Udemy.com as my main source of information.
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -26,8 +26,6 @@ A variety of courses, assigments and many more activities develop using Udemy.co
 ## Description 💡
 
 There are many great concepts I learned with udemy, many new skills I developed and many others that I still need to work on.
-
-This project was part of an assignment on one of the classes I took. The idea was to merge the concepts I learned and applied them on a single one-page website.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
