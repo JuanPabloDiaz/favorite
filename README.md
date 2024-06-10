@@ -1,4 +1,4 @@
-# Astro Movies View Transitions Demo
+# Juan's Favorites View Transitions Demo
 
 ![Screenshot](./screenshot.png)
 
