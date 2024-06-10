@@ -1,6 +1,4 @@
-# Astro Movies View Transitions Demo
-
-### 👉🏽 [Live Demo](https://astro-movies.pages.dev/)
+# Juan's Favorites View Transitions Demo
 
 ![Screenshot](./screenshot.png)
 
@@ -27,5 +25,3 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Check out [Astro's documentation](https://docs.astro.build) or jump into their [Discord server](https://astro.build/chat).
-
-You can also reach out to [Maxi on Twitter](https://twitter.com/charca).
