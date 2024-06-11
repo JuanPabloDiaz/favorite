@@ -96,7 +96,10 @@
     { "title": "Venom II", "id": "580489" },
     { "title": "Avatar", "id": "19995" },
     { "title": "Avatar II", "id": "76600" },
-    { "title": "Aquaman", "id": "297802" }
+    { "title": "Aquaman", "id": "297802" },
+    { "title": "Glass", "id": "450465" },
+    { "title": "Split", "id": "381288" },
+    { "title": "Unbreakable", "id": "9741" }
   ],
   "Sci-fi": [
     { "title": "Van Helsing", "id": "7131" },
@@ -140,6 +143,10 @@
     { "title": "The Revenant", "id": "281957" }
   ],
   "Drama": [
+    {
+      "title": "The Mule",
+      "id": "504172"
+    },
     { "title": "the theory of everything", "id": "266856" },
     {
       "title": "Lemony Snicket's A Series of Unfortunate Events",
