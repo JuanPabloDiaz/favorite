@@ -1,4 +1,19 @@
 {
+  "Startups": [
+    { "title": "The Pursuit of Happyness", "id": "1402" },
+    { "title": "Jobs", "id": "115782" },
+    { "title": "AlphaGo", "id": "455008" },
+    { "title": "Sound of Freedom", "id": "678512" },
+    { "title": "A Million Miles Away", "id": "1002185" },
+    { "title": "The wolf of wall street", "id": "106646" },
+    { "title": "The big short", "id": "318846" },
+    { "title": "The imitation game", "id": "205596" },
+    { "title": "The social network", "id": "37799" },
+    { "title": "El dilema de las redes", "id": "656690" },
+    { "title": "her", "id": "152601" },
+    { "title": "The Intouchables", "id": "77338" },
+    { "title": "The Intern", "id": "257211" }
+  ],
   "Action": [
     { "title": "Fast & Furious", "id": "9799" },
     { "title": "Fast & Furious II", "id": "584" },
@@ -13,14 +28,10 @@
     { "title": "Men in Black", "id": "607" },
     { "title": "Men in black II", "id": "608" },
     { "title": "Men in black III", "id": "41154" },
-    { "title": "Civil War", "id": "929590" }
+    { "title": "Civil War", "id": "929590" },
+    { "title": "Top Gun: Maverick", "id": "361743" }
   ],
-  "Clasics": [
-    { "title": "The Godfather", "id": "238" },
-    { "title": "The Godfather II", "id": "240" },
-    { "title": "The Godfather III", "id": "242" }
-  ],
-  "Action ● Superheroes": [
+  "Superheroes": [
     { "title": "The dark knight", "id": "155" },
     { "title": "The dark knight rises", "id": "49026" },
     { "title": "The dark knight begins", "id": "272" },
@@ -63,6 +74,7 @@
     { "title": "Thor", "id": "10195" },
     { "title": "Thor II", "id": "76338" },
     { "title": "Thor III", "id": "284053" },
+    { "title": "Thor IV", "id": "616037" },
     { "title": "Black Widow", "id": "497698" },
     { "title": "Black Panther", "id": "284054" },
     { "title": "Black Panther", "id": "505642" },
@@ -71,8 +83,15 @@
     { "title": "Captain America III", "id": "271110" },
     { "title": "Captain Marvel", "id": "299537" },
     { "title": "Doctor Strange", "id": "284052" },
-    { "title": "Spiderman", "id": "315635" },
-    { "title": "Spiderman II", "id": "559" },
+    {
+      "title": "Doctor Strange in the Multiverse of Madness",
+      "id": "453395"
+    },
+    { "title": "Spiderman", "id": "557" },
+    { "title": "Spiderman", "id": "559" },
+    { "title": "Spiderman", "id": "1930" },
+    { "title": "Spiderman", "id": "429617" },
+    { "title": "Spiderman", "id": "634649" },
     { "title": "Hancock", "id": "8960" },
     { "title": "shang-chi", "id": "566525" },
     { "title": "Venom", "id": "335983" },
@@ -128,27 +147,38 @@
     { "title": "The Revenant", "id": "281957" }
   ],
   "Drama": [
+    { "title": "The Godfather", "id": "238" },
+    { "title": "The Godfather II", "id": "240" },
+    { "title": "The Godfather III", "id": "242" },
+    { "title": "The irishman", "id": "398978" },
     { "title": "Oppenheimer", "id": "872585" },
     { "title": "The Green Mile", "id": "497" },
-    { "title": "the irishman", "id": "398978" },
     { "title": "The Terminal", "id": "594" },
     { "title": "The Da Vinci Code", "id": "591" },
     { "title": "Angels & Demons", "id": "591" },
     { "title": "Inferno", "id": "207932" },
-    {
-      "title": "The Mule",
-      "id": "504172"
-    },
-    { "title": "the theory of everything", "id": "266856" },
+    { "title": "The Mule", "id": "504172" },
+    { "title": "The theory of everything", "id": "266856" },
+    { "title": "American History X", "id": "73" },
+    { "title": "Schindler's List", "id": "807" },
+    { "title": "Se7en", "id": "424" },
+    { "title": "Life Is Beautiful", "id": "637" },
+    { "title": "The Shawshank Redemption", "id": "278" },
+
     {
       "title": "Lemony Snicket's A Series of Unfortunate Events",
       "id": "11774"
     },
-    { "title": "The Pursuit of Happyness", "id": "1402" },
+    { "title": "The Aviator", "id": "2567" },
+    { "title": "The Departed", "id": "1422" },
+    { "title": "Catch Me If You Can", "id": "640" },
+    { "title": "Seven Pounds", "id": "11321" },
+    { "title": "The Blind Side", "id": "22881" },
     { "title": "The King's Speech", "id": "45269" },
     { "title": "The tourist", "id": "37710" },
     { "title": "The curios case of Benjamin Button", "id": "4922" },
     { "title": "The Great Gatsby", "id": "64682" },
+    { "title": "Southpaw", "id": "307081" },
     { "title": "Creed", "id": "312221" },
     { "title": "Creed II", "id": "480530" },
     { "title": "Creed III", "id": "677179" },
@@ -161,6 +191,7 @@
   ],
   "Comedy": [
     { "title": "Forrest Gump", "id": "13" },
+    { "title": "The Bucket List", "id": "7350" },
     { "title": "The Simpsons movie", "id": "35" },
     { "title": "The Grand Budapest Hotel", "id": "120467" },
     { "title": "Ace Ventura: Pet Detective", "id": "3049" },
@@ -170,10 +201,14 @@
     { "title": "The Truman Show", "id": "37165" },
     { "title": "Bruce Almighty", "id": "310" },
     { "title": "Liar Liar", "id": "1624" },
+    { "title": "Fun with Dick and Jane", "id": "7552" },
     { "title": "Dumb and Dumber", "id": "8467" },
     { "title": "Yes man", "id": "10201" },
     { "title": "Mr. Popper's Penguins", "id": "58224" },
     { "title": "Me, Myself & Irene", "id": "2123" },
+    { "title": "Hustle", "id": "705861" },
+    { "title": "Big Daddy", "id": "9032" },
+    { "title": "Amélie", "id": "194" },
     { "title": "Hitch", "id": "8488" },
     { "title": "Focus", "id": "256591" },
     { "title": "Glass Onion", "id": "661374" },
@@ -184,7 +219,8 @@
     { "title": "Ted", "id": "72105" },
     { "title": "Ted II", "id": "214756" },
     { "title": "Click", "id": "9339" },
-    { "title": "Just Go with It", "id": "50546" }
+    { "title": "Just Go with It", "id": "50546" },
+    { "title": "A Man Called Otto", "id": "937278" }
   ],
   "Animation": [
     { "title": "The Lion King", "id": "8587" },
@@ -227,16 +263,5 @@
     { "title": "Beauty and the Beast", "id": "321612" },
     { "title": "Aladdin (people)", "id": "420817" },
     { "title": "Maleficent", "id": "102651" }
-  ],
-  "startups": [
-    { "title": "the wolf of wall street", "id": "106646" },
-    { "title": "the big short", "id": "318846" },
-    { "title": "the imitation game", "id": "205596" },
-    { "title": "the social network", "id": "37799" },
-    { "title": "El dilema de las redes", "id": "656690" },
-    { "title": "Jobs", "id": "115782" },
-    { "title": "her", "id": "152601" },
-    { "title": "The Intouchables", "id": "77338" },
-    { "title": "The Intern", "id": "257211" }
   ]
 }
