@@ -2,7 +2,7 @@
 import Modal from "../../../components/Modal.astro";
 
 const { id } = Astro.params;
-const url = `https://api.themoviedb.org/3/movie/${id}?append_to_response=credits,videos,images&api_key=${
+const url = `https://api.themoviedb.org/3/movie/${id}?append_to_response=credits,videos,images,recommendations&api_key=${
   import.meta.env.TMDB_API_KEY
 }`;
 
@@ -27,17 +27,23 @@ const movie = {
       ? "https://image.tmdb.org/t/p/w300/" + c.profile_path
       : "https://via.placeholder.com/300x450",
   })),
+  morelike: data.recommendations.results.slice(0, 5).map((m) => ({
+    ...m,
+    poster_path: m.poster_path
+      ? "https://image.tmdb.org/t/p/w500/" + m.poster_path
+      : "https://via.placeholder.com/500x750",
+  })),
   images: data.images.backdrops.slice(0, 6),
   videos: data.videos,
 };
-// console.log("videos", movie.videos);
+// console.log("more like this", movie.recommendations.results.slice(0, 5));
 // console.log("video", movie.videos.results.slice(0, 1));
 
 const video = movie.videos.results.slice(0, 6);
-console.log("video var", video);
-video.map((v, index) => {
-  console.log(`Video ${index + 1}:`, v);
-});
+// console.log("video var", video);
+// video.map((v, index) => {
+//   console.log(`Video ${index + 1}:`, v);
+// });
 ---
 
 <div class="movie-info border-b border-gray-800">
@@ -221,4 +227,47 @@ video.map((v, index) => {
     </div>
   </div>
   <!-- end movie-videos -->
+
+  <div class="movie-Recommendations border-b border-gray-800">
+    <div class="container mx-auto px-4 py-16">
+      <h2 class="text-4xl font-semibold">More Like This</h2>
+
+      <div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8"
+        >
+          {
+            movie.morelike.map((morelike) => (
+              <div class="mt-8">
+                <a href={`/movies/${morelike.id}`}>
+                  <img
+                    src={morelike.poster_path}
+                    alt={morelike.title}
+                    class="thumbnail hover:opacity-75 transition ease-in-out duration-150"
+                  />
+                </a>
+                <div class="mt-2">
+                  <a
+                    href={`/movies/${morelike.id}`}
+                    class="text-lg mt-2 hover:text-gray-300"
+                  >
+                    {morelike.title}
+                  </a>
+                  <div class="flex items ">
+                    <div class="text-sm text-gray-400">
+                      {morelike.release_date}
+                    </div>
+                    <div class="text-sm text-gray-400 ml-2">
+                      {morelike.vote_average}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+      <!-- end movie-Recommendations -->
+    </div>
+  </div>
 </div>
