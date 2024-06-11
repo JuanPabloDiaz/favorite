@@ -7,7 +7,7 @@ const { movie } = Astro.props;
     <img
       src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
       alt={`${movie.title} Poster`}
-      class="thumbnail rounded-lg shadow-sm shadow-slate-600 hover:opacity-75 transition ease-in-out duration-150hover:shadow-slate-50"
+      class="thumbnail rounded-lg shadow-sm shadow-slate-600 hover:opacity-75 transition ease-in-out duration-300 hover:shadow-slate-50"
       id={`movie-poster-${movie.id}`}
     />
   </a>
