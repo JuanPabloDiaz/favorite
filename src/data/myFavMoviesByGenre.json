@@ -1,12 +1,5 @@
 {
-  "clasicos": [
-    { "title": "The Godfather", "id": "238" },
-    { "title": "The Godfather II", "id": "240" },
-    { "title": "The Godfather III", "id": "242" },
-    { "title": "Forrest Gump", "id": "13" },
-    { "title": "Men in Black", "id": "607" },
-    { "title": "Men in black II", "id": "608" },
-    { "title": "Men in black III", "id": "41154" },
+  "Action": [
     { "title": "Fast & Furious", "id": "9799" },
     { "title": "Fast & Furious II", "id": "584" },
     { "title": "Fast & Furious III", "id": "9615" },
@@ -16,7 +9,15 @@
     { "title": "Fast & Furious VII", "id": "168259" },
     { "title": "Fast & Furious VIII", "id": "337339" },
     { "title": "Fast & Furious IX", "id": "385128" },
-    { "title": "Fast & Furious X", "id": "385687" },
+    { "title": "Fast & Furious X", "id": "385687" }
+  ],
+  "Clasics": [
+    { "title": "The Godfather", "id": "238" },
+    { "title": "The Godfather II", "id": "240" },
+    { "title": "The Godfather III", "id": "242" },
+    { "title": "Men in Black", "id": "607" },
+    { "title": "Men in black II", "id": "608" },
+    { "title": "Men in black III", "id": "41154" },
     { "title": "Rocky", "id": "1366" },
     { "title": "Rocky II", "id": "1367" },
     { "title": "Rocky III", "id": "1371" },
@@ -103,6 +104,7 @@
   ],
   "Sci-fi": [
     { "title": "Van Helsing", "id": "7131" },
+    { "title": "The Tomorrow War", "id": "588228" },
     {
       "title": "The Lord of the Rings: The Fellowship of the Ring",
       "id": "120"
@@ -143,6 +145,11 @@
     { "title": "The Revenant", "id": "281957" }
   ],
   "Drama": [
+    { "title": "The Green Mile", "id": "497" },
+    { "title": "The Terminal", "id": "594" },
+    { "title": "The Da Vinci Code", "id": "591" },
+    { "title": "Angels & Demons", "id": "591" },
+    { "title": "Inferno", "id": "207932" },
     {
       "title": "The Mule",
       "id": "504172"
@@ -159,6 +166,7 @@
     { "title": "The Great Gatsby", "id": "64682" }
   ],
   "Comedy": [
+    { "title": "Forrest Gump", "id": "13" },
     { "title": "The Grand Budapest Hotel", "id": "120467" },
     { "title": "Ace Ventura: Pet Detective", "id": "3049" },
     { "title": "Ace Ventura II: When Nature Calls", "id": "9273" },
@@ -176,30 +184,30 @@
     { "title": "The Hangover", "id": "18785" },
     { "title": "The Hangover II", "id": "45243" },
     { "title": "The Hangover III", "id": "109439" },
-    { "title": "The Internship", "id": "116741" },
     { "title": "Ted", "id": "72105" },
     { "title": "Ted II", "id": "214756" },
     { "title": "Click", "id": "9339" },
     { "title": "Just Go with It", "id": "50546" }
   ],
   "Animation": [
-    { "title": "Madagascar", "id": "953" },
     { "title": "The Lion King", "id": "8587" },
     { "title": "Tarzan", "id": "37135" },
-    { "title": "PocaHontas", "id": "10530" },
     { "title": "Hercules", "id": "11970" },
-    { "title": "Cat in the hat", "id": "10588" },
-    { "title": "Lilo & Stitch", "id": "11544" },
-    { "title": "Spirit", "id": 9023 },
     { "title": "The Hunchback of Notre Dame", "id": "10545" },
+    { "title": "PocaHontas", "id": "10530" },
+    { "title": "jungle book", "id": "9325" },
     { "title": "Toy Story", "id": "862" },
     { "title": "Toy Story II", "id": "863" },
+    { "title": "Mulan", "id": "10674" },
+    { "title": "The Road to El Dorado", "id": "10501" },
+    { "title": "101 Dalmatas", "id": "11674" },
+    { "title": "The Little Mermaid", "id": "10144" },
+    { "title": "Madagascar", "id": "953" },
+    { "title": "Lilo & Stitch", "id": "11544" },
+    { "title": "Spirit", "id": "9023" },
     { "title": "Tangled", "id": "38757" },
     { "title": "Atlantis", "id": "10865" },
-    { "title": "jungle book", "id": "9325" },
     { "title": "jungle book", "id": "278927" },
-    { "title": "Mulan", "id": "10674" },
-    { "title": "Wall-e", "id": "10681" },
     { "title": "The Incredibles", "id": "9806" },
     { "title": "The Incredibles II", "id": "260513" },
     { "title": "Finding Nemo", "id": "12" },
@@ -212,16 +220,16 @@
     { "title": "Soul", "id": "508442" },
     { "title": "Luca", "id": "508943" },
     { "title": "Encanto", "id": "568124" },
-    { "title": "Beauty and the Beast", "id": "321612" },
-    { "title": "The Little Mermaid", "id": "10144" },
+    { "title": "Wall-e", "id": "10681" },
     { "title": "Aladdin", "id": "812" },
-    { "title": "Maleficent", "id": "102651" },
-    { "title": "Aladin", "id": "420817" },
     { "title": "Alice in Wonderland", "id": "12155" },
     { "title": "Alice Through the Looking Glass", "id": "241259" },
     { "title": "The Emperor's New Groove", "id": "11688" },
-    { "title": "The Road to El Dorado", "id": "10501" },
-    { "title": "Charlie and the Chocolate Factory", "id": "118" }
+    { "title": "Cat in the hat", "id": "10588" },
+    { "title": "Charlie and the Chocolate Factory", "id": "118" },
+    { "title": "Beauty and the Beast", "id": "321612" },
+    { "title": "Aladdin (people)", "id": "420817" },
+    { "title": "Maleficent", "id": "102651" }
   ],
   "startups": [
     { "title": "the wolf of wall street", "id": "106646" },
@@ -231,6 +239,7 @@
     { "title": "El dilema de las redes", "id": "656690" },
     { "title": "Jobs", "id": "115782" },
     { "title": "her", "id": "152601" },
-    { "title": "The Intouchables", "id": "77338" }
+    { "title": "The Intouchables", "id": "77338" },
+    { "title": "The Intern", "id": "257211" }
   ]
 }

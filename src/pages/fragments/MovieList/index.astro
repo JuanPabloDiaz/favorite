@@ -1,7 +1,7 @@
 ---
 import MovieCard from "../../../components/MovieCard.astro";
-import myFavMovies from "../../../data/myFavMovies.json";
-import myFavMoviesByCategory from "../../../data/myFavMoviesByCategory.json";
+// import myFavMovies from "../../../data/myFavMovies.json";
+import myFavMoviesByGenre from "../../../data/myFavMoviesByGenre.json";
 
 const popularMoviesResponse = await fetch(
   "https://api.themoviedb.org/3/movie/popular?api_key=" +
@@ -10,22 +10,59 @@ const popularMoviesResponse = await fetch(
 const popularMoviesData = await popularMoviesResponse.json();
 const popularMovies = popularMoviesData.results;
 
-const myFavMoviesDetails = await Promise.all(
-  myFavMovies.map(async (movie) => {
-    const response = await fetch(
-      `https://api.themoviedb.org/3/movie/${movie.id}?api_key=${
-        import.meta.env.TMDB_API_KEY
-      }`
-    );
-    const data = await response.json();
-    return data;
-  })
-);
-// console.log(myFavMoviesDetails);
+// const myFavMoviesDetails = await Promise.all(
+//   myFavMovies.map(async (movie) => {
+//     const response = await fetch(
+//       `https://api.themoviedb.org/3/movie/${movie.id}?api_key=${
+//         import.meta.env.TMDB_API_KEY
+//       }`
+//     );
+//     const data = await response.json();
+//     return data;
+//   })
+// );
+
+// Iterating over the myFavMoviesByGenre object
+const Genres = Object.keys(myFavMoviesByGenre);
+const myFavMoviesByGenreDetails = {};
+
+for (const Genre of Genres) {
+  myFavMoviesByGenreDetails[Genre] = await Promise.all(
+    myFavMoviesByGenre[Genre].map(async (movie) => {
+      const response = await fetch(
+        `https://api.themoviedb.org/3/movie/${movie.id}?api_key=${
+          import.meta.env.TMDB_API_KEY
+        }`
+      );
+      const data = await response.json();
+      return data;
+    })
+  );
+}
 ---
 
 <main class="container mx-auto px-4 pt-16 mb-16">
-  <article class="popular-movies">
+  <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">
+    Juan's Favorite Movies
+  </h2>
+  <section class="">
+    {
+      Genres.map((Genre) => (
+        <article>
+          <h2 class="uppercase tracking-wider text-orange-400 text-sm font-semibold pt-3 border-b-4 border-zinc-500 w-2/6 ">
+            {Genre}
+          </h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+            {myFavMoviesByGenreDetails[Genre].map((movie) => (
+              <MovieCard movie={movie} />
+            ))}
+          </div>
+        </article>
+      ))
+    }
+  </section>
+
+  <!-- <article class="popular-movies">
     <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">
       Juan's Favorite Movies
     </h2>
@@ -34,8 +71,8 @@ const myFavMoviesDetails = await Promise.all(
     >
       {myFavMoviesDetails.map((movie) => <MovieCard movie={movie} />)}
     </div>
-  </article>
-  <!-- end pouplar-movies -->
+  </article> --><!-- end pouplar-movies
+
   <article class="popular-movies">
     <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">
       Popular Movies
@@ -46,4 +83,6 @@ const myFavMoviesDetails = await Promise.all(
       {popularMovies.map((movie) => <MovieCard movie={movie} />)}
     </div>
   </article>
+</main>
+-->
 </main>
