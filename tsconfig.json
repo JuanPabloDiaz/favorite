@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    // Enable strict type-checking. Recommended for handling my collection in data folder.
+    "allowSyntheticDefaultImports": true,
     // Enable top-level await, and other modern ESM features.
     "target": "ESNext",
     "module": "ESNext",
