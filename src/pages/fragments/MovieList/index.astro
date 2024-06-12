@@ -41,30 +41,33 @@ for (const Genre of Genres) {
     })
   );
 }
+
 ---
 
 <main class="container mx-auto px-4 pt-16 mb-16">
-  <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">
-    Juan's Favorite Movies
-  </h2>
-  <section class="">
-    {
-      Genres.map((Genre) => (
-        <article>
+  <!-- <article class="popular-movies">
+      <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">
+        Juan's Favorite Movies
+      </h2>
+      <div>
+        {
+          Genres.map((Genre) => (
+        <div>
           <h2 class="uppercase tracking-wider text-orange-400 text-sm font-semibold pt-3 border-b-4 border-zinc-500 w-2/6 ">
             {Genre}
           </h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {myFavMoviesByGenreDetails[Genre].map((movie) => (
               <MovieCard movie={movie} />
-            ))}
+              ))}
           </div>
-        </article>
+        </div>
       ))
-    }
-  </section>
+      }
+    </div>
+  </article> --> <!-- end myFavMoviesByGenre-->
 
-  <article class="popular-movies">
+  <!-- <article class="popular-movies">
     <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">
       OLD - Juan's Favorite Movies
     </h2>
@@ -73,9 +76,8 @@ for (const Genre of Genres) {
     >
       {myFavMoviesDetails.map((movie) => <MovieCard movie={movie} />)}
     </div>
-  </article>
-
-   <!-- end pouplar-movies-->
+  </article> -->
+     <!-- end OLD-movies-->
 
   <article class="popular-movies">
     <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">
