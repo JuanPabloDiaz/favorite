@@ -1,8 +1,8 @@
 ---
 import MovieCard from "../../../components/MovieCard.astro";
 
-// import myFavMovies from "../../../data/myFavMovies.json";
-// import myFavMoviesByGenre from "../../../data/myFavMoviesByGenre.json";
+import myFavMovies from "../../../content/myFavMovies.json";
+// import myFavMoviesByGenre from "../../../content/myFavMoviesByGenre.json";
 
 const popularMoviesResponse = await fetch(
   "https://api.themoviedb.org/3/movie/popular?api_key=" +
@@ -13,17 +13,17 @@ const popularMovies = popularMoviesData.results;
 
 // OLD MOVIES
 
-// const myFavMoviesDetails = await Promise.all(
-//   myFavMovies.map(async (movie) => {
-//     const response = await fetch(
-//       `https://api.themoviedb.org/3/movie/${movie.id}?api_key=${
-//         import.meta.env.TMDB_API_KEY
-//       }`
-//     );
-//     const data = await response.json();
-//     return data;
-//   })
-// );
+const myFavMoviesDetails = await Promise.all(
+  myFavMovies.map(async (movie) => {
+    const response = await fetch(
+      `https://api.themoviedb.org/3/movie/${movie.id}?api_key=${
+        import.meta.env.TMDB_API_KEY
+      }`
+    );
+    const data = await response.json();
+    return data;
+  })
+);
 
 // Iterating over the myFavMoviesByGenre object
 
@@ -70,7 +70,7 @@ const popularMovies = popularMoviesData.results;
     </div>
   </article> --> <!-- end myFavMoviesByGenre-->
 
-  <!-- <article class="popular-movies">
+  <article class="popular-movies">
     <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">
       OLD - Juan's Favorite Movies
     </h2>
@@ -79,7 +79,7 @@ const popularMovies = popularMoviesData.results;
     >
       {myFavMoviesDetails.map((movie) => <MovieCard movie={movie} />)}
     </div>
-  </article> -->
+  </article>
   <!-- end OLD-movies-->
 
   <article class="popular-movies">
