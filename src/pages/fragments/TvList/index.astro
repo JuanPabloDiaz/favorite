@@ -1,7 +1,7 @@
 ---
-import TvShowCard from "../../../components/TvShowCard.astro";
-import myFavTvShows from "../../../data/myFavTvShows.json";
-import myFavSpanishTvShows from "../../../data/myFavSpTvShows.json";
+import TvShowCard from "@components/TvShowCard.astro";
+import myFavTvShows from "@content/tv-shows/myFavTvShows.json";
+import myFavSpanishTvShows from "@content/tv-shows/myFavSpTvShows.json";
 
 const myFavTvShowsDetails = await Promise.all(
   myFavTvShows.map(async (show) => {
