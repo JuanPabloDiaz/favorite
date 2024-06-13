@@ -1,8 +1,10 @@
 ---
-import MovieCard from "../../../components/MovieCard.astro";
+import MovieCard from "@components/MovieCard.astro";
 
-import myFavMovies from "../../../content/myFavMovies.json";
-// import myFavMoviesByGenre from "../../../content/myFavMoviesByGenre.json";
+import { getCollection, getEntry } from 'astro:content';
+
+import myFavMovies from "@content/movies/myFavMovies.json";
+// import myFavMoviesByGenre from "@content/movies/myFavMoviesByGenre.json";
 
 const popularMoviesResponse = await fetch(
   "https://api.themoviedb.org/3/movie/popular?api_key=" +
