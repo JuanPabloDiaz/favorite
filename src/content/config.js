@@ -1,18 +1,27 @@
-// 1. Importa las utilidades de `astro:content`
-import { defineCollection } from "astro:content";
-// 2. Define tu colección(es)
+import { defineCollection, z } from "astro:content";
 const moviesCollection = defineCollection({
   type: "data",
-  contentType: "json",
-  extension: ".json",
+  schema: z.array(
+    z.object({
+      genre: z.string(),
+      movies: z.array(
+        z.object({
+          title: z.string().optional(),
+          id: z.number(),
+        })
+      ),
+    })
+  ),
 });
 const tvShowsCollection = defineCollection({
   type: "data",
-  contentType: "json",
-  extension: ".json",
+  // schema: z.array(
+  //   z.object({
+  // title: z.string().optional(),
+  //     id: z.number(),
+  //   })
+  // ),
 });
-// 3. Exporta un único objeto `collections` para registrar tu(s) colección(es)
-//    Esta clave debe coincidir con el nombre de tu directorio de colección en "src/content"
 export const collections = {
   movies: moviesCollection,
   tvShows: tvShowsCollection,
