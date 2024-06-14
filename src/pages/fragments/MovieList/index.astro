@@ -1,10 +1,31 @@
 ---
 import MovieCard from "@components/MovieCard.astro";
-import { getCollection } from 'astro:content';
+// import myFavMoviesByGenre from '@content/movies/myFavMoviesByGenre.json';
 
-// import myFavMoviesByGenre from "@content/movies/myFavMoviesByGenre.json";
+// Using Content Collections to fetch data:
+// import { getCollection } from 'astro:content';
 
-// Fetch popular movies
+// const moviesCollection = await getCollection('movies');
+// const moviesDetails = await Promise.all(moviesCollection.map(async (movie) => {
+//   return Promise.all(movie.data.map(async (movieGenre) => {
+//     // console.log('movieGenre: ', movieGenre.genre);
+//     return Promise.all(movieGenre.movies.map(async (movie) => {
+//       const response = await fetch(`https://api.themoviedb.org/3/movie/${movie.id}?api_key=${import.meta.env.TMDB_API_KEY}`);
+//       const data = await response.json();
+//       // Include genre information in the returned object
+//       return { ...movie, ...data, genre: movieGenre.genre }; // Combine local movie data with fetched data and include genre
+//     }));
+//   }));
+// }));
+// // Flatten the array structure to make it easier to work with
+// const flattenedMoviesDetails = moviesDetails.flat(2);
+
+// // Now, since each movie object includes genre, this will correctly create a set of genres
+// const Genres = [...new Set(flattenedMoviesDetails.map(movie => movie.genre))];
+
+// -------------------  END Content Collection   --------------------------------------------------------------------------
+
+// Fetch Popular Movies (Basic Workflow)
 const popularMoviesResponse = await fetch(
   "https://api.themoviedb.org/3/movie/popular?api_key=" +
     import.meta.env.TMDB_API_KEY
@@ -12,70 +33,9 @@ const popularMoviesResponse = await fetch(
 const popularMoviesData = await popularMoviesResponse.json();
 const popularMovies = popularMoviesData.results;
 
-// const movies = await getCollection('movies');
-// movies.map(async (movie) => {
-//   // console.log('movie: ', movie.data.map((movieGenre) => movieGenre.genre));
-//   // console.log('movie: ', movie.data.map((movieGenre) => movieGenre.movies.map((movie) => movie.title)));
-//   // console.log('id: ', movie.data.map((movieGenre) => movieGenre.movies.map((movie) => movie.id)));
-//   const movieId = movie.data.map((movieGenre) => movieGenre.movies.map((movie) => movie.id));
-//   // console.log('movieId: ', movieId);
-//       const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${import.meta.env.TMDB_API_KEY}`);
-//       const data = await response.json();
-//       console.log('data: ', data.title);
-//       return data;
-//     })
+// -------------------  END Fetch Popular Movies (Basic Workflow)   --------------------------------------------------------
 
-// const moviesCollection = await getCollection('movies');
-// const moviesDetails = await Promise.all(moviesCollection.map(async (movie) => {
-//   return Promise.all(movie.data.map(async (movieGenre) => {
-//     console.log('movieGenre: ', movieGenre.genre);
-//     return Promise.all(movieGenre.movies.map(async (movie) => {
-//       const response = await fetch(`https://api.themoviedb.org/3/movie/${movie.id}?api_key=${import.meta.env.TMDB_API_KEY}`);
-//       const data = await response.json();
-//       return { ...movie, ...data }; // Combine local movie data with fetched data
-//     }));
-//   }));
-// }));
-// // Flatten the array structure to make it easier to work with
-// const flattenedMoviesDetails = moviesDetails.flat(2);
-
-// // Assuming you have a way to categorize movies by genre in your collection
-// const Genres = [...new Set(flattenedMoviesDetails.map(movie => movie.genre))];
-
-
-const moviesCollection = await getCollection('movies');
-const moviesDetails = await Promise.all(moviesCollection.map(async (movie) => {
-  return Promise.all(movie.data.map(async (movieGenre) => {
-    // console.log('movieGenre: ', movieGenre.genre);
-    return Promise.all(movieGenre.movies.map(async (movie) => {
-      const response = await fetch(`https://api.themoviedb.org/3/movie/${movie.id}?api_key=${import.meta.env.TMDB_API_KEY}`);
-      const data = await response.json();
-      // Include genre information in the returned object
-      return { ...movie, ...data, genre: movieGenre.genre }; // Combine local movie data with fetched data and include genre
-    }));
-  }));
-}));
-// Flatten the array structure to make it easier to work with
-const flattenedMoviesDetails = moviesDetails.flat(2);
-
-// Now, since each movie object includes genre, this will correctly create a set of genres
-const Genres = [...new Set(flattenedMoviesDetails.map(movie => movie.genre))];
-
-
-// OLD MOVIES
-// const myFavMoviesDetails = await Promise.all(
-//   myFavMovies.map(async (movie) => {
-//     const response = await fetch(
-//       `https://api.themoviedb.org/3/movie/${movie.id}?api_key=${
-//         import.meta.env.TMDB_API_KEY
-//       }`
-//     );
-//     const data = await response.json();
-//     return data;
-//   })
-// );
-
-// Iterating over the myFavMoviesByGenre object
+// Fetch My Favorite Movies by Genre (Old Workflow - Iterating over the myFavMoviesByGenre object)
 
 // const Genres = Object.keys(myFavMoviesByGenre);
 // const myFavMoviesByGenreDetails = {};
@@ -94,40 +54,13 @@ const Genres = [...new Set(flattenedMoviesDetails.map(movie => movie.genre))];
 //   );
 // }
 
-// Fetch My Favorite Movies by Genre
-
-// const myFavMoviesByGenre = await getCollection('movies');
-// const movies = await getCollection('movies', ({ data }) => {
-// 	// console.log('data: ', data);
-//   console.log('movie: ', data.map((movie) => movie.movies)
-
-//   );
-
-//   return !data
-// });
-
-// const myFavMovies = movies.map((movie)
-// Fetch detailed information for each favorite movie
-
-// const myFavMoviesByGenreDetails = {};
-
-// for (const genreObj of myFavMoviesByGenre) {
-//   const genre = genreObj.data.genre;
-//   const movies = genreObj.data.movies;
-
-//   // myFavMoviesByGenreDetails[genre] = await Promise.all(
-//   //   movies.map(async (movie) => {
-//   //     const response = await fetch(`https://api.themoviedb.org/3/movie/${movie.id}?api_key=${TMDB_API_KEY}`);
-//   //     const data = await response.json();
-//   //     return data;
-//   //   })
-//   // );
-// }
+// -------------------  END Fetch My Favorite Movies by Genre (Old Workflow)   --------------------------------------------------------
 
 ---
 
 <main class="container mx-auto px-4 pt-16 mb-16">
 
+<!-- <article class="popular-movies">
   <h1 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">
     Juan's Favorite Movies
   </h1>
@@ -145,45 +78,11 @@ const Genres = [...new Set(flattenedMoviesDetails.map(movie => movie.genre))];
       </div>
     ))}
   </div>
+</article> -->
+  <!-- end NEW myFavMoviesByGenre-->
 
-  <!-- <div class="justify-around bg-slate-800">
-    {movies.map(
-      (myFavM) => (
-      <div>
-        <p class="uppercase tracking-wider text-orange-400 text-sm font-semibold pt-3 border-b-4 border-zinc-500 w-2/6 ">
-                        {myFavM.data.map((movieGenre) => movieGenre.genre)}</p>
-          <div>{myFavM.data.map((movieGenre) => movieGenre.movies.map((movie) =>
-            <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">
-            {movie.title}</h2>
-            <p>{movie.id}</p>
 
-          ))}</div>
-        </div>
-      )
-    )}
-
-  </div> -->
-
-  <!--
-  <div class="mb-10 flex w-full flex-col flex-wrap items-center md:flex-row">
-    {
-      Genres.map((Genre) => (
-        <div>
-          <h2 class="uppercase tracking-wider text-orange-400 text-sm font-semibold pt-3 border-b-4 border-zinc-500 w-2/6 ">
-            {Genre}
-          </h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-            {myFavMoviesByGenreDetails[Genre].map((movie) => (
-              <MovieCard movie={movie} />
-            ))}
-          </div>
-        </div>
-      ))
-    }
-  </div>
-  -->
-
-  <!-- <article class="popular-movies">
+<!-- <article class="popular-movies">
       <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">
         Juan's Favorite Movies
       </h2>
@@ -203,19 +102,8 @@ const Genres = [...new Set(flattenedMoviesDetails.map(movie => movie.genre))];
       ))
       }
     </div>
-  </article> --> <!-- end myFavMoviesByGenre-->
-
-  <!-- <article class="popular-movies">
-    <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">
-      OLD - Juan's Favorite Movies
-    </h2>
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8"
-    >
-      {myFavMoviesDetails.map((movie) => <MovieCard movie={movie} />)}
-    </div>
   </article> -->
-  <!-- end OLD-movies-->
+  <!-- end OLD myFavMoviesByGenre-->
 
   <article class="popular-movies">
     <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">
@@ -227,5 +115,6 @@ const Genres = [...new Set(flattenedMoviesDetails.map(movie => movie.genre))];
       {popularMovies.map((movie) => <MovieCard movie={movie} />)}
     </div>
   </article>
+  <!-- end popular -->
 
 </main>
