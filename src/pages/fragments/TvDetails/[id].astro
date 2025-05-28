@@ -1,5 +1,5 @@
 ---
-import Modal from "../../../components/Modal.astro";
+import Modal from '../../../components/Modal.astro';
 
 const { id } = Astro.params;
 const url = `https://api.themoviedb.org/3/tv/${id}?append_to_response=credits,videos,images,recommendations&api_key=${
@@ -11,27 +11,27 @@ const data = await response.json();
 const show = {
   ...data,
   poster_path: data.poster_path
-    ? "https://image.tmdb.org/t/p/w500/" + data.poster_path
-    : "https://via.placeholder.com/500x750",
-  vote_average: (data.vote_average * 10).toFixed(2) + "%",
-  first_air_date: new Date(data.first_air_date).toLocaleDateString("en-us", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
+    ? 'https://image.tmdb.org/t/p/w500/' + data.poster_path
+    : 'https://via.placeholder.com/500x750',
+  vote_average: (data.vote_average * 10).toFixed(2) + '%',
+  first_air_date: new Date(data.first_air_date).toLocaleDateString('en-us', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
   }),
-  genres: data.genres.map((g) => g.name).join(", "),
+  genres: data.genres.map((g) => g.name).join(', '),
   cast: data.credits.cast.slice(0, 5).map((c) => ({
     ...c,
     profile_path: c.profile_path
-      ? "https://image.tmdb.org/t/p/w300/" + c.profile_path
-      : "https://via.placeholder.com/300x450",
+      ? 'https://image.tmdb.org/t/p/w300/' + c.profile_path
+      : 'https://via.placeholder.com/300x450',
   })),
   images: data.images.backdrops.slice(0, 9),
   morelike: data.recommendations.results.slice(0, 5).map((m) => ({
     ...m,
     poster_path: m.poster_path
-      ? "https://image.tmdb.org/t/p/w500/" + m.poster_path
-      : "https://via.placeholder.com/500x750",
+      ? 'https://image.tmdb.org/t/p/w500/' + m.poster_path
+      : 'https://via.placeholder.com/500x750',
   })),
 
   // videos: data.videos,
@@ -131,9 +131,7 @@ const show = {
 <div class="tv-cast border-b border-gray-800">
   <div class="container mx-auto px-4 py-16">
     <h2 class="text-4xl font-semibold">Cast</h2>
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8"
-    >
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
       {
         show.cast.map((cast) => (
           <div class="mt-8">
@@ -146,10 +144,7 @@ const show = {
               />
             </a>
             <div class="mt-2">
-              <a
-                href={`/people/${cast.id}`}
-                class="text-lg mt-2 hover:text-gray:300"
-              >
+              <a href={`/people/${cast.id}`} class="text-lg mt-2 hover:text-gray:300">
                 {cast.name}
               </a>
               <div class="text-sm text-gray-400">{cast.character}</div>
@@ -200,9 +195,7 @@ const show = {
     <h2 class="text-4xl font-semibold">More Like This</h2>
 
     <article>
-      <div
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8"
-      >
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
         {
           show.morelike.map((morelike) => (
             <div class="mt-8">
@@ -214,19 +207,12 @@ const show = {
                 />
               </a>
               <div class="mt-2">
-                <a
-                  href={`/tv/${morelike.id}`}
-                  class="text-lg mt-2 hover:text-gray-300"
-                >
+                <a href={`/tv/${morelike.id}`} class="text-lg mt-2 hover:text-gray-300">
                   {morelike.title}
                 </a>
                 <div class="flex items ">
-                  <div class="text-sm text-gray-400">
-                    {morelike.release_date}
-                  </div>
-                  <div class="text-sm text-gray-400 ml-2">
-                    {morelike.vote_average}
-                  </div>
+                  <div class="text-sm text-gray-400">{morelike.release_date}</div>
+                  <div class="text-sm text-gray-400 ml-2">{morelike.vote_average}</div>
                 </div>
               </div>
             </div>

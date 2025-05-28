@@ -1,11 +1,10 @@
 ---
-import MovieCard from "../../../components/MovieCard.astro";
+import MovieCard from '../../../components/MovieCard.astro';
 // import myFavMovies from "../../../data/myFavMovies.json";
-import myFavMoviesByGenre from "../../../data/myFavMoviesByGenre.json";
+import myFavMoviesByGenre from '../../../data/myFavMoviesByGenre.json';
 
 const popularMoviesResponse = await fetch(
-  "https://api.themoviedb.org/3/movie/popular?api_key=" +
-    import.meta.env.TMDB_API_KEY
+  'https://api.themoviedb.org/3/movie/popular?api_key=' + import.meta.env.TMDB_API_KEY
 );
 const popularMoviesData = await popularMoviesResponse.json();
 const popularMovies = popularMoviesData.results;
@@ -30,9 +29,7 @@ for (const Genre of Genres) {
   myFavMoviesByGenreDetails[Genre] = await Promise.all(
     myFavMoviesByGenre[Genre].map(async (movie) => {
       const response = await fetch(
-        `https://api.themoviedb.org/3/movie/${movie.id}?api_key=${
-          import.meta.env.TMDB_API_KEY
-        }`
+        `https://api.themoviedb.org/3/movie/${movie.id}?api_key=${import.meta.env.TMDB_API_KEY}`
       );
       const data = await response.json();
       return data;

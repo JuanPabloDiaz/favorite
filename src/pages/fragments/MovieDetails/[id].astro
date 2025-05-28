@@ -1,5 +1,5 @@
 ---
-import Modal from "../../../components/Modal.astro";
+import Modal from '../../../components/Modal.astro';
 
 const { id } = Astro.params;
 const url = `https://api.themoviedb.org/3/movie/${id}?append_to_response=credits,videos,images,recommendations&api_key=${
@@ -11,27 +11,27 @@ const data = await response.json();
 const movie = {
   ...data,
   poster_path: data.poster_path
-    ? "https://image.tmdb.org/t/p/w500/" + data.poster_path
-    : "https://via.placeholder.com/500x750",
-  vote_average: (data.vote_average * 10).toFixed(2) + "%",
-  release_date: new Date(data.release_date).toLocaleDateString("en-us", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
+    ? 'https://image.tmdb.org/t/p/w500/' + data.poster_path
+    : 'https://via.placeholder.com/500x750',
+  vote_average: (data.vote_average * 10).toFixed(2) + '%',
+  release_date: new Date(data.release_date).toLocaleDateString('en-us', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
   }),
-  genres: data.genres.map((g) => g.name).join(", "),
+  genres: data.genres.map((g) => g.name).join(', '),
   crew: data.credits.crew.slice(0, 3),
   cast: data.credits.cast.slice(0, 5).map((c) => ({
     ...c,
     profile_path: c.profile_path
-      ? "https://image.tmdb.org/t/p/w300/" + c.profile_path
-      : "https://via.placeholder.com/300x450",
+      ? 'https://image.tmdb.org/t/p/w300/' + c.profile_path
+      : 'https://via.placeholder.com/300x450',
   })),
   morelike: data.recommendations.results.slice(0, 5).map((m) => ({
     ...m,
     poster_path: m.poster_path
-      ? "https://image.tmdb.org/t/p/w500/" + m.poster_path
-      : "https://via.placeholder.com/500x750",
+      ? 'https://image.tmdb.org/t/p/w500/' + m.poster_path
+      : 'https://via.placeholder.com/500x750',
   })),
   images: data.images.backdrops.slice(0, 6),
   videos: data.videos,
@@ -136,9 +136,7 @@ const video = movie.videos.results.slice(0, 6);
   <div class="movie-cast border-b border-gray-800">
     <div class="container mx-auto px-4 py-16">
       <h2 class="text-4xl font-semibold">Cast</h2>
-      <div
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8"
-      >
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
         {
           movie.cast.map((cast) => (
             <div class="mt-8">
@@ -151,10 +149,7 @@ const video = movie.videos.results.slice(0, 6);
                 />
               </a>
               <div class="mt-2">
-                <a
-                  href={`/people/${cast.id}`}
-                  class="text-lg mt-2 hover:text-gray:300"
-                >
+                <a href={`/people/${cast.id}`} class="text-lg mt-2 hover:text-gray:300">
                   {cast.name}
                 </a>
                 <div class="text-sm text-gray-400">{cast.character}</div>
@@ -233,9 +228,7 @@ const video = movie.videos.results.slice(0, 6);
       <h2 class="text-4xl font-semibold">More Like This</h2>
 
       <div>
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8"
-        >
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {
             movie.morelike.map((morelike) => (
               <div class="mt-8">
@@ -247,19 +240,12 @@ const video = movie.videos.results.slice(0, 6);
                   />
                 </a>
                 <div class="mt-2">
-                  <a
-                    href={`/movies/${morelike.id}`}
-                    class="text-lg mt-2 hover:text-gray-300"
-                  >
+                  <a href={`/movies/${morelike.id}`} class="text-lg mt-2 hover:text-gray-300">
                     {morelike.title}
                   </a>
                   <div class="flex items ">
-                    <div class="text-sm text-gray-400">
-                      {morelike.release_date}
-                    </div>
-                    <div class="text-sm text-gray-400 ml-2">
-                      {morelike.vote_average}
-                    </div>
+                    <div class="text-sm text-gray-400">{morelike.release_date}</div>
+                    <div class="text-sm text-gray-400 ml-2">{morelike.vote_average}</div>
                   </div>
                 </div>
               </div>

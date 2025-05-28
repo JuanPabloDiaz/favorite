@@ -1,5 +1,5 @@
 {
-  "name": "juan_favorites",
+  "name": "@example/basics",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,13 +7,16 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "format": "prettier --write \"src/**/*.{js,astro,css}\""
   },
   "devDependencies": {
-    "@astrojs/tailwind": "^1.0.0",
-    "astro": "^1.0.6"
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.10.2",
+    "prettier": "^3.5.3",
+    "prettier-plugin-astro": "^0.14.1"
   },
   "dependencies": {
-    "@astrojs/cloudflare": "^5.0.0"
+    "@astrojs/cloudflare": "^10.4.0"
   }
 }
