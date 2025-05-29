@@ -1,0 +1,84 @@
+---
+import Layout from '../layouts/Layout.astro';
+import MovieCard from '../components/MovieCard.astro';
+import TvShowCard from '../components/TvShowCard.astro';
+import movieDetails from '../data/movieDetails.json';
+import tvShowDetails from '../data/tvShowDetails.json';
+
+// Get search query from URL
+const query = Astro.url.searchParams.get('query')?.toLowerCase() || '';
+
+// Search in movies
+const movieResults = [];
+for (const genre in movieDetails) {
+  const genreMovies = movieDetails[genre].filter(
+    (movie) =>
+      movie.title?.toLowerCase().includes(query) || movie.overview?.toLowerCase().includes(query)
+  );
+  movieResults.push(...genreMovies);
+}
+
+// Search in TV shows
+const tvResults = [
+  ...tvShowDetails.regular.filter(
+    (show) =>
+      show.name?.toLowerCase().includes(query) || show.overview?.toLowerCase().includes(query)
+  ),
+  ...tvShowDetails.spanish.filter(
+    (show) =>
+      show.name?.toLowerCase().includes(query) || show.overview?.toLowerCase().includes(query)
+  ),
+];
+
+// Remove duplicates if any
+const uniqueMovieResults = [...new Map(movieResults.map((m) => [m.id, m])).values()];
+const uniqueTvResults = [...new Map(tvResults.map((t) => [t.id, t])).values()];
+---
+
+<Layout title={`Search Results for "${query}" - Juan's Favorites`}>
+  <main class="container mx-auto px-4 pt-16">
+    <div class="search-results">
+      <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold mb-4">
+        Resultados de búsqueda para: "{query}"
+      </h2>
+
+      {
+        uniqueMovieResults.length > 0 && (
+          <section class="movies mb-8">
+            <h3 class="text-lg font-semibold text-gray-300 mb-4">
+              Películas ({uniqueMovieResults.length})
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+              {uniqueMovieResults.map((movie) => (
+                <MovieCard movie={movie} />
+              ))}
+            </div>
+          </section>
+        )
+      }
+
+      {
+        uniqueTvResults.length > 0 && (
+          <section class="tv-shows">
+            <h3 class="text-lg font-semibold text-gray-300 mb-4">
+              Series de TV ({uniqueTvResults.length})
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+              {uniqueTvResults.map((show) => (
+                <TvShowCard show={show} />
+              ))}
+            </div>
+          </section>
+        )
+      }
+
+      {
+        uniqueMovieResults.length === 0 && uniqueTvResults.length === 0 && (
+          <p class="text-gray-300 text-center py-8">
+            No se encontraron resultados para "{query}". Intenta con otra búsqueda.
+          </p>
+        )
+      }
+    </div>
+  </main>
+</Layout>
