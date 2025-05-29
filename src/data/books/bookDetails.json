@@ -1,0 +1,270 @@
+{
+  "allBooks": [
+    {
+      "id": "OL17930368W",
+      "slug": "atomic-habits-OL17930368W",
+      "title": "Atomic Habits",
+      "authors": [
+        "James Clear"
+      ],
+      "author_details": [
+        {
+          "name": "James Clear",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "No matter your goals, Atomic Habits offers a proven framework for improving every day. James Clear, one of the world's leading experts on habit formation, reveals practical strategies that will teach you exactly how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results.",
+      "subjects": [
+        "Habit",
+        "Habit breaking",
+        "Behavior modification",
+        "Self-actualization (psychology)",
+        "Business",
+        "psychology",
+        "Personal Growth",
+        "New York Times bestseller",
+        "BUSINESS & ECONOMICS / Organizational Behavior",
+        "PSYCHOLOGY / Social Psychology",
+        "SELF-HELP / Personal Growth / General.",
+        "Self-help / personal growth / general",
+        "Lebensführung",
+        "Gewohnheit",
+        "Änderung",
+        "Erfolg"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/12539702-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL17930368W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 68
+      }
+    },
+    {
+      "id": "OL17590212W",
+      "slug": "the-subtle-art-of-not-giving-a-fck-OL17590212W",
+      "title": "The Subtle Art of Not Giving a F*ck",
+      "authors": [
+        "Mark Manson"
+      ],
+      "author_details": [
+        {
+          "name": "Mark Manson",
+          "bio": "American author and blogger",
+          "birth_date": "9 March 1984",
+          "death_date": null
+        }
+      ],
+      "description": "In this book, blogger and former internet entrepreneur Mark Manson explains in simple, no expletives barred terms how to achieve happiness by caring more about fewer things and not caring at all about more.\r\n     He explains how the metrics we use to define ourselves may be the very things holding us back. By redefining our metrics, questioning ourselves and doubting everything, we may be able to find that we're better off than we think, and thereby become happier people.",
+      "subjects": [
+        "Self-realization",
+        "Conduct of life",
+        "Conducta de vida",
+        "nyt:advice-how-to-and-miscellaneous=2016-10-02",
+        "New York Times bestseller",
+        "Long Now Manual for Civilization"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/8231990-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL17590212W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 88
+      }
+    },
+    {
+      "id": "OL17075811W",
+      "slug": "sapiens-OL17075811W",
+      "title": "Sapiens",
+      "authors": [
+        "Yuval Noah Harari"
+      ],
+      "author_details": [
+        {
+          "name": "Yuval Noah Harari",
+          "bio": null,
+          "birth_date": "1957",
+          "death_date": null
+        }
+      ],
+      "description": "From a renowned historian comes a groundbreaking narrative of humanity’s creation and evolution—a #1 international bestseller—that explores the ways in which biology and history have defined us and enhanced our understanding of what it means to be “human.”\r\n\r\nOne hundred thousand years ago, at least six different species of humans inhabited Earth. Yet today there is only one—homo sapiens. What happened to the others? And what may happen to us?\r\n\r\nMost books about the history of humanity pursue either a historical or a biological approach, but Dr. Yuval Noah Harari breaks the mold with this highly original book that begins about 70,000 years ago with the appearance of modern cognition. From examining the role evolving humans have played in the global ecosystem to charting the rise of empires, Sapiens integrates history and science to reconsider accepted narratives, connect past developments with contemporary concerns, and examine specific events within the context of larger ideas.\r\n\r\nDr. Harari also compels us to look ahead, because over the last few decades humans have begun to bend laws of natural selection that have governed life for the past four billion years. We are acquiring the ability to design not only the world around us, but also ourselves. Where is this leading us, and what do we want to become?\r\n\r\nFeaturing 27 photographs, 6 maps, and 25 illustrations/diagrams, this provocative and insightful work is sure to spark debate and is essential reading for aficionados of Jared Diamond, James Gleick, Matt Ridley, Robert Wright, and Sharon Moalem.",
+      "subjects": [
+        "Technology and civilization",
+        "Human beings",
+        "Historical Chronology",
+        "Historia universal",
+        "Historia",
+        "Civilization",
+        "Hombre",
+        "World history",
+        "History",
+        "Non-Fiction",
+        "Science",
+        "SCIENCE / Life Sciences / General",
+        "SCIENCE / General",
+        "SCIENCE / Life Sciences / Evolution",
+        "Weltgeschichte",
+        "Civilization, history",
+        "Chronology, historical",
+        "Chronologie historique",
+        "Technologie et civilisation",
+        "Histoire universelle",
+        "Histoire",
+        "Humans",
+        "Civilisation",
+        "Homme",
+        "nyt:combined-print-and-e-book-nonfiction=2015-03-01",
+        "New York Times bestseller",
+        "Life Sciences",
+        "Evolution",
+        "General",
+        "Menschheit",
+        "Humanité",
+        "Människan",
+        "Fysisk antropologi",
+        "Human",
+        "Sapiens",
+        "nyt:paperback-nonfiction=2018-06-03",
+        "Comics & graphic novels, adaptations",
+        "Zivilisation",
+        "Society",
+        "Psychology",
+        "Economic history",
+        "Cognition and culture",
+        "Civilization--history",
+        "Human beings--history",
+        "Technology and civilization--history",
+        "Cb113.h4 h3713 2015",
+        "599.9",
+        "Sci027000 sci086000 sci000000",
+        "Cronología histórica",
+        "Tecnología y civilización",
+        "Anthropology",
+        "Long Now Manual for Civilization"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/8634250-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL17075811W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 30
+      }
+    },
+    {
+      "id": "OL19293745W",
+      "slug": "designing-data-intensive-applications-OL19293745W",
+      "title": "Designing Data-Intensive Applications",
+      "authors": [
+        "Martin Kleppmann"
+      ],
+      "author_details": [
+        {
+          "name": "Martin Kleppmann",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "No description available.",
+      "subjects": [
+        "Development",
+        "Web site development",
+        "Application software",
+        "Database management",
+        "Databases",
+        "COMPUTERS",
+        "Desktop Applications",
+        "Project Management software",
+        "Application software--development",
+        "Tk5105.888 .q44 2017",
+        "005.276"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/8434671-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL19293745W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 7
+      }
+    },
+    {
+      "id": "OL11326416W",
+      "slug": "1984-adaptation-OL11326416W",
+      "title": "1984 (adaptation)",
+      "authors": [
+        "Michael Dean"
+      ],
+      "author_details": [
+        {
+          "name": "Michael Dean",
+          "bio": null,
+          "birth_date": "19",
+          "death_date": null
+        }
+      ],
+      "description": "Winston Smith lives in a society where the government controls people every second of the day. He fights this world with love. But it's dangerous: love for another person can be punished by death - and Big Brother is always watching.\r\n\r\nOrwell's classic story shows that there is no freedom unless ideas and beliefs can be questioned. This is as true today as when it was written, more than fifty years ago.\r\n--back cover",
+      "subjects": [
+        "Totalitarianism",
+        "Fiction",
+        "Totalitarianism -- Fiction",
+        "Dystopias",
+        "Textbooks for foreign speakers",
+        "Lectures et morceaux choisis",
+        "Readers for new literates",
+        "High interest-low vocabulary books",
+        "English language",
+        "British and irish fiction (fictional works by one author)",
+        "London (england), fiction",
+        "Fiction, political",
+        "Fiction, dystopian",
+        "Fiction, science fiction, general",
+        "Readers",
+        "English language, juvenile literature"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/8745958-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL11326416W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 18
+      }
+    }
+  ]
+}

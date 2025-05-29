@@ -1,0 +1,198 @@
+---
+const { id } = Astro.params; // Get the book's OpenLibrary Work ID from the URL
+let book = null;
+let fetchError = null;
+
+try {
+  const results = await Astro.glob('@data/books/bookDetails.json');
+  if (results && results.length > 0) {
+    const bookJsonData = results[0].default || results[0];
+    if (bookJsonData && bookJsonData.allBooks) {
+      // The 'id' in bookDetails.json should be the OpenLibrary Work ID, without "/works/"
+      book = bookJsonData.allBooks.find((b) => b.id === id || b.slug === id);
+      if (!book) {
+        fetchError = `Book with ID or slug "${id}" not found. Check if the ID is correct and data is fetched.`;
+      }
+    } else {
+      fetchError =
+        'Book data is not in the expected format or "allBooks" key is missing in imported JSON.';
+    }
+  } else {
+    fetchError = 'Book data file (bookDetails.json) not found. Please run `npm run fetch-books`.';
+  }
+} catch (error) {
+  console.error(`Error loading or processing bookDetails.json for book ID "${id}":`, error);
+  fetchError = `Failed to load book data. Details: ${error.message}`;
+}
+
+const placeholderImageUrl = 'https://via.placeholder.com/500x750.png?text=No+Cover+Art';
+const mainImageUrl =
+  book?.cover_url && book.cover_url !== placeholderImageUrl ? book.cover_url : placeholderImageUrl;
+
+// Helper to format arrays for display (e.g., subjects, authors)
+const formatArray = (arr, separator = ', ') =>
+  arr && arr.length > 0 ? arr.join(separator) : 'N/A';
+
+// Helper for publication year (already just year in data)
+const formatDate = (dateString) => {
+  if (!dateString) return 'N/A';
+  return dateString;
+};
+
+const getAuthorNames = (bookDetail) => {
+  if (bookDetail?.authors && bookDetail.authors.length > 0) {
+    return bookDetail.authors.join(', ');
+  }
+  if (bookDetail?.author_details && bookDetail.author_details.length > 0) {
+    return bookDetail.author_details.map((ad) => ad.name).join(', ');
+  }
+  return 'Author N/A';
+};
+---
+
+{
+  fetchError && (
+    <div class="container mx-auto px-4 py-8">
+      <div class="text-red-500 bg-red-100 border border-red-400 rounded p-4 my-4 text-sm">
+        <p>
+          <strong>Error loading book details:</strong>
+        </p>
+        <p>{fetchError}</p>
+        <p class="mt-2">
+          <a href="/books" class="text-orange-500 hover:underline">
+            Return to Books List
+          </a>
+        </p>
+      </div>
+    </div>
+  )
+}
+
+{
+  book && !fetchError && (
+    <>
+      {/* Book Info Header Section */}
+      <div class="book-info border-b border-gray-800">
+        <div class="container mx-auto px-4 py-16 flex flex-col md:flex-row">
+          <div class="flex-none w-full md:w-80 lg:w-96">
+            <img
+              src={mainImageUrl}
+              alt={`Cover for ${book.title}`}
+              class="w-full h-auto object-cover md:object-contain rounded-lg shadow-lg bg-gray-800 aspect-[2/3]"
+              width="500"
+              height="750"
+              loading="eager"
+            />
+          </div>
+          <div class="md:ml-16 lg:ml-24 mt-8 md:mt-0">
+            <h2 class="text-4xl font-semibold">{book.title || 'Title Not Available'}</h2>
+
+            <div class="flex flex-wrap items-center text-gray-400 text-sm mt-3">
+              {book.average_rating != null && ( // Check for null or undefined explicitly
+                <>
+                  <svg class="fill-current text-orange-500 w-4 h-4 mr-1" viewBox="0 0 24 24">
+                    <path d="M17.56 21a1 1 0 01-.46-.11L12 18.22l-5.1 2.67a1 1 0 01-1.45-1.06l1-5.63-4.12-4a1 1 0 01-.25-1 1 1 0 01.81-.68l5.7-.83 2.51-5.13a1 1 0 011.8 0l2.54 5.12 5.7 .83a1 1 0 01.81.68 1 1 0 01-.25 1l-4.12 4 1 5.63a1 1 0 01-.4 1 1 1 0 01-.62.18z" />
+                  </svg>
+                  <span class="mr-1">{book.average_rating.toFixed(1)}</span>
+                  <span class="mx-2">|</span>
+                </>
+              )}
+              <span>Published: {formatDate(book.publication_year)}</span>
+              {book.page_count != null && (
+                <>
+                  <span class="mx-2">|</span>
+                  <span>{book.page_count} pages</span>
+                </>
+              )}
+            </div>
+
+            {/* Author(s) */}
+            <div class="mt-4">
+              <h4 class="text-white font-semibold text-md">By:</h4>
+              <p class="text-gray-400">{getAuthorNames(book)}</p>
+            </div>
+
+            {/* Subjects/Genres */}
+            {book.subjects && book.subjects.length > 0 && (
+              <div class="mt-4">
+                <h4 class="text-white font-semibold text-md">Genres/Subjects:</h4>
+                <div class="flex flex-wrap gap-2 mt-1">
+                  {book.subjects.slice(0, 7).map((subject) => (
+                    <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">
+                      {subject}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <p class="text-gray-300 mt-6 text-justify leading-relaxed sm:text-sm md:text-base prose prose-invert max-w-none">
+              {book.description || 'No description available.'}
+            </p>
+
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-sm">
+              {book.publisher && ( // Publisher is a string, not an array in OpenLibrary Work details
+                <div>
+                  <h4 class="text-white font-semibold">Publisher:</h4>
+                  <p class="text-gray-400">{book.publisher || 'N/A'}</p>
+                </div>
+              )}
+              {book.isbn_13 && ( // isbn_13 is a string, not array
+                <div>
+                  <h4 class="text-white font-semibold">ISBN-13:</h4>
+                  <p class="text-gray-400">{book.isbn_13}</p>
+                </div>
+              )}
+              {book.isbn_10 && ( // isbn_10 is a string, not array
+                <div>
+                  <h4 class="text-white font-semibold">ISBN-10:</h4>
+                  <p class="text-gray-400">{book.isbn_10}</p>
+                </div>
+              )}
+            </div>
+
+            {/* External Links */}
+            <div class="mt-8 flex space-x-3">
+              {book.links?.open_library && (
+                <a
+                  href={book.links.open_library}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center bg-orange-500 text-gray-900 rounded font-semibold px-5 py-3 hover:bg-orange-600 transition ease-in-out duration-150"
+                >
+                  <svg
+                    class="w-6 fill-current mr-2"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M20 5H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2zM4 19V7h16l.002 12H4z" />
+                    <path d="M6 9h12v2H6zm0 4h12v2H6zm0 4h6v2H6z" />
+                  </svg>
+                  View on Open Library
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Author Biography Section (if available) */}
+      {book.author_details && book.author_details.length > 0 && book.author_details[0].bio && (
+        <div class="author-bio-section border-b border-gray-800">
+          <div class="container mx-auto px-4 py-12">
+            <h2 class="text-3xl font-semibold mb-6">About {book.author_details[0].name}</h2>
+            <div class="prose prose-invert prose-sm md:prose-base max-w-none text-gray-300 leading-relaxed">
+              <p>{book.author_details[0].bio}</p>
+            </div>
+          </div>
+        </div>
+      )}
+    </>
+  )
+}
+---
+<style>
+  /* Tailwind Typography plugin classes 'prose' and 'prose-invert' are used for description and bio. */
+  /* Ensure the plugin is configured in tailwind.config.cjs if not already. */
+  /* For example: add require('@tailwindcss/typography') to plugins in tailwind.config.cjs */
+</style>

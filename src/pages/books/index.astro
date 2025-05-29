@@ -1,9 +1,12 @@
 ---
 import Layout from '@layouts/Layout.astro';
-// import TvList from "@pages/fragments/TvList/index.astro";
+import BookList from '@pages/fragments/BookList/index.astro';
+import { metadata } from '@config/metadata.js';
+
+const pageTitle = `Books — ${metadata.name}`;
+const pageDescription = `A collection of favorite books. ${metadata.defaultDescription}`;
 ---
 
-<Layout title="Books — Juan's Favorites">
-  <!-- <TvList /> -->
-  Books Page here
+<Layout title={pageTitle} description={pageDescription}>
+  <BookList />
 </Layout>

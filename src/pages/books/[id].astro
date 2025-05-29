@@ -1,8 +1,34 @@
 ---
 import Layout from '@layouts/Layout.astro';
-import TvDetails from '@pages/fragments/TvDetails/[id].astro';
+import BookDetailsFragment from '@pages/fragments/BookDetails/[id].astro';
+import { metadata } from '@config/metadata.js';
+
+const pageTitle = `Book Details — ${metadata.name || "Juan's Favorites"}`;
+const pageDescription = `Details for a selected book from ${metadata.name || "Juan's Favorites"}.`;
+
+// For SSR (which this project uses based on cloudflare adapter with output: "server"),
+// getStaticPaths is not strictly needed for dynamic routing to work.
+// The [id].astro page will be rendered on demand.
+// If pre-rendering all book pages at build time was desired, getStaticPaths would be:
+// export async function getStaticPaths() {
+//   try {
+//     const results = await Astro.glob('@data/books/bookDetails.json');
+//     if (results && results.length > 0) {
+//        const bookJsonData = results[0].default || results[0];
+//        if (bookJsonData && bookJsonData.allBooks) {
+//          return bookJsonData.allBooks.map(book => ({
+//            params: { id: book.id || book.slug }, // Ensure 'id' or 'slug' matches what's used in fragment
+//            // props: { book } // Optionally pass full book data as props to avoid re-fetch in fragment
+//          }));
+//        }
+//     }
+//   } catch (error) {
+//     console.error("Error in getStaticPaths for books:", error);
+//   }
+//   return []; // Fallback to empty paths if error or no data
+// }
 ---
 
-<Layout title="Juan's Favorites — TV">
-  <TvDetails />
+<Layout title={pageTitle} description={pageDescription}>
+  <BookDetailsFragment />
 </Layout>

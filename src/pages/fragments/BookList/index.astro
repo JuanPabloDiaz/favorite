@@ -1,0 +1,85 @@
+---
+import BookCard from '@components/BookCard.astro';
+
+let allBooks = [];
+let fetchError = null;
+
+try {
+  // Use Astro.glob to import the JSON data from bookDetails.json.
+  // Ensure the path matches the output file of fetch-books.js.
+  const results = await Astro.glob('@data/books/bookDetails.json');
+  if (results && results.length > 0) {
+    // Astro.glob() with JSON files returns an array where each item has a `default` property
+    // (if it's a default export from a JS file that happens to be JSON, which is unlikely here)
+    // or the direct parsed JSON if it's a .json file.
+    // For direct .json files, results[0] itself is the parsed data.
+    const bookJsonData = results[0].default || results[0];
+
+    if (bookJsonData && bookJsonData.allBooks) {
+      allBooks = bookJsonData.allBooks;
+    } else {
+      console.warn(
+        'No "allBooks" key found in the imported bookDetails.json or data is null/malformed.'
+      );
+      fetchError =
+        'Book data is not in the expected format. Ensure "allBooks" array exists in bookDetails.json.';
+      allBooks = [];
+    }
+  } else {
+    console.warn(
+      'bookDetails.json file not found via Astro.glob. Path: @data/books/bookDetails.json'
+    );
+    fetchError =
+      'Book data file (bookDetails.json) not found. Please run the data fetching script (`npm run fetch-books` or `npm run fetch-data`).';
+    allBooks = [];
+  }
+} catch (error) {
+  console.error('Error loading or processing bookDetails.json via Astro.glob:', error);
+  fetchError = `Failed to load book data. Details: ${error.message}`;
+  allBooks = []; // Ensure it's an array
+}
+---
+
+<div class="container mx-auto px-4 pt-16">
+  <div class="favorite-books">
+    {/* Changed class name for specificity */}
+    <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">Favorite Books</h2>
+    {
+      fetchError && (
+        <div class="text-red-500 bg-red-100 border border-red-400 rounded p-4 my-4 text-sm">
+          <p>
+            <strong>Error loading books:</strong>
+          </p>
+          <p>{fetchError}</p>
+          <p class="mt-2">
+            Please ensure you have run the command <code>npm run fetch-books</code> (or{' '}
+            <code>npm run fetch-data</code>) after adding books to
+            <code>src/data/myFavBooks.json</code>.
+          </p>
+        </div>
+      )
+    }
+    {
+      allBooks.length === 0 && !fetchError && (
+        <div class="text-gray-400 bg-gray-800 border border-gray-700 rounded p-4 my-4 text-sm">
+          <p>
+            No books found in <code>src/data/books/bookDetails.json</code>.
+          </p>
+          <p class="mt-2">To see your favorite books here, please:</p>
+          <ol class="list-decimal list-inside mt-1">
+            <li>
+              Ensure you have added books to <code>src/data/myFavBooks.json</code>.
+            </li>
+            <li>
+              Run the command <code>npm run fetch-books</code> (or <code>npm run fetch-data</code>)
+              to fetch the book details.
+            </li>
+          </ol>
+        </div>
+      )
+    }
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+      {allBooks.map((book) => <BookCard book={book} />)}
+    </div>
+  </div>
+</div>

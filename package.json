@@ -10,7 +10,8 @@
     "fetch-music": "node scripts/fetch-musicbrainz.js",
     "fetch-podcasts": "node scripts/fetch-podcasts.js",
     "fetch-games": "node scripts/fetch-games.js",
-    "fetch-data": "npm run fetch-movies && npm run fetch-music && npm run fetch-podcasts && npm run fetch-games"
+    "fetch-books": "node scripts/fetch-books.js",
+    "fetch-data": "npm run fetch-movies && npm run fetch-music && npm run fetch-podcasts && npm run fetch-games && npm run fetch-books"
   },
   "devDependencies": {
     "@astrojs/cloudflare": "^10.4.0",

@@ -1,0 +1,121 @@
+---
+const { book } = Astro.props; // Expect a book object as a prop
+
+const placeholderImageUrl = 'https://via.placeholder.com/500x750.png?text=No+Cover+Art';
+
+const imageUrl =
+  book.cover_url && book.cover_url !== placeholderImageUrl ? book.cover_url : placeholderImageUrl;
+
+const bookTitle = book.title || 'Title Unknown';
+// Use the book's Open Library ID (e.g., OL123W) for the URL.
+// The slug property from bookDetails.json should already have this.
+const bookUrl = `/books/${book.slug || book.id}`;
+
+// Display primary author
+let primaryAuthor = 'Author Unknown';
+if (book.authors && book.authors.length > 0) {
+  // Assuming authors is an array of strings from bookDetails.json
+  primaryAuthor = book.authors[0];
+} else if (book.author_details && book.author_details.length > 0 && book.author_details[0].name) {
+  // Fallback if authors array is not directly populated with names but with objects
+  primaryAuthor = book.author_details[0].name;
+}
+
+// Display genres/subjects (e.g., first 2-3, comma-separated)
+const displaySubjects =
+  book.subjects && book.subjects.length > 0 ? book.subjects.slice(0, 3).join(', ') : 'N/A';
+const fullSubjects = book.subjects && book.subjects.length > 0 ? book.subjects.join(', ') : '';
+
+const displayPublicationYear = book.publication_year || 'Unknown Year';
+
+// Average rating - Open Library might not provide this directly in the work object.
+const displayRating = book.average_rating ? book.average_rating.toFixed(1) : null;
+
+const displayPageCount = book.page_count ? `${book.page_count} pages` : null;
+---
+
+<div class="mt-8">
+  {/* Consistent with GameCard margin-top */}
+  <a
+    href={bookUrl}
+    class="block aspect-[2/3] bg-gray-800 rounded-lg overflow-hidden"
+    title={bookTitle}
+    data-astro-prefetch
+  >
+    <div class="relative w-full h-full">
+      <img
+        src={imageUrl}
+        alt={`Cover art for ${bookTitle}`}
+        width="500"
+        height="750"
+        loading="lazy"
+        decoding="async"
+        class="thumbnail w-full h-full object-cover rounded-lg shadow-sm shadow-slate-600 hover:opacity-75 transition ease-in-out duration-300 hover:shadow-slate-50"
+        id={`book-poster-${book.id}`}
+      />
+      <!-- Skeleton loader, hidden by default, managed by imageLoading.js -->
+      <div class="absolute inset-0 bg-gray-800 animate-pulse" style="display: none;"></div>
+    </div>
+  </a>
+  <div class="mt-2">
+    <a href={bookUrl} class="text-lg mt-2 hover:text-gray-300" title={bookTitle}>{bookTitle}</a>
+
+    <div class="text-gray-400 text-sm mt-1">
+      <span>{primaryAuthor}</span>
+    </div>
+
+    {/* Rating and Publication Year - adapt from GameCard's Metacritic/ReleaseDate section */}
+    <div class="text-gray-400 text-sm mt-1 flex items-center">
+      {
+        displayRating && (
+          <>
+            <svg class="fill-current text-orange-500 w-4 h-4 mr-1" viewBox="0 0 24 24">
+              {' '}
+              {/* Star Icon */}
+              <path d="M17.56 21a1 1 0 01-.46-.11L12 18.22l-5.1 2.67a1 1 0 01-1.45-1.06l1-5.63-4.12-4a1 1 0 01-.25-1 1 1 0 01.81-.68l5.7-.83 2.51-5.13a1 1 0 011.8 0l2.54 5.12 5.7 .83a1 1 0 01.81.68 1 1 0 01-.25 1l-4.12 4 1 5.63a1 1 0 01-.4 1 1 1 0 01-.62.18z" />
+            </svg>
+            <span class="mr-1">{displayRating}</span>
+            <span class="mx-1">|</span>
+          </>
+        )
+      }
+      <span>{displayPublicationYear}</span>
+    </div>
+
+    {/* Page Count - if available */}
+    {
+      displayPageCount && (
+        <div class="text-gray-400 text-sm mt-1">
+          <span>{displayPageCount}</span>
+        </div>
+      )
+    }
+
+    {/* Subjects/Genres - adapt from GameCard's genres section */}
+    {
+      book.subjects && book.subjects.length > 0 && (
+        <div class="text-gray-400 text-sm mt-1 truncate" title={fullSubjects}>
+          {displaySubjects}
+        </div>
+      )
+    }
+
+    {/* Optional: ISBNs can be added here if desired, similar to GameCard's platforms */}
+    {
+      /* book.isbn_13 && (
+      <div class="flex flex-wrap gap-1 mt-2">
+        <span class="bg-gray-700 text-gray-300 text-xs px-2 py-0.5 rounded-full">
+          ISBN: {book.isbn_13}
+        </span>
+      </div>
+    )*/
+    }
+  </div>
+</div>
+
+<script>
+  // Ensure imageLoading.js setup is consistent with other cards.
+  // GameCard.astro (and PodcastCard.astro) uses this direct import.
+  import { setupImageLoading } from '@scripts/imageLoading.js';
+  document.addEventListener('DOMContentLoaded', setupImageLoading);
+</script>
