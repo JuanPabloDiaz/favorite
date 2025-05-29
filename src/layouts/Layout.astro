@@ -2,12 +2,23 @@
 import '../styles/styles.css';
 import Footer from '../components/Footer.astro';
 import Nav from '../components/Nav.astro';
+import { metadata, getActiveDomain } from '../config/metadata';
 
 export interface Props {
   title: string;
+  description?: string;
 }
 
-const { title } = Astro.props as Props;
+const { title, description } = Astro.props as Props;
+const descriptionValue = description || metadata.defaultDescription;
+
+// Get the active domain and update metadata
+const activeDomain = await getActiveDomain();
+metadata.domain = activeDomain;
+metadata.baseUrl = `https://${activeDomain}`;
+
+// Canonical URL
+const canonicalURL = new URL(Astro.url.pathname, metadata.baseUrl);
 ---
 
 <!doctype html>
@@ -18,7 +29,29 @@ const { title } = Astro.props as Props;
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
     <meta name="view-transition" content="same-origin" />
+
+    <!-- Primary Meta Tags -->
     <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={descriptionValue} />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={descriptionValue} />
+    <meta property="og:image" content="/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={descriptionValue} />
+    <meta property="twitter:image" content="/og-image.jpg" />
+
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script>
       import '../scripts/spa-navigation.js';

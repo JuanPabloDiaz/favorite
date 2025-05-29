@@ -1,8 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import MovieList from './fragments/MovieList/index.astro';
+import { metadata } from '../config/metadata';
 ---
 
-<Layout title="Juan's Favorites">
+<Layout title={metadata.pages.home.title} description={metadata.pages.home.description}>
   <MovieList />
 </Layout>
