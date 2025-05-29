@@ -1,5 +1,5 @@
 ---
-import Modal from '../../../components/Modal.astro';
+import Modal from '@components/Modal.astro';
 
 const { id } = Astro.params;
 const url = `https://api.themoviedb.org/3/movie/${id}?append_to_response=credits,videos,images,recommendations&api_key=${
