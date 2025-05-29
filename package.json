@@ -13,10 +13,10 @@
     "fetch-data": "npm run fetch-movies && npm run fetch-music && npm run fetch-podcasts && npm run fetch-games"
   },
   "devDependencies": {
-    "@astrojs/cloudflare": "^10.4.0",
+    "@astrojs/cloudflare": "^12.5.3",
     "@astrojs/sitemap": "^3.4.0",
     "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.10.2",
+    "astro": "^5.8.1",
     "dotenv": "^16.5.0",
     "node-fetch": "^3.3.2",
     "prettier": "^3.5.3",
