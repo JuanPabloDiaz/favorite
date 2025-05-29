@@ -8,7 +8,7 @@ try {
   // Use Astro.glob to import the JSON data.
   // Note: Astro.glob returns an array of modules. For a single file, we take the first.
   // The content of the JSON file is usually the default export.
-  const results = await Astro.glob('../../../data/podcastDetails.json');
+  const results = await Astro.glob('@data/podcastDetails.json');
   if (results && results.length > 0) {
     // For JSON files, Astro.glob provides the parsed content directly.
     // If it were a module with exports, it might be results[0].default or results[0].allPodcasts

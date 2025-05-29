@@ -1,25 +1,16 @@
 ---
 import PodcastCard from '@components/PodcastCard.astro';
-import { readFile } from 'node:fs/promises'; // Use node:fs/promises
+import podcastDetails from '@data/podcastDetails.json';
 
 let allPodcasts = [];
 let fetchError = null;
 
-try {
-  // Adjust path as necessary, assuming data file is in src/data/
-  const podcastDataPath = 'src/data/myFavPodcasts.json';
-  const podcastJsonData = await readFile(podcastDataPath, 'utf-8');
-  const parsedData = JSON.parse(podcastJsonData);
-  if (Array.isArray(parsedData)) {
-    allPodcasts = parsedData;
-  } else {
-    fetchError = 'Podcast data is not in the expected array format.';
-  }
-} catch (error) {
-  console.error('Error reading or parsing podcastDetails.json:', error);
-  fetchError = `Failed to load podcast data. Please ensure 'npm run fetch-data' has been run successfully. Details: ${error.message}`;
-  // Set allPodcasts to empty array in case of error to prevent crash, error message will be shown
-  allPodcasts = [];
+if (Array.isArray(podcastDetails)) {
+  allPodcasts = podcastDetails;
+} else if (podcastDetails && podcastDetails.podcastDetails) {
+  allPodcasts = Object.values(podcastDetails.podcastDetails);
+} else {
+  fetchError = 'Podcast data is not in the expected format.';
 }
 ---
 

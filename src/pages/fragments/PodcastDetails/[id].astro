@@ -4,7 +4,7 @@ let podcast = null;
 let fetchError = null;
 
 try {
-  const results = await Astro.glob('../../../data/podcastDetails.json');
+  const results = await Astro.glob('@data/podcastDetails.json');
   if (results && results.length > 0) {
     const podcastJsonData = results[0].default || results[0];
     if (podcastJsonData && podcastJsonData.allPodcasts) {
