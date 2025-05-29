@@ -1,10 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import MovieCard from '../components/MovieCard.astro';
-import TvShowCard from '../components/TvShowCard.astro';
-import movieDetails from '../data/movieDetails.json';
-import tvShowDetails from '../data/tvShowDetails.json';
-import { metadata } from '../config/metadata';
+import Layout from '@layouts/Layout.astro';
+import MovieCard from '@components/MovieCard.astro';
+import TvShowCard from '@components/TvShowCard.astro';
+import movieDetails from '@data/movieDetails.json';
+import tvShowDetails from '@data/tvShowDetails.json';
+import { metadata } from '@config/metadata';
 
 // Get search query from URL
 const query = Astro.url.searchParams.get('query')?.toLowerCase() || '';
