@@ -1,55 +1,16 @@
 ---
 import MovieCard from '../../../components/MovieCard.astro';
-// import myFavMovies from "../../../data/myFavMovies.json";
 import myFavMoviesByGenre from '../../../data/myFavMoviesByGenre.json';
-
-const hasApiKey = !!import.meta.env.TMDB_API_KEY;
-
-const popularMoviesResponse = await fetch(
-  'https://api.themoviedb.org/3/movie/popular?api_key=' + import.meta.env.TMDB_API_KEY
-);
-const popularMoviesData = await popularMoviesResponse.json();
-const popularMovies = popularMoviesData.results;
-
-// const myFavMoviesDetails = await Promise.all(
-//   myFavMovies.map(async (movie) => {
-//     const response = await fetch(
-//       `https://api.themoviedb.org/3/movie/${movie.id}?api_key=${
-//         import.meta.env.TMDB_API_KEY
-//       }`
-//     );
-//     const data = await response.json();
-//     return data;
-//   })
-// );
+import popularMovies from '../../../data/popularMovies.json';
+import movieDetails from '../../../data/movieDetails.json';
 
 // Iterating over the myFavMoviesByGenre object
 const Genres = Object.keys(myFavMoviesByGenre);
-const myFavMoviesByGenreDetails = {};
 
-for (const Genre of Genres) {
-  myFavMoviesByGenreDetails[Genre] = await Promise.all(
-    myFavMoviesByGenre[Genre].map(async (movie) => {
-      const response = await fetch(
-        `https://api.themoviedb.org/3/movie/${movie.id}?api_key=${import.meta.env.TMDB_API_KEY}`
-      );
-      const data = await response.json();
-      return data;
-    })
-  );
-}
+// Note: We're now using pre-fetched movie details from our local JSON
 ---
 
 <main class="container mx-auto px-4 pt-16 mb-16">
-
-  {typeof window === "undefined" && (
-  <div style="background: #222; color: #ffb300; padding: 1em; margin-bottom: 1em;">
-    <strong>Debug:</strong>
-    {hasApiKey
-      ? "TMDB_API_KEY está presente en este entorno."
-      : "TMDB_API_KEY NO está presente en este entorno."}
-  </div>
-)}
 
   <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">
     Juan's Favorite Movies
@@ -58,11 +19,11 @@ for (const Genre of Genres) {
     {
       Genres.map((Genre) => (
         <article>
-          <h2 class="uppercase tracking-wider text-orange-400 text-sm font-semibold pt-3 border-b-4 border-zinc-500 w-2/6 ">
+          <h2 class="uppercase tracking-wider text-orange-400 text-sm font-semibold pt-3 border-b-4 border-zinc-500 w-2/6">
             {Genre}
           </h2>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-            {myFavMoviesByGenreDetails[Genre].map((movie) => (
+            {movieDetails[Genre].map((movie) => (
               <MovieCard movie={movie} />
             ))}
           </div>
