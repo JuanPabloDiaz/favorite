@@ -1,24 +1,25 @@
 ---
-import { readFile } from 'node:fs/promises';
-
 const { id } = Astro.params; // Get the podcast ID from the URL
 let podcast = null;
 let fetchError = null;
 
 try {
-  const podcastDataPath = 'src/data/podcastDetails.json'; // Adjust path if needed
-  const podcastJsonData = await readFile(podcastDataPath, 'utf-8');
-  const parsedData = JSON.parse(podcastJsonData);
-  if (parsedData && parsedData.allPodcasts) {
-    podcast = parsedData.allPodcasts.find(p => p.id.toString() === id.toString());
-    if (!podcast) {
-      fetchError = `Podcast with ID "${id}" not found.`;
+  const results = await Astro.glob('../../../data/podcastDetails.json');
+  if (results && results.length > 0) {
+    const podcastJsonData = results[0].default || results[0];
+    if (podcastJsonData && podcastJsonData.allPodcasts) {
+      podcast = podcastJsonData.allPodcasts.find(p => p.id.toString() === id.toString());
+      if (!podcast) {
+        fetchError = `Podcast with ID "${id}" not found.`;
+      }
+    } else {
+      fetchError = 'Podcast data is not in the expected format or "allPodcasts" key is missing in imported JSON.';
     }
   } else {
-    fetchError = 'Podcast data is not in the expected format or "allPodcasts" key is missing.';
+    fetchError = 'Podcast data file not found via Astro.glob.';
   }
 } catch (error) {
-  console.error(`Error reading or parsing podcastDetails.json for podcast ${id}:`, error);
+  console.error(`Error loading or processing podcastDetails.json for podcast ${id} via Astro.glob:`, error);
   fetchError = `Failed to load podcast data. Details: ${error.message}`;
 }
 

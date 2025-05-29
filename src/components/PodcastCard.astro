@@ -3,16 +3,19 @@
 const { podcast } = Astro.props; // Expect a podcast object as a prop
 
 // Use placeholder if image is not available or is set to the known placeholder URL from the fetch script
-const placeholderUrl = "https://via.placeholder.com/500x500.png?text=No+Artwork"; // This should match the one in fetch-podcasts.js
-const imageUrl = podcast.image && podcast.image !== placeholderUrl && podcast.image !== "https://via.placeholder.com/500x750.png?text=No%20Artwork" ? podcast.image : placeholderUrl;
+const placeholderUrl = 'https://via.placeholder.com/500x500.png?text=No+Artwork'; // This should match the one in fetch-podcasts.js
+const imageUrl =
+  podcast.image &&
+  podcast.image !== placeholderUrl &&
+  podcast.image !== 'https://via.placeholder.com/500x750.png?text=No%20Artwork'
+    ? podcast.image
+    : placeholderUrl;
 
-
-const podcastTitle = podcast.title || "Title Unknown";
-const displayPublisher = podcast.publisher || "Publisher Unknown";
+const podcastTitle = podcast.title || 'Title Unknown';
+const displayPublisher = podcast.publisher || 'Publisher Unknown';
 // Ensure the link points to the detail page structure: /podcasts/[id]
 const podcastSlug = podcast.id; // Assuming podcast.id is the ListenNotes ID string
 const podcastUrl = `/podcasts/${podcastSlug}`;
-
 ---
 
 <div class="mt-8">
@@ -36,7 +39,9 @@ const podcastUrl = `/podcasts/${podcastSlug}`;
     </div>
   </a>
   <div class="mt-2">
-    <a href={podcastUrl} class="text-lg mt-2 hover:text-gray-300" title={podcastTitle}>{podcastTitle}</a>
+    <a href={podcastUrl} class="text-lg mt-2 hover:text-gray-300" title={podcastTitle}
+      >{podcastTitle}</a
+    >
     <div class="flex items-center text-gray-400 text-sm mt-1">
       <span>{displayPublisher}</span>
     </div>

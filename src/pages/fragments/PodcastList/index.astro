@@ -1,10 +1,70 @@
 ---
 import PodcastCard from '@components/PodcastCard.astro';
-import { getPodcasts } from '@services/podcasts';
 
-const podcasts = await getPodcasts();
+let allPodcasts = [];
+let fetchError = null;
+
+try {
+  // Use Astro.glob to import the JSON data.
+  // Note: Astro.glob returns an array of modules. For a single file, we take the first.
+  // The content of the JSON file is usually the default export.
+  const results = await Astro.glob('../../../data/podcastDetails.json');
+  if (results && results.length > 0) {
+    // For JSON files, Astro.glob provides the parsed content directly.
+    // If it were a module with exports, it might be results[0].default or results[0].allPodcasts
+    // Let's assume it's the direct content or default export which is the object.
+    const podcastJsonData = results[0].default || results[0];
+    if (podcastJsonData && podcastJsonData.allPodcasts) {
+      allPodcasts = podcastJsonData.allPodcasts;
+    } else {
+      console.warn(
+        'No "allPodcasts" key found in the imported podcastDetails.json or data is null/malformed.'
+      );
+      fetchError = 'Podcast data is not in the expected format.';
+      allPodcasts = [];
+    }
+  } else {
+    console.warn('podcastDetails.json file not found via Astro.glob.');
+    fetchError = 'Podcast data file not found.';
+    allPodcasts = [];
+  }
+} catch (error) {
+  console.error('Error loading or processing podcastDetails.json via Astro.glob:', error);
+  fetchError = `Failed to load podcast data. Details: ${error.message}`;
+  allPodcasts = []; // Ensure it's an array
+}
 ---
 
-<section class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-  {podcasts.map((podcast) => <PodcastCard podcast={podcast} />)}
-</section>
+<div class="container mx-auto px-4 pt-16">
+  <div class="popular-movies">
+    {
+      /* Re-use existing class name for styling if appropriate, or use a new one like "popular-podcasts" if styles are specific */
+    }
+    <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">
+      Favorite Podcasts
+    </h2>
+    {
+      fetchError && (
+        <div class="text-red-500 bg-red-100 border border-red-400 rounded p-4 my-4">
+          <p>
+            <strong>Error loading podcasts:</strong>
+          </p>
+          <p>{fetchError}</p>
+        </div>
+      )
+    }
+    {
+      allPodcasts.length === 0 && !fetchError && (
+        <div class="text-gray-400 bg-gray-800 border border-gray-700 rounded p-4 my-4">
+          <p>
+            No podcasts found. Please run `npm run fetch-data` to populate the list, or add podcasts
+            to `src/data/myFavPodcasts.json` and then run the fetch command.
+          </p>
+        </div>
+      )
+    }
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+      {allPodcasts.map((podcast) => <PodcastCard podcast={podcast} />)}
+    </div>
+  </div>
+</div>

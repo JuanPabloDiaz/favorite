@@ -5,7 +5,7 @@ interface Props {
   height?: string;
 }
 
-const { className = '', width = 'full', height = '4', } = Astro.props;
+const { className = '', width = 'full', height = '4' } = Astro.props;
 ---
 
 <div class={`bg-gray-700 rounded animate-pulse h-${height} w-${width} ${className}`}></div>
@@ -17,11 +17,11 @@ const { className = '', width = 'full', height = '4', } = Astro.props;
 
     // Ocultar skeletons y mostrar contenido después de un pequeño delay
     setTimeout(() => {
-      skeletons.forEach(skeleton => {
+      skeletons.forEach((skeleton) => {
         skeleton.classList.add('hidden');
       });
 
-      content.forEach(element => {
+      content.forEach((element) => {
         element.classList.remove('hidden');
       });
     }, 300);
@@ -33,11 +33,11 @@ const { className = '', width = 'full', height = '4', } = Astro.props;
     const skeletons = document.querySelectorAll('[data-skeleton]');
     const content = document.querySelectorAll('[data-content]');
 
-    skeletons.forEach(skeleton => {
+    skeletons.forEach((skeleton) => {
       skeleton.classList.remove('hidden');
     });
 
-    content.forEach(element => {
+    content.forEach((element) => {
       element.classList.add('hidden');
     });
   });

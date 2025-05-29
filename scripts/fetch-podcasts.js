@@ -1,5 +1,3 @@
-// scripts/fetch-podcasts.js
-
 import fs from 'fs/promises';
 import fetch from 'node-fetch';
 
@@ -47,7 +45,9 @@ async function fetchPodcastData(podcastName) {
     });
 
     if (!searchResponse.ok) {
-      console.error(`Error searching for podcast "${podcastName}": ${searchResponse.status} ${searchResponse.statusText}`);
+      console.error(
+        `Error searching for podcast "${podcastName}": ${searchResponse.status} ${searchResponse.statusText}`
+      );
       const errorBody = await searchResponse.text();
       console.error('Error body:', errorBody);
       return null;
@@ -76,7 +76,9 @@ async function fetchPodcastData(podcastName) {
     });
 
     if (!detailsResponse.ok) {
-      console.error(`Error fetching details for podcast ID "${podcastId}" (${podcastName}): ${detailsResponse.status} ${detailsResponse.statusText}`);
+      console.error(
+        `Error fetching details for podcast ID "${podcastId}" (${podcastName}): ${detailsResponse.status} ${detailsResponse.statusText}`
+      );
       const errorBody = await detailsResponse.text();
       console.error('Error body:', errorBody);
       return null;
@@ -88,13 +90,12 @@ async function fetchPodcastData(podcastName) {
     const image = detailsData.image || detailsData.thumbnail || PLACEHOLDER_IMAGE_URL;
     // Prioritize genres from search results if they are an array of strings
     let genres = podcastSearchResult.genres || [];
-    if (!Array.isArray(genres) || !genres.every(g => typeof g === 'string')) {
-        // Fallback to genre_ids from detailsData if search result genres are not suitable
-        // For simplicity, we'll store genre_ids directly if names aren't readily available.
-        // A more robust solution would map these IDs to names.
-        genres = detailsData.genre_ids || [];
+    if (!Array.isArray(genres) || !genres.every((g) => typeof g === 'string')) {
+      // Fallback to genre_ids from detailsData if search result genres are not suitable
+      // For simplicity, we'll store genre_ids directly if names aren't readily available.
+      // A more robust solution would map these IDs to names.
+      genres = detailsData.genre_ids || [];
     }
-
 
     return {
       id: detailsData.id,
@@ -110,7 +111,6 @@ async function fetchPodcastData(podcastName) {
       explicit_content: detailsData.explicit_content,
       // rating: detailsData.rating || null, // ListenNotes API doesn't seem to provide a direct rating field
     };
-
   } catch (error) {
     console.error(`An unexpected error occurred while fetching data for "${podcastName}":`, error);
     return null;
@@ -139,8 +139,10 @@ async function main() {
     process.exit(1);
   }
 
-  if (!Array.isArray(podcastInput) || !podcastInput.every(p => typeof p.name === 'string')) {
-    console.error(`Invalid format in "${PODCAST_INPUT_FILE}". Expected an array of objects with a "name" property.`);
+  if (!Array.isArray(podcastInput) || !podcastInput.every((p) => typeof p.name === 'string')) {
+    console.error(
+      `Invalid format in "${PODCAST_INPUT_FILE}". Expected an array of objects with a "name" property.`
+    );
     process.exit(1);
   }
 
@@ -165,7 +167,9 @@ async function main() {
 
   try {
     await fs.writeFile(PODCAST_OUTPUT_FILE, JSON.stringify(outputData, null, 2));
-    console.log(`\nSuccessfully wrote ${allPodcastDetails.length} podcast details to "${PODCAST_OUTPUT_FILE}"`);
+    console.log(
+      `\nSuccessfully wrote ${allPodcastDetails.length} podcast details to "${PODCAST_OUTPUT_FILE}"`
+    );
   } catch (error) {
     console.error(`Error writing output file "${PODCAST_OUTPUT_FILE}":`, error.message);
     process.exit(1);

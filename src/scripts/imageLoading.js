@@ -5,7 +5,7 @@ export function setupImageLoading() {
   const images = document.querySelectorAll('.thumbnail');
   images.forEach((img) => {
     if (!(img instanceof HTMLImageElement)) return;
-    
+
     const pulseDiv = img.nextElementSibling;
     if (pulseDiv && pulseDiv.classList.contains('animate-pulse')) {
       pulseDiv.style.display = 'block';
