@@ -1,8 +1,403 @@
 [
-    { "title": "Atomic Habits", "author": "James Clear" },
-    { "title": "The Subtle Art of Not Giving a F*ck", "author": "Mark Manson" },
-    { "title": "Sapiens", "author": "Yuval Noah Harari" },
-    { "title": "Designing Data-Intensive Applications", "author": "Martin Kleppmann" },
-    { "title": "1984", "author": "George Orwell"}
+    {
+      "_id": 1,
+      "title": "The Four Agreements",
+      "author": "Don Miguel Ruiz",
+      "category": ["self-help"],
+      "coverImage": "28-cuatro-acuerdos.jpg",
+      "api_id": "OL27201W"
+    },
+    {
+      "_id": 2,
+      "title": "Sonho grande",
+      "author": "Cristiane Correa",
+      "category": ["business", "biography"],
+      "coverImage": "8-sonho-grande.jpg",
+      "api_id": "OL24328117W"
+    },
+    {
+      "_id": 3,
+      "title": "The lean startup",
+      "author": "Eric Ries",
+      "category": ["business"],
+      "coverImage": "4-the-lean-startup.jpg",
+      "api_id": "OL20618767W"
+    },
+    {
+      "_id": 4,
+      "title": "High effective management",
+      "author": "Andrew S. Grove",
+      "category": ["business"],
+      "coverImage": "5-high-effective-management.jpg",
+      "api_id": "404-not-found"
+    },
+    {
+      "_id": 5,
+      "title": "The ride of a lifetime",
+      "author": "Robert Iger",
+      "category": ["business", "biography"],
+      "coverImage": "25-ride-of-lifetime.jpg",
+      "api_id": "OL20140592W"
+    },
+    {
+      "_id": 6,
+      "title": "Elon Musk",
+      "author": "Ashlee Vance, Francisco López Martín",
+      "category": ["biography"],
+      "coverImage": "26-elon-musk.jpg",
+      "api_id": "OL17184556W"
+    },
+    {
+      "_id": 7,
+      "title": "Orlando Ayala, el Colombiano que le hablaba al oído a bill gates.",
+      "author": "Julio Cesar Guzman",
+      "category": ["biography"],
+      "coverImage": "27-orlando-ayala.jpg",
+      "api_id": "404-not-found"
+    },
+    {
+      "_id": 8,
+      "title": "La estupidez colectiva",
+      "author": "Julian Torres Gomez",
+      "category": ["self-help", "business"],
+      "coverImage": "16-la-estupidez-colectiva.jpg",
+      "api_id": "OL20141484W"
+    },
+    {
+      "_id": 9,
+      "title": "Rich Dad Poor Dad",
+      "author": "Robert T. Kiyosaki",
+      "category": ["finance"],
+      "coverImage": "17-rich-dad-poor-dad.jpg",
+      "api_id": "OL24604864W"
+    },
+    {
+      "_id": 10,
+      "title": "Blitzscaling",
+      "author": "Reid Hoffman",
+      "category": ["business", "self-help"],
+      "coverImage": "18-blitzscaling.jpg",
+      "api_id": "OL18027210W"
+    },
+    {
+      "_id": 11,
+      "title": "Zero to One",
+      "author": "Peter Thiel",
+      "category": ["business", "self-help"],
+      "coverImage": "19-zero-to-one.jpg",
+      "api_id": "OL17078706W"
+    },
+    {
+      "_id": 12,
+      "title": "The 7 habits of highly effective people",
+      "author": "Stephen R. Covey",
+      "category": ["self-help"],
+      "coverImage": "24-seven-habits-highly-effective-people.jpg",
+      "api_id": "OL23814995M"
+    },
+    {
+      "_id": 13,
+      "title": "Limitless",
+      "author": "Jim Kwik",
+      "category": ["self-help"],
+      "coverImage": "29-limitless.jpg",
+      "api_id": "OL20687130W"
+    },
+    {
+      "_id": 14,
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "category": ["self-help"],
+      "coverImage": "6-atomic-habits.jpg",
+      "api_id": "OL17930368W"
+    },
+    {
+      "_id": 15,
+      "title": "5 am club",
+      "author": "Robin Sharma",
+      "category": ["self-help"],
+      "coverImage": "1-5-am-club.jpg",
+      "api_id": "OL24315517W"
+    },
+    {
+      "_id": 16,
+      "title": "Grit",
+      "author": "Angela Duckworth",
+      "category": ["self-help", "business"],
+      "coverImage": "2-grit.jpg",
+      "api_id": "OL27704468M"
+    },
+    {
+      "_id": 17,
+      "title": "Good to great",
+      "author": "Jim Collins",
+      "category": ["business"],
+      "coverImage": "3-good-to-great.jpg",
+      "api_id": "OL6669337W"
+    },
+    {
+      "_id": 18,
+      "title": "Sapiens",
+      "author": "Yuval Noah Harari",
+      "description": "A sweeping history of humankind, from the Stone Age to the modern era.",
+      "category": ["technology"],
+      "coverImage": "15-sapiens.jpg",
+      "api_id": "OL17075811W"
+    },
+    {
+      "_id": 19,
+      "title": "Homo Deus",
+      "author": "Yuval Noah Harari",
+      "category": ["technology"],
+      "coverImage": "23-homo-deus.jpg",
+      "api_id": "OL27969037W"
+    },
+    {
+      "_id": 20,
+      "title": "How to Win Friends and Influence People",
+      "author": "Dale Carnegie",
+      "category": ["self-help"],
+      "coverImage": "14-how-to-win-friends.jpg",
+      "api_id": "OL20429311W"
+    },
+    {
+      "_id": 21,
+      "title": "Influence, New and expanded",
+      "author": "Robert B. Cialdini",
+      "category": ["self-help"],
+      "coverImage": "13-Influence.jpg",
+      "api_id": "404-not-found"
+    },
+    {
+      "_id": 22,
+      "title": "Never split the difference",
+      "author": "Chris Voss",
+      "category": ["business"],
+      "coverImage": "7-never-split-the-difference.jpg",
+      "api_id": "OL18819818W"
+    },
+    {
+      "_id": 23,
+      "title": "Getting to Yes",
+      "author": "Roger Fisher, William Ury",
+      "category": ["business"],
+      "coverImage": "21-getting-to-yes.jpg",
+      "api_id": "OL27443945M"
+    },
+    {
+      "_id": 24,
+      "title": "You Can Negotiate Anything: How to Get What You Want",
+      "author": "Herb Cohen",
+      "category": ["business"],
+      "coverImage": "22-you-can-negotiate-anything.jpg",
+      "api_id": "OL6333875W"
+    },
+    {
+      "_id": 25,
+      "title": "The Manager's Path",
+      "author": "Camille Fournier",
+      "category": ["technology"],
+      "coverImage": "the-managers-path.jpg",
+      "api_id": "OL19860807W"
+    },
+    {
+      "_id": 26,
+      "title": "Designing Data-Intensive Applications",
+      "author": "Martin Kleppmann",
+      "category": ["technology"],
+      "coverImage": "30-designing-data-intensive-app.jpg",
+      "api_id": "OL36735720M"
+    },
+    {
+      "_id": 27,
+      "title": "Learning Spark: Lightning-Fast Data Analytics",
+      "author": "Denny Lee, Brooke Wenig, Tathagata Das, Jules S. Damji",
+      "category": ["technology"],
+      "coverImage": "20-learning-apache-spark.jpg",
+      "api_id": "OL22137082W"
+    },
+    {
+      "_id": 28,
+      "title": "Building The Data Lakehouse",
+      "author": "Bill Inmon, Mary Levins, Ranjeet Srivastava",
+      "category": ["technology"],
+      "coverImage": "28-building-the-data-lakehouse.jpg",
+      "api_id": "OL35250973M"
+    },
+    {
+      "_id": 29,
+      "title": "Pro Git",
+      "author": "Scott Chacon, Ben Straub",
+      "category": ["technology"],
+      "coverImage": "29-pro-git.jpg",
+      "api_id": "OL40220555M"
+    },
+    {
+      "_id": 30,
+      "title": "JavaScript and jQuery",
+      "author": "Jon Duckett",
+      "category": ["technology"],
+      "coverImage": "30-javascript-and-jquery.jpg",
+      "api_id": "OL25917962M"
+    },
+    {
+      "_id": 31,
+      "title": "Next.js Quick Start Guide: Server-side rendering done right",
+      "author": "Kirill Konshin",
+      "category": ["technology"],
+      "coverImage": "31-nextjs-quick-start-guide.jpg",
+      "api_id": "OL26835727M"
+    },
+    {
+      "_id": 32,
+      "title": "Control Your Mind and Master Your Feelings",
+      "author": "Eric Robertson",
+      "category": ["self-help"],
+      "coverImage": "32-control-your-mind-and-master-your-feelings.jpg",
+      "api_id": "OL25312237W"
+    },
+    {
+      "_id": 33,
+      "title": "The Psychology of Money",
+      "author": "Morgan Housel",
+      "category": ["finance"],
+      "coverImage": "33-psychology-of-money.jpg",
+      "api_id": "OL21640039W"
+    },
+    {
+      "_id": 34,
+      "title": "Love Yourself Like Your Life Depends On It",
+      "author": "Kamal Ravikant",
+      "category": ["self-help"],
+      "coverImage": "34-love-yourself-like-your-life-depends-on-it.jpg",
+      "api_id": "OL16796246W"
+    },
+    {
+      "_id": 35,
+      "title": "The Seven Spiritual Laws of Success",
+      "author": "Deepak Chopra",
+      "category": ["self-help"],
+      "coverImage": "35-seven-spiritual-laws-of-success.jpg",
+      "api_id": "OL587999W"
+    },
+    {
+      "_id": 36,
+      "title": "El hombre más rico de Babilonia",
+      "author": "George Hill",
+      "category": ["finance"],
+      "coverImage": "36-hombre-mas-rico-de-babilonia.jpg",
+      "api_id": "OL26498423W"
+    },
+    {
+      "_id": 37,
+      "title": "Can't Hurt Me",
+      "author": "David Goggins",
+      "category": ["self-help", "biography"],
+      "coverImage": "37-cant-hurt-me.jpg",
+      "api_id": "OL18108064W"
+    },
+    {
+      "_id": 38,
+      "title": "The Secret",
+      "author": "Rhonda Byrne",
+      "category": ["self-help"],
+      "coverImage": "38-secret.jpg",
+      "api_id": "OL15839737W"
+    },
+    {
+      "_id": 39,
+      "title": "Steve Jobs",
+      "author": "Walter Isaacson",
+      "category": ["biography", "technology"],
+      "coverImage": "39-steve-jobs.jpg",
+      "api_id": "OL16085155W"
+    },
+    {
+      "_id": 40,
+      "title": "Chip War",
+      "author": "Chris Miller",
+      "category": ["technology"],
+      "coverImage": "40-chip-war.jpg",
+      "api_id": "OL27846746W"
+    },
+    {
+      "_id": 41,
+      "title": "The Coming Wave",
+      "author": "Mustafa Suleyman, Michael Bhaskar",
+      "category": ["technology"],
+      "coverImage": "41-coming-wave.jpg",
+      "api_id": "OL36525720W"
+    },
+    {
+      "_id": 42,
+      "title": "Hit Refresh",
+      "author": "Satya Nadella",
+      "category": ["business", "biography", "technology"],
+      "coverImage": "42-hit-refresh.jpg",
+      "api_id": "OL24392940W"
+    },
+    {
+      "_id": 43,
+      "title": "Don't Believe Everything You Think",
+      "author": "Joseph Nguyen",
+      "category": ["self-help"],
+      "coverImage": "43-dont-believe-everything-you-think.jpg",
+      "api_id": "OL28098879W"
+    },
+    {
+      "_id": 44,
+      "title": "Man's Search for Meaning",
+      "author": "Viktor E. Frankl",
+      "category": ["self-help", "biography"],
+      "coverImage": "44-mans-search-for-meaning.jpg",
+      "api_id": "OL1268413W"
+    },
+    {
+      "_id": 45,
+      "title": "One Hundred Years of Solitude",
+      "author": "Gabriel García Márquez",
+      "category": ["fiction"],
+      "coverImage": "45-one-hundred-years-of-solitude.jpg",
+      "api_id": "OL274505W"
+    },
+    {
+      "_id": 46,
+      "title": "How to Talk to Anyone",
+      "author": "Leil Lowndes",
+      "category": ["self-help"],
+      "coverImage": "46-how-to-talk-to-anyone.jpg",
+      "api_id": "OL1874705W"
+    },
+    {
+      "_id": 47,
+      "title": "Let Them Theory",
+      "author": "Mel Robbins",
+      "category": ["self-help"],
+      "coverImage": "47-let-them-theory.jpg",
+      "api_id": "OL39181496W"
+    },
+    {
+      "_id": 48,
+      "title": "Python for Everybody",
+      "author": "Charles R. Severance",
+      "category": ["technology"],
+      "coverImage": "48-python-for-everybody.jpg",
+      "api_id": "OL19546442W"
+    },
+    {
+      "_id": 49,
+      "title": "Breathe",
+      "author": "James Nestor",
+      "category": ["self-help"],
+      "coverImage": "49-breathe.jpg",
+      "api_id": "OL25283089W"
+    },
+    {
+      "_id": 50,
+      "title": "You Don’t Know JS",
+      "author": "Kyle Simpson",
+      "category": ["technology"],
+      "coverImage": "50-you-dont-know-js.jpg",
+      "api_id": "OL17823439W"
+    }
   ]
-  

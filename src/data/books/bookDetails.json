@@ -1,6 +1,534 @@
 {
   "allBooks": [
     {
+      "id": "OL27203W",
+      "slug": "the-four-agreements-OL27203W",
+      "title": "The Four Agreements",
+      "authors": [
+        "Don Miguel Ruiz"
+      ],
+      "author_details": [
+        {
+          "name": "Don Miguel Ruiz",
+          "bio": "Mexican author of Toltec spiritual and neoshamanistic texts.",
+          "birth_date": "1952",
+          "death_date": null
+        }
+      ],
+      "description": "In The Four Agreements, don Miguel Ruiz reveals the source of self-limiting beliefs that rob us of joy and create needless suffering. Based on ancient Toltec wisdom, The Four Agreements offer a powerful code of conduct that can rapidly transform our lives to a new experience of freedom, true happiness, and love.\r\n\r\nA New York Times bestseller for over a decade\r\nAn international bestseller published in 52 languages worldwide\r\n\r\n\"This book by don Miguel Ruiz, simple yet so powerful, has made a tremendous difference in how I think and act in every encounter.\" — Oprah Winfrey\r\n\r\n\"Don Miguel Ruiz's book is a roadmap to enlightenment and freedom.\" — Deepak Chopra, Author, The Seven Spiritual Laws of Success\r\n\r\n\"An inspiring book with many great lessons.\" — Wayne Dyer, Author, Real Magic\r\n\r\n\"In the tradition of Castaneda, Ruiz distills essential Toltec wisdom, expressing with clarity and impeccability what it means for men and women to live as peaceful warriors in the modern world.\" — Dan Millman, Author, Way of the Peaceful Warrior",
+      "subjects": [
+        "Conduct of life",
+        "Conduct of life.",
+        "Miscellanea",
+        "Toltec philosophy",
+        "Philosophy",
+        "Life Style",
+        "Conducta (Etica)",
+        "Filosofía tolteca",
+        "Spirituality",
+        "Character",
+        "Personal growth and achievement",
+        "Indian philosophy, north america",
+        "Large type books",
+        "nyt:religion-spirituality-and-faith=2015-03-08",
+        "New York Times bestseller",
+        "Toltecs",
+        "SELF-HELP / Motivational & Inspirational"
+      ],
+      "publication_year": "1997",
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/924521-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL27203W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 21
+      }
+    },
+    {
+      "id": "OL24328117W",
+      "slug": "sonho-grande-OL24328117W",
+      "title": "Sonho Grande",
+      "authors": [
+        "Cristiane Correa"
+      ],
+      "author_details": [
+        {
+          "name": "Cristiane Correa",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "No description available.",
+      "subjects": [],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/10848745-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL24328117W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 2
+      }
+    },
+    {
+      "id": "OL16086010W",
+      "slug": "the-lean-startup-OL16086010W",
+      "title": "The Lean Startup",
+      "authors": [
+        "Eric Ries"
+      ],
+      "author_details": [
+        {
+          "name": "Eric Ries",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "\"Most startups are built to fail. But those failures, according to entrepreneur Eric Ries, are preventable. Startups don't fail because of bad execution, or missed deadlines, or blown budgets. They fail because they are building something nobody wants. Whether they arise from someone's garage or are created within a mature Fortune 500 organization, new ventures, by definition, are designed to create new products or services under conditions of extreme uncertainly. Their primary mission is to find out what customers ultimately will buy. One of the central premises of The Lean Startup movement is what Ries calls \"validated learning\" about the customer. It is a way of getting continuous feedback from customers so that the company can shift directions or alter its plans inch by inch, minute by minute. Rather than creating an elaborate business plan and a product-centric approach, Lean Startup prizes testing your vision continuously with your customers and making constant adjustments\"--",
+      "subjects": [
+        "New York Times bestseller",
+        "New business enterprises",
+        "Organizational effectiveness",
+        "Consumers' preferences",
+        "nyt:hardcover_business_books=2012-02-25",
+        "Consumer behavior",
+        "Entrepreneurship",
+        "Long Now Manual for Civilization",
+        "Innovations",
+        "Adaptation au changement",
+        "Création d'entreprises",
+        "Esprit d'entreprise",
+        "Marketing",
+        "Efficacité",
+        "Compétitivité",
+        "Innovation",
+        "Ondernemerschap",
+        "Organisatieontwikkeling",
+        "Nieuwe ondernemingen",
+        "Bedrijfsorganisatie"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/7104760-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL16086010W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 20
+      }
+    },
+    {
+      "id": "OL20140592W",
+      "slug": "the-ride-of-a-lifetime-OL20140592W",
+      "title": "The Ride of a Lifetime",
+      "authors": [
+        "Robert Iger"
+      ],
+      "author_details": [
+        {
+          "name": "Robert Iger",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "Robert Iger shares the lessons he's learned while running Disney and leading its 200,000 employees, and he explores the principles that are necessary for true leadership.\n\nIger became CEO of the Walt Disney Company in 2005, during a difficult time. His vision for the future came down to three ideas: Recommit to the concept that quality matters; Embrace technology instead of fighting it; and Think bigger-- think globally. Here he shares the lessons he's learned while running Disney, and explores the principles that are necessary for true leadership. -- adapted from jacket",
+      "subjects": [
+        "Economic history",
+        "nyt:advice-how-to-and-miscellaneous=2019-10-13",
+        "New York Times bestseller",
+        "Leadership",
+        "Executives",
+        "Biography",
+        "Management",
+        "Walt Disney Company",
+        "Motion pictures, production and direction"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/8788773-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL20140592W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 9
+      }
+    },
+    {
+      "id": "OL17184556W",
+      "slug": "elon-musk-OL17184556W",
+      "title": "Elon Musk",
+      "authors": [
+        "Ashlee Vance"
+      ],
+      "author_details": [
+        {
+          "name": "Ashlee Vance",
+          "bio": null,
+          "birth_date": "1977",
+          "death_date": null
+        }
+      ],
+      "description": "In the spirit of Steve Jobs and Moneyball, Elon Musk is both an illuminating and authorized look at the extraordinary life of one of Silicon Valley's most exciting, unpredictable, and ambitious entrepreneurs -- a real-life Tony Stark -- and a fascinating exploration of the renewal of American invention and its new \"makers.\" Elon Musk spotlights the technology and vision of Elon Musk, the renowned entrepreneur and innovator behind SpaceX, Tesla, and SolarCity, who sold one of his Internet companies, PayPal, for $1.5 billion. Ashlee Vance captures the full spectacle and arc of the genius's life and work, from his tumultuous upbringing in South Africa and flight to the United States to his dramatic technical innovations and entrepreneurial pursuits. Vance uses Musk's story to explore one of the pressing questions of our age: can the nation of inventors and creators who led the modern world for a century still compete in an age of fierce global competition? He argues that Musk -- one of the most unusual and striking figures in American business history -- is a contemporary, visionary amalgam of legendary inventors and industrialists including Thomas Edison, Henry Ford, Howard Hughes, and Steve Jobs. More than any other entrepreneur today, Musk has dedicated his energies and his own vast fortune to inventing a future that is as rich and far-reaching as the visionaries of the golden age of science-fiction fantasy. Thorough and insightful, Elon Musk brings to life a technology industry that is rapidly and dramatically changing by examining the life of one of its most powerful and influential titans. - Publisher.",
+      "subjects": [
+        "SpaceX (Firm)",
+        "PayPal (Firm)",
+        "Businesspeople",
+        "Biography",
+        "Tesla Motors",
+        "Businesspeople, biography",
+        "Technological innovations, economic aspects",
+        "Aerospace industries",
+        "Automobiles, electric",
+        "Inventors",
+        "nyt:combined-print-and-e-book-nonfiction=2015-06-07",
+        "New York Times bestseller",
+        "New York Times reviewed",
+        "Technological innovations",
+        "Economic aspects",
+        "Gens d'affaires",
+        "Biographies",
+        "Inventeurs",
+        "Innovations",
+        "Aspect économique",
+        "Innovations technologiques",
+        "Hommes d'affaires",
+        "Aspects économiques",
+        "SpaceX (Firme)",
+        "PayPal (Firme)",
+        "Technology, economic aspects",
+        "Entrepreneurship",
+        "Business, biography"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/8463846-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL17184556W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 17
+      }
+    },
+    {
+      "id": "OL2010879W",
+      "slug": "rich-dad-poor-dad-OL2010879W",
+      "title": "Rich Dad, Poor Dad",
+      "authors": [
+        "Robert T. Kiyosaki"
+      ],
+      "author_details": [
+        {
+          "name": "Robert T. Kiyosaki",
+          "bio": null,
+          "birth_date": "8 Apr 1947",
+          "death_date": null
+        }
+      ],
+      "description": "April of 2022 marks a 25-year milestone for the personal finance classic Rich Dad Poor Dad that still ranks as the #1 Personal Finance book of all time. And although 25 years have passed since Rich Dad Poor Dad was first published, readers will find that very little in the book itself has changed — and for good reason. While so much in our world is changing a high speed, the lessons about money and the principles of Rich Dad Poor Dad haven’t changed. Today, as money continues to play a key role in our daily lives, the messages in Robert Kiyosaki’s international bestseller are more timely and more important than ever.\r\n\r\nMilestones \r\n\r\nWhile there is a milestone  to commemorate — and a new section in the book on Why Milestones Are Important — preserving the integrity of the original content is testimony to the fact that this book has truly stood the test of time. The sidebars throughout the book (that were updated for the 20-year anniversary edition) have been updated again, but the core principles that parents and grandparents — those who embraced Robert’s story and messages 25 years ago — are sharing them with new generations who have found that its timeless wisdom and no-nonsense lessons can be applied to anyone’s life and their vision for a future that includes taking control of their finances.\r\nPeople of all cultures and countries celebrate milestones. We use them to measure time, mark progress, reflect on the lessons we’ve learned, and celebrate accomplishments… and they give meaning to our life’s journey. They are a way that we integrate past, present, and future… looking back at where we started, where we are today… and the promise of all that the future can hold.",
+      "subjects": [
+        "Rich people",
+        "Personal Finance",
+        "Investments",
+        "Finanzas personales",
+        "Inversiones",
+        "Ricos",
+        "Riqueza",
+        "Financial security",
+        "Success",
+        "Financiering",
+        "Huishoudingen",
+        "Finance, personal",
+        "Hacienda privada",
+        "Spanish language materials",
+        "Investissements",
+        "Portfolios (financial records)",
+        "Finanças privadas",
+        "Investimentos",
+        "Finances personnelles",
+        "Riches",
+        "Comportement",
+        "Investissement",
+        "Riche",
+        "Hindi language"
+      ],
+      "publication_year": "2002",
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/8315603-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL2010879W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 64
+      }
+    },
+    {
+      "id": "OL18027210W",
+      "slug": "blitzscaling-OL18027210W",
+      "title": "Blitzscaling",
+      "authors": [
+        "Reid Hoffman"
+      ],
+      "author_details": [
+        {
+          "name": "Reid Hoffman",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "What entrepreneur or founder doesnt aspire to build the next Amazon, Facebook, or Airbnb? Yet those who actually manage to do so are exceedingly rare. So what separates the startups that get disrupted and disappear from the ones who grow to become global giants? The secret is blitzscaling: a set of techniques for scaling up at a dizzying pace that blows competitors out of the water. The objective of Blitzscaling is not to go from zero to one, but from one to one billion as quickly as possible.",
+      "subjects": [
+        "BUSINESS & ECONOMICS / Entrepreneurship",
+        "SELF-HELP / Personal Growth / Success",
+        "Geschäftsplan",
+        "Entrepreneurship",
+        "BUSINESS & ECONOMICS / Leadership",
+        "Unternehmensgründung",
+        "Small business",
+        "New business enterprises",
+        "Growth",
+        "Strategic planning",
+        "Success in business"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/8294642-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL18027210W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 3
+      }
+    },
+    {
+      "id": "OL17078706W",
+      "slug": "zero-to-one-OL17078706W",
+      "title": "Zero to One",
+      "authors": [
+        "Peter A. Thiel"
+      ],
+      "author_details": [
+        {
+          "name": "Peter A. Thiel",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "If you want to build a better future, you must believe in secrets.\r\n\r\nThe great secret of our time is that there are still uncharted frontiers to explore and new inventions to create. In Zero to One , legendary entrepreneur and investor Peter Thiel shows how we can find singular ways to create those new things. \r\n\r\nThiel begins with the contrarian premise that we live in an age of technological stagnation, even if we’re too distracted by shiny mobile devices to notice. Information technology has improved rapidly, but there is no reason why progress should be limited to computers or Silicon Valley. Progress can be achieved in any industry or area of business. It comes from the most important skill that every leader must master: learning to think for yourself.\r\n\r\nDoing what someone else already knows how to do takes the world from 1 to n, adding more of something familiar. But when you do something new, you go from 0 to 1. The next Bill Gates will not build an operating system. The next Larry Page or Sergey Brin won’t make a search engine. Tomorrow’s champions will not win by competing ruthlessly in today’s marketplace. They will escape competition altogether, because their businesses will be unique. \r\n\r\nZero to One presents at once an optimistic view of the future of progress in America and a new way of thinking about innovation: it starts by learning to ask the questions that lead you to find value in unexpected places.",
+      "subjects": [
+        "Diffusion of innovations",
+        "New business enterprises",
+        "New products",
+        "Entrepreneurship",
+        "BUSINESS & ECONOMICS / Entrepreneurship",
+        "BUSINESS & ECONOMICS / Small Business",
+        "POLITICAL SCIENCE / Public Policy / Economic Policy",
+        "BUSINESS & ECONOMICS",
+        "Small Business",
+        "POLITICAL SCIENCE",
+        "Public Policy",
+        "Economic Policy",
+        "Unternehmensgründung",
+        "Geschäftsidee",
+        "Produktinnovation",
+        "Pionierunternehmen",
+        "Företagsetablering",
+        "Entreprenörskap",
+        "Innovationsspridning",
+        "nyt:advice-how-to-and-miscellaneous=2014-10-05",
+        "New York Times bestseller",
+        "Hd62.5 .t525 2014",
+        "658.1/1",
+        "Bus025000 bus060000 pol024000"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/9002334-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL17078706W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 16
+      }
+    },
+    {
+      "id": "OL2629977W",
+      "slug": "the-7-habits-of-highly-effective-people-OL2629977W",
+      "title": "The 7 Habits of Highly Effective People",
+      "authors": [
+        "Stephen R. Covey"
+      ],
+      "author_details": [
+        {
+          "name": "Stephen R. Covey",
+          "bio": "Stephen Richards Covey was the author of the non-fiction books including the best-seller, \"The Seven Habits of Highly Effective People\". He was also a professor at the Jon M. Huntsman School of Business at Utah State University.",
+          "birth_date": "October 24, 1932",
+          "death_date": "July 16, 2012"
+        }
+      ],
+      "description": "*New York Times bestseller—over 40 million copies sold*\r\n*The #1 Most Influential Business Book of the Twentieth Century*\r\n\r\nOne of the most inspiring and impactful books ever written, The 7 Habits of Highly Effective People has captivated readers for nearly three decades. It has transformed the lives of presidents and CEOs, educators and parents—millions of people of all ages and occupations. Now, this 30th anniversary edition of the timeless classic commemorates the wisdom of the 7 Habits with modern additions from Sean Covey.\r\n\r\nThe 7 Habits have become famous and are integrated into everyday thinking by millions and millions of people. Why? Because they work!\r\n\r\nWith Sean Covey’s added takeaways on how the habits can be used in our modern age, the wisdom of the 7 Habits will be refreshed for a new generation of leaders.",
+      "subjects": [
+        "Success- Psychological aspects",
+        "Character",
+        "Success",
+        "Psychological aspects",
+        "Aspectos psicológicos",
+        "Carácter",
+        "Exito",
+        "Psychological aspects of Success",
+        "Self-actualization",
+        "Self-management",
+        "Éxito",
+        "Achievement",
+        "Reading Level-Grade 11",
+        "Reading Level-Grade 12",
+        "Miniature books",
+        "Specimens",
+        "Success, psychological aspects",
+        "Motivational",
+        "Cheng gong fa",
+        "Self-actualization (Psychology)",
+        "Psychologie du travail",
+        "Ethique",
+        "Déontologie professionnelle",
+        "Développement personnel",
+        "Successful people",
+        "Logro",
+        "Exito en los negocios",
+        "Autoadministración (Psicología)",
+        "Leadership",
+        "Personality",
+        "Self-evaluation",
+        "Efficiency",
+        "Comportement social",
+        "Aspects psychologiques",
+        "Compétences",
+        "Attitudes",
+        "Ontwikkelingspsychologie",
+        "Management",
+        "Leidinggeven",
+        "Zelfontwikkeling",
+        "Effectiviteit",
+        "Psychology",
+        "Erfolg",
+        "Führungskraft",
+        "Karriereplanung",
+        "Lebensführung",
+        "Ratgeber",
+        "Selbsterziehung",
+        "Caractère",
+        "Succès",
+        "Guides, manuels",
+        "Success--psychological aspects",
+        "Bf637.s8 c68 1989",
+        "Bf 637.s8 c873 1989",
+        "158",
+        "Family",
+        "Child rearing",
+        "Conduct of life"
+      ],
+      "publication_year": "2001",
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/10079937-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL2629977W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 24
+      }
+    },
+    {
+      "id": "OL20687130W",
+      "slug": "limitless-OL20687130W",
+      "title": "Limitless",
+      "authors": [
+        "Jim Kwik"
+      ],
+      "author_details": [
+        {
+          "name": "Jim Kwik",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "No description available.",
+      "subjects": [
+        "Success",
+        "Brain",
+        "Learning",
+        "Self-actualization (psychology)",
+        "Habit",
+        "Motivation (psychology)",
+        "nyt:advice-how-to-and-miscellaneous=2020-05-17",
+        "New York Times bestseller"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/9360116-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL20687130W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 3
+      }
+    },
+    {
       "id": "OL17930368W",
       "slug": "atomic-habits-OL17930368W",
       "title": "Atomic Habits",
@@ -50,42 +578,160 @@
       }
     },
     {
-      "id": "OL17590212W",
-      "slug": "the-subtle-art-of-not-giving-a-fck-OL17590212W",
-      "title": "The Subtle Art of Not Giving a F*ck",
+      "id": "OL19665926W",
+      "slug": "the-5-am-club-OL19665926W",
+      "title": "The 5 a.m. Club",
       "authors": [
-        "Mark Manson"
+        "Robin S. Sharma"
       ],
       "author_details": [
         {
-          "name": "Mark Manson",
-          "bio": "American author and blogger",
-          "birth_date": "9 March 1984",
+          "name": "Robin S. Sharma",
+          "bio": "Occupation:\tCanadian lawyer,[1] leadership expert[2] and writer\r\nNationality:\tCanadian\r\nEthnicity:\tIndian\r\nCitizenship:\tCanadian\r\nAlma mater:\tDalhousie University School of Law\r\nGenres\tself-help, motivational\r\nNotable work(s)\t:The Monk Who Sold His Ferrari, The Saint, the Surfer, and the CEO: A Remarkable Story About Living Your Heart's Desires\r\nNotable award(s): Golden Gavel award by Toastmasters International in 2011\r\nwww.robinsharma.com",
+          "birth_date": "1964",
           "death_date": null
         }
       ],
-      "description": "In this book, blogger and former internet entrepreneur Mark Manson explains in simple, no expletives barred terms how to achieve happiness by caring more about fewer things and not caring at all about more.\r\n     He explains how the metrics we use to define ourselves may be the very things holding us back. By redefining our metrics, questioning ourselves and doubting everything, we may be able to find that we're better off than we think, and thereby become happier people.",
+      "description": "No description available.",
       "subjects": [
-        "Self-realization",
-        "Conduct of life",
-        "Conducta de vida",
-        "nyt:advice-how-to-and-miscellaneous=2016-10-02",
-        "New York Times bestseller",
-        "Long Now Manual for Civilization"
+        "Self-actualization (psychology)"
       ],
       "publication_year": null,
       "average_rating": null,
       "page_count": null,
-      "cover_url": "https://covers.openlibrary.org/b/id/8231990-L.jpg",
+      "cover_url": "https://covers.openlibrary.org/b/id/10326643-L.jpg",
       "isbn_10": null,
       "isbn_13": null,
       "publisher": null,
       "links": {
-        "open_library": "https://openlibrary.org/works/OL17590212W"
+        "open_library": "https://openlibrary.org/works/OL19665926W"
       },
       "source_api": "OpenLibrary",
       "api_version_info": {
-        "work_revision": 88
+        "work_revision": 4
+      }
+    },
+    {
+      "id": "OL17361140W",
+      "slug": "grit-OL17361140W",
+      "title": "Grit",
+      "authors": [
+        "Angela Duckworth"
+      ],
+      "author_details": [
+        {
+          "name": "Angela Duckworth",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "Pioneering psychologist Angela Duckworth shows anyone striving to succeed—be it parents, students, educators, athletes, or business people—that the secret to outstanding achievement is not talent but a special blend of passion and persistence she calls “grit.”",
+      "subjects": [
+        "leadership",
+        "business",
+        "Personality",
+        "Perseverance (Ethics.)",
+        "Psychology",
+        "Success",
+        "Expectation (Psychology.)",
+        "Erfolg",
+        "Erfolgsstreben",
+        "Selbstverwirklichung",
+        "Perseverance (Ethics)",
+        "Perseverance",
+        "Expectation (Psychology)",
+        "Education",
+        "Diligence",
+        "Persönlichkeitsentwicklung",
+        "Professional Development",
+        "Volition",
+        "Selbstbewusstsein",
+        "Aspirations (Psychology)",
+        "Achievement",
+        "EDUCATION / Professional Development",
+        "PSYCHOLOGY / Personality",
+        "nyt:combined-print-and-e-book-nonfiction=2016-05-22",
+        "New York Times bestseller",
+        "New York Times reviewed",
+        "Determination (Personality trait)",
+        "Self-realization",
+        "Success in business",
+        "Will",
+        "Psychological Aspirations",
+        "Succès",
+        "Persévérance (Morale)",
+        "Expectation (Psychologie)",
+        "Volonté",
+        "Applied Psychology",
+        "SELF-HELP",
+        "Personal Growth",
+        "General",
+        "Happiness",
+        "Psychologie",
+        "Psychology--personality",
+        "Education--professional development",
+        "Bf637.s8 d693 2016",
+        "Bf 637.s8 d836g 2016",
+        "158.1",
+        "Psy023000 edu046000",
+        "nyt:e-book-nonfiction=2016-05-22",
+        "Determination",
+        "Passion",
+        "nyt:paperback-nonfiction=2018-09-09"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/7438753-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL17361140W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 19
+      }
+    },
+    {
+      "id": "OL6669337W",
+      "slug": "good-to-great-OL6669337W",
+      "title": "Good to Great",
+      "authors": [
+        "Jim Collins"
+      ],
+      "author_details": [
+        {
+          "name": "Jim Collins",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "The Challenge:\r\nBuilt to Last, the defining management study of the nineties, showed how great companies triumph over time and how long-term sustained performance can be engineered into the DNA of an enterprise from the verybeginning.\r\n\r\nBut what about the company that is not born with great DNA? How can good companies, mediocre companies, even bad companies achieve enduring greatness?\r\n\r\nThe Study: \r\nFor years, this question preyed on the mind of Jim Collins. Are there companies that defy gravity and convert long-term mediocrity or worse into long-term superiority? And if so, what are the universal distinguishing characteristics that cause a company to go from good to great?\r\n\r\nThe Standards:\r\nUsing tough benchmarks, Collins and his research team identified a set of elite companies that made the leap to great results and sustained those results for at least fifteen years. How great? After the leap, the good-to-great companies generated cumulative stock returns that beat the general stock market by an average of seven times in fifteen years, better than twice the results delivered by a composite index of the world's greatest companies, including Coca-Cola, Intel, General Electric, and Merck.\r\n\r\nThe Comparisons: \r\nThe research team contrasted the good-to-great companies with a carefully selected set of comparison companies that failed to make the leap from good to great. What was different? Why did one set of companies become truly great performers while the other set remained only good?\r\n\r\nOver five years, the team analyzed the histories of all twenty-eight companies in the study. After sifting through mountains of data and thousands of pages of interviews, Collins and his crew discovered the key determinants of greatness -- why some companies make the leap and others don't.\r\n\r\nThe Findings:\r\nThe findings of the Good to Great study will surprise many readers and shed light on virtually every area of management strategy and practice. The findings include:\r\n\r\nLevel 5 Leaders: The research team was shocked to discover the type of leadership required to achieve greatness.\r\nThe Hedgehog Concept: (Simplicity within the Three Circles): To go from good to great requires transcending the curse of competence.\r\nA Culture of Discipline: When you combine a culture of discipline with an ethic of entrepreneurship, you get the magical alchemy of great results. Technology Accelerators: Good-to-great companies think differently about the role of technology.\r\nThe Flywheel and the Doom Loop: Those who launch radical change programs and wrenching restructurings will almost certainly fail to make the leap.\r\n“Some of the key concepts discerned in the study,” comments Jim Collins, \"fly in the face of our modern business culture and will, quite frankly, upset some people.”\r\n\r\nPerhaps, but who can afford to ignore these findings?",
+      "subjects": [
+        "business",
+        "Leadership",
+        "Technological innovations",
+        "Management",
+        "Strategic planning",
+        "Organizational change"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/53111-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL6669337W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 6
       }
     },
     {
@@ -174,6 +820,300 @@
       }
     },
     {
+      "id": "OL27969037W",
+      "slug": "homo-deus-OL27969037W",
+      "title": "Homo Deus",
+      "authors": [
+        "Yuval Noah Harari"
+      ],
+      "author_details": [
+        {
+          "name": "Yuval Noah Harari",
+          "bio": null,
+          "birth_date": "1957",
+          "death_date": null
+        }
+      ],
+      "description": "Que deviendront nos démocraties quand Google et Facebook connaîtront nos goûts et nos préférences politiques mieux que nous-mêmes ? Qu'adviendra-t-il de l'Etat providence lorsque nous, les humains, serons évincés du marché de l'emploi par des ordinateurs plus performants ? Quelle utilisation certaines religions feront-elles de la manipulation génétique ?\r\n\r\nHomo Deus nous dévoile ce que sera le monde d'aujourd'hui lorsque, à nos mythes collectifs tels que les dieux, l'argent, l'égalité et la liberté, s'allieront de nouvelles technologies démiurgiques. Et que les algorithmes, de plus en plus intelligents, pourront se passer de notre pouvoir de décision. Car, tandis que l'Homo Sapiens devient un Homo Deus, nous nous forgeons un nouveau destin.\r\n\r\nBest-seller international - plus de 200 000 exemplaires vendus en France, traduit dans près de 40 langues - Sapiens interrogeait l'histoire de l'humanité, de l'âge de la pierre à l'ère de la Silicon Valley. Homo deus offre un aperçu vertigineux des rêves et des cauchemars qui façonneront le XXIe siècle.",
+      "subjects": [],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://via.placeholder.com/500x750.png?text=No+Cover+Art",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL27969037W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 3
+      }
+    },
+    {
+      "id": "OL1063267W",
+      "slug": "how-to-win-friends-and-influence-people-OL1063267W",
+      "title": "How to Win Friends and Influence People",
+      "authors": [
+        "Dale Carnegie"
+      ],
+      "author_details": [
+        {
+          "name": "Dale Carnegie",
+          "bio": "Dale Harbison Carnegie was an American writer and lecturer and the developer of famous courses in self-improvement, salesmanship, corporate training, public speaking, and interpersonal skills.\r\nSource: wikipedia",
+          "birth_date": "November 24, 1888",
+          "death_date": "November 1, 1955"
+        }
+      ],
+      "description": "Available for the first time ever in trade paperback, Dale Carnegie's enduring classic, the inspirational personal development guide that shows how to achieve lifelong success. One of the top-selling books of all time, \"How to Win Friends & Influence People\" has sold more than 15 million copies in all its editions.",
+      "subjects": [
+        "Succès",
+        "Psychologie appliquée",
+        "Psychologie applique e.",
+        "Applied Psychology",
+        "Succe  s.",
+        "Success",
+        "Conduct of life",
+        "Persuasion (Psychology)",
+        "Leadership",
+        "Interpersonal relations",
+        "Interpersonal communication",
+        "Éxito",
+        "Conducta (Ética)",
+        "Cheng gong fa",
+        "Ren ji guan xi",
+        "Xiu shen",
+        "Succes",
+        "Psychologie appliquee",
+        "Relations humaines",
+        "Tong su du wu",
+        "Self-actualization (Psychology)",
+        "Framgång",
+        "Mänskliga relationer",
+        "Självförverkligande",
+        "Psychology, applied",
+        "Sociology",
+        "Achievement",
+        "Bf637.s8 c37 1998",
+        "Bf 637.s8 c289 1998",
+        "158/.1",
+        "Self-help techniques",
+        "Long Now Manual for Civilization"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://via.placeholder.com/500x750.png?text=No+Cover+Art",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL1063267W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 20
+      }
+    },
+    {
+      "id": "OL24467396W",
+      "slug": "influence-new-and-expanded-OL24467396W",
+      "title": "Influence, New and Expanded",
+      "authors": [
+        "Robert B. Cialdini"
+      ],
+      "author_details": [
+        {
+          "name": "Robert B. Cialdini",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "No description available.",
+      "subjects": [],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/11073544-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL24467396W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 1
+      }
+    },
+    {
+      "id": "OL18819818W",
+      "slug": "never-split-the-difference-OL18819818W",
+      "title": "Never Split the Difference",
+      "authors": [
+        "Chris Voss"
+      ],
+      "author_details": [
+        {
+          "name": "Chris Voss",
+          "bio": null,
+          "birth_date": "1957",
+          "death_date": null
+        }
+      ],
+      "description": "Do you wish you could read faster? Go BOOKS offers an in-depth look into some of the most popular and informative books of the last two decades. Whether you are using this books as a study guide, reference material, further connection to the original book or simply a way to retrieve the content and material faster...Our goal is to provide value to every listener.\r\n\r\nThis summary book breaks down all the big ideas, key points and facts so the listener can quickly and easily understand the content.\r\n\r\nIn this book you will find:\r\n\r\nBook overview\r\nBackground Information about the book\r\nBackground information about the author\r\nCover questions\r\nTrivia questions\r\nDiscussion questions",
+      "subjects": [
+        "Negotiation",
+        "Negotiation in business",
+        "Business communication",
+        "Business",
+        "Communication",
+        "Psychology",
+        "Persuasion",
+        "Influence",
+        "Emotional intelligence",
+        "Hostage negotiation",
+        "FBI",
+        "FBI negotiation tactics",
+        "Chris",
+        "Voss",
+        "Tahl Raz",
+        "Anecdotes",
+        "Officials and employees",
+        "Employees",
+        "Hostage negotiations",
+        "United States",
+        "Biography",
+        "United States. Federal Bureau of Investigation",
+        "United states, federal bureau of investigation"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/8365942-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL18819818W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 9
+      }
+    },
+    {
+      "id": "OL1837566W",
+      "slug": "getting-to-yes-OL1837566W",
+      "title": "Getting to yes",
+      "authors": [
+        "Roger Drummer Fisher"
+      ],
+      "author_details": [
+        {
+          "name": "Roger Drummer Fisher",
+          "bio": "Harvard Law School professor and director of the Harvard Negotiation Project.",
+          "birth_date": "1922",
+          "death_date": "2012"
+        }
+      ],
+      "description": "Getting to Yes offers a concise, step-by-step, proven strategy for coming to mutually acceptable agreements in every sort of conflict—whether it involves parents and children, neighbors, bosses and employees, customers or corporations, tenants or diplomats. Based on the work of the Harvard Negotiation Project, a group that deals continually with all levels of negotiation and conflict resolution from domestic to business to international, Getting to Yes tells you how to:Separate the people from the problem;Focus on interests, not positions;Work together to create options that will satisfy both parties; andNegotiate successfully with people who are more powerful, refuse to play by the rules, or resort to \"dirty tricks.\"Since its original publication in 1981, Getting to Yes has been translated into 18 languages and has sold over 1 million copies in its various editions. This completely revised edition is a universal guide to the art of negotiating personal and professional disputes. It offers a concise strategy for coming to mutually acceptable agreements in every sort of conflict.",
+      "subjects": [
+        "Negotiation",
+        "Interpersonal Relations",
+        "Applied Psychology",
+        "Conflict (Psychology)",
+        "Business",
+        "Nonfiction",
+        "Onderhandelen",
+        "Négociations",
+        "Administracao",
+        "Negocio Fiduciario",
+        "Verhandlungstechnik",
+        "Conflict management",
+        "Psychological Conflict",
+        "Réunions",
+        "Psychologie du travail",
+        "Négociation",
+        "Développement d'aptitudes",
+        "Kommunikationstraining",
+        "Conflict (Psychology.)",
+        "Verhandlung",
+        "Sozialer Konsens",
+        "Interpersonale Kommunikation",
+        "Negotiating",
+        "MANAGEMENT DEVELOPMENT",
+        "MANUALS",
+        "Negotiation in business",
+        "Psychology, applied",
+        "Conflict, psychological",
+        "Bf637.n4 f57 1991",
+        "Bf 637.n4 f535g 1991",
+        "158/.5",
+        "Bf637.n4 f57 1992",
+        "Bf 637.n4 f535 1991",
+        "Surveyor Program (U.S.)"
+      ],
+      "publication_year": "1981",
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/96165-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL1837566W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 24
+      }
+    },
+    {
+      "id": "OL19860807W",
+      "slug": "the-managers-path-OL19860807W",
+      "title": "The Manager's Path",
+      "authors": [
+        "Camille Fournier"
+      ],
+      "author_details": [
+        {
+          "name": "Camille Fournier",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "Managing people is difficult wherever you work. But in the tech industry, where management is also a technical discipline, the learning curve can be brutal—especially when there are few tools, texts, and frameworks to help you. In this practical guide, author Camille Fournier (tech lead turned CTO) takes you through each stage in the journey from engineer to technical manager.\r\n\r\nFrom mentoring interns to working with senior staff, you’ll get actionable advice for approaching various obstacles in your path. This book is ideal whether you’re a new manager, a mentor, or a more experienced leader looking for fresh advice. Pick up this book and learn how to become a better manager and leader in your organization.\r\n\r\n- Begin by exploring what you expect from a manager\r\n- Understand what it takes to be a good mentor, and a good tech lead\r\n- Learn how to manage individual members while remaining focused on the entire team\r\n- Understand how to manage yourself and avoid common pitfalls that challenge many leaders\r\n- Manage multiple teams and learn how to manage managers\r\n- Learn how to build and bootstrap a unifying culture in teams",
+      "subjects": [
+        "Management",
+        "Business",
+        "Software Development",
+        "Professional employees",
+        "Personnel management",
+        "Handbooks, manuals",
+        "Leadership",
+        "Industrial management",
+        "Management -- Handbooks, manuals, etc"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/8667291-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL19860807W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 6
+      }
+    },
+    {
       "id": "OL19293745W",
       "slug": "designing-data-intensive-applications-OL19293745W",
       "title": "Designing Data-Intensive Applications",
@@ -218,52 +1158,958 @@
       }
     },
     {
-      "id": "OL11326416W",
-      "slug": "1984-adaptation-OL11326416W",
-      "title": "1984 (adaptation)",
+      "id": "OL26118465W",
+      "slug": "building-the-data-lakehouse-OL26118465W",
+      "title": "Building the Data Lakehouse",
       "authors": [
-        "Michael Dean"
+        "Bill Inmon"
       ],
       "author_details": [
         {
-          "name": "Michael Dean",
+          "name": "Bill Inmon",
           "bio": null,
-          "birth_date": "19",
+          "birth_date": null,
           "death_date": null
         }
       ],
-      "description": "Winston Smith lives in a society where the government controls people every second of the day. He fights this world with love. But it's dangerous: love for another person can be punished by death - and Big Brother is always watching.\r\n\r\nOrwell's classic story shows that there is no freedom unless ideas and beliefs can be questioned. This is as true today as when it was written, more than fifty years ago.\r\n--back cover",
+      "description": "No description available.",
       "subjects": [
-        "Totalitarianism",
-        "Fiction",
-        "Totalitarianism -- Fiction",
-        "Dystopias",
-        "Textbooks for foreign speakers",
-        "Lectures et morceaux choisis",
-        "Readers for new literates",
-        "High interest-low vocabulary books",
-        "English language",
-        "British and irish fiction (fictional works by one author)",
-        "London (england), fiction",
-        "Fiction, political",
-        "Fiction, dystopian",
-        "Fiction, science fiction, general",
-        "Readers",
-        "English language, juvenile literature"
+        "Computer software",
+        "Computers"
       ],
       "publication_year": null,
       "average_rating": null,
       "page_count": null,
-      "cover_url": "https://covers.openlibrary.org/b/id/8745958-L.jpg",
+      "cover_url": "https://covers.openlibrary.org/b/id/13209403-L.jpg",
       "isbn_10": null,
       "isbn_13": null,
       "publisher": null,
       "links": {
-        "open_library": "https://openlibrary.org/works/OL11326416W"
+        "open_library": "https://openlibrary.org/works/OL26118465W"
       },
       "source_api": "OpenLibrary",
       "api_version_info": {
-        "work_revision": 18
+        "work_revision": 2
+      }
+    },
+    {
+      "id": "OL16310859W",
+      "slug": "pro-git-OL16310859W",
+      "title": "Pro Git",
+      "authors": [
+        "Scott Chacon"
+      ],
+      "author_details": [
+        {
+          "name": "Scott Chacon",
+          "bio": "software engineer and co-founder of GitHub",
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "*Pro Git* is your fully-updated guide to Git and its usage in the modern world. Git has come a long way since it was first developed by Linus Torvalds for Linux kernel development. It has taken the open source world by storm since its inception in 2005, and this book teaches you how to use it like a pro.\r\n\r\nEffective and well-implemented version control is a necessity for successful web projects, whether large or small. With this book you’ll learn how to master the world of distributed version workflow, use the distributed features of Git to the full, and extend Git to meet your every need.",
+      "subjects": [
+        "Computer science",
+        "Software engineering",
+        "Electronic data processing",
+        "Distributed processing",
+        "Git (Computer file)",
+        "Software development",
+        "Version control systems",
+        "Computer programming",
+        "Electronic data processing, distributed processing",
+        "Electronic data processing--distributed processing",
+        "Application software--development",
+        "Qa76.758",
+        "Application software",
+        "Development"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/7892827-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL16310859W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 17
+      }
+    },
+    {
+      "id": "OL17341092W",
+      "slug": "javascript-and-jquery-OL17341092W",
+      "title": "JavaScript and jQuery",
+      "authors": [
+        "Jon Duckett"
+      ],
+      "author_details": [
+        {
+          "name": "Jon Duckett",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "This is not your average programming book.\r\n\r\nWe understand that all kinds of people build websites these days (and that they don’t all have a degree in computer science).\r\n\r\nSo, if you want to use JavaScript to make your web pages more interactive, interesting, and usable, we can help. Even if you have never done any programming.",
+      "subjects": [
+        "JavaScript (Computer program language)",
+        "Javascript (computer program language)",
+        "Web site development",
+        "Computers--programming languages--javascript",
+        "Javascript",
+        "Jquery",
+        "Qa76.73.j39 d83 2014",
+        "005.133"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/7419725-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL17341092W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 10
+      }
+    },
+    {
+      "id": "OL19545090W",
+      "slug": "nextjs-quick-start-guide-server-side-rendering-done-right-OL19545090W",
+      "title": "Next.js Quick Start Guide: Server-side rendering done right",
+      "authors": [
+        "Kirill Konshin"
+      ],
+      "author_details": [
+        {
+          "name": "Kirill Konshin",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "No description available.",
+      "subjects": [
+        "Javascript (computer program language)",
+        "Application software, development"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/8511342-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL19545090W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 2
+      }
+    },
+    {
+      "id": "OL25312237W",
+      "slug": "control-your-mind-and-master-your-feelings-OL25312237W",
+      "title": "Control Your Mind and Master Your Feelings",
+      "authors": [
+        "Eric Robertson"
+      ],
+      "author_details": [
+        {
+          "name": "Eric Robertson",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "We oftentimes look towards the outside world to find the roots of our problems. However, most of the times, we should be looking inwards. Our mind and our emotions determine our state of being in the present moment. If those aspects are left unchecked, we can get easily overwhelmed and are left feeling unfulfilled every single day. \r\n\r\nThis book contains two manuscripts designed to help you discover the best and most efficient way to control your thoughts and master your feelings.\r\n\r\nIn the first part of the bundle called Breaking Overthinking, you will discover:\r\n\r\nHow overthinking can be detrimental to your social life. \r\nThe hidden dangers of overthinking and what can happen to you if it’s left untreated. \r\nHow to declutter your mind from all the noise of the modern world. \r\nHow overthinking affects your body, your energy levels, and your everyday mood. \r\nHow your surroundings affect your state of mind, and what you NEED to do in order to break out of that state. \r\nBad habits we perform every day and don’t even realize are destroying our sanity (and how to overcome them properly). \r\nHow to cut out toxic people from your life, which cloud your judgment and make you feel miserable.",
+      "subjects": [
+        "Self-help",
+        "personal development",
+        "emotional intelligence",
+        "mindfulness",
+        "meditation",
+        "cognitive behavioral therapy",
+        "CBT",
+        "anxiety",
+        "depression",
+        "anger management",
+        "stress management",
+        "positive thinking",
+        "self-control",
+        "mental health",
+        "emotional well-being"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/12009823-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL25312237W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 13
+      }
+    },
+    {
+      "id": "OL21640039W",
+      "slug": "the-psychology-of-money-OL21640039W",
+      "title": "The Psychology of Money",
+      "authors": [
+        "Morgan Housel"
+      ],
+      "author_details": [
+        {
+          "name": "Morgan Housel",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "Timeless lessons on wealth, greed, and happiness doing well with money isn’t necessarily about what you know. It’s about how you behave. And behavior is hard to teach, even to really smart people. How to manage money, invest it, and make business decisions are typically considered to involve a lot of mathematical calculations, where data and formulae tell us exactly what to do. But in the real world, people don’t make financial decisions on a spreadsheet. They make them at the dinner table, or in a meeting room, where personal history, your unique view of the world, ego, pride, marketing, and odd incentives are scrambled together. In the psychology of money, the author shares 19 short stories exploring the strange ways people think about money and teaches you how to make better sense of one of life’s most important matters.",
+      "subjects": [
+        "Money",
+        "Consumption (Economics)",
+        "Quality of life",
+        "Attitude change",
+        "Accounting",
+        "Ethics",
+        "Self-help techniques",
+        "Psychology",
+        "Finance",
+        "Personal",
+        "Satisfaction",
+        "Wealth, management",
+        "Psychological aspects",
+        "Wealth",
+        "Personal Finance",
+        "Financial literacy",
+        "Management",
+        "Richesse",
+        "BUSINESS & ECONOMICS",
+        "Investing"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/10389354-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL21640039W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 20
+      }
+    },
+    {
+      "id": "OL20652728W",
+      "slug": "love-yourself-like-your-life-depends-on-it-OL20652728W",
+      "title": "Love Yourself Like Your Life Depends on It",
+      "authors": [
+        "Kamal Ravikant"
+      ],
+      "author_details": [
+        {
+          "name": "Kamal Ravikant",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "No description available.",
+      "subjects": [
+        "Psychology",
+        "Self-acceptance",
+        "Self-esteem",
+        "Self-realization"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/9296952-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL20652728W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 5
+      }
+    },
+    {
+      "id": "OL548626W",
+      "slug": "the-seven-spiritual-laws-of-success-OL548626W",
+      "title": "The Seven Spiritual Laws of Success",
+      "authors": [
+        "Deepak Chopra"
+      ],
+      "author_details": [
+        {
+          "name": "Deepak Chopra",
+          "bio": "Deepak Chopra is an Indian American author, public speaker, alternative medicine advocate, and a prominent figure in the New Age movement. Through his books and videos, he has become one of the best-known and wealthiest figures in alternative medicine. - Wikipedia",
+          "birth_date": "22 October 1947",
+          "death_date": null
+        }
+      ],
+      "description": "In The Seven Spiritual Laws of Success, Deepak Chopra distills the essence of his teachings into seven simple, yet powerful principles that can easily be applied to create success in all areas of your life. Based on natural laws that govern all of creation, this book shatters the myth that success is the result of hard work, exacting plans, or driving ambition.\r\n\r\nInstead, Chopra offers a life-altering perspective on the attainment of success: Once we understand our true nature and learn to live in harmony with natural law, a sense of well-being, good health, fulfilling relationships, energy and enthusiasm for life, and material abundance will spring forth easily and effortlessly.\r\n\r\nFilled with timeless wisdom and practical steps you can apply right away, this is a book you will cherish for a lifetime, for within its pages are the secrets to making all your dreams come true",
+      "subjects": [
+        "Achievement",
+        "Commerce",
+        "Psychological aspects",
+        "Psychological aspects of Wealth",
+        "Psychology",
+        "Religious aspects",
+        "Religious aspects of Success",
+        "Religious aspects of Success in business",
+        "Success",
+        "Success in business",
+        "Wealth",
+        "Exito en los negocios",
+        "Aspectos religiosos",
+        "Aspectos psicológicos",
+        "Riqueza",
+        "Exito",
+        "Succes",
+        "Aspect psychologique",
+        "D'entraide",
+        "Aspect religieux",
+        "Richesse",
+        "Succes dans les affaires",
+        "Spiritualite",
+        "Success, religious aspects",
+        "Succès",
+        "Self-realization, religious aspects",
+        "Вневероисповедные формы религии"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/6632013-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL548626W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 10
+      }
+    },
+    {
+      "id": "OL1740783W",
+      "slug": "el-hombre-mas-rico-de-babilonia-para-nuestra-epoca-OL1740783W",
+      "title": "El hombre mas rico de Babilonia para nuestra epoca",
+      "authors": [
+        "George Hill"
+      ],
+      "author_details": [
+        {
+          "name": "George Hill",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "No description available.",
+      "subjects": [
+        "Finance, personal"
+      ],
+      "publication_year": "2006",
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/3356007-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL1740783W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 5
+      }
+    },
+    {
+      "id": "OL18108064W",
+      "slug": "cant-hurt-me-OL18108064W",
+      "title": "Can't Hurt Me",
+      "authors": [
+        "David Goggins"
+      ],
+      "author_details": [
+        {
+          "name": "David Goggins",
+          "bio": "American motivational speaker, author, and retired United States Navy SEAL.",
+          "birth_date": "1975",
+          "death_date": null
+        }
+      ],
+      "description": "For David Goggins, childhood was a nightmare--poverty, prejudice, and physical abuse colored his days and haunted his nights. But through self-discipline, mental toughness, and hard work, Goggins transformed himself from a depressed, overweight young man with no future into a US Armed Forces icon and one of the world's top endurance athletes. The only man in history to complete elite training as a Navy SEAL, Army Ranger, and Air Force tactical air controller, he went on to set records in numerous endurance events, inspiring Outside magazine to name him the Fittest (Real) Man in America.\r\n\r\nIn Can't Hurt Me, he shares his astonishing life story and reveals that most of us tap into only 40 percent of our capabilities. Goggins calls this The 40% Rule, and his story illuminates a path that anyone can follow to push past pain, demolish fear, and reach their full potential.",
+      "subjects": [
+        "nyt:advice-how-to-and-miscellaneous=2019-01-13",
+        "New York Times bestseller",
+        "United states, navy, seals",
+        "United states, navy, biography",
+        "United states, air force",
+        "Triathlon",
+        "Athletes, biography",
+        "Endurance sports",
+        "Motivation (psychology)",
+        "Self-realization",
+        "Marathon running",
+        "Recreation"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/8305903-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL18108064W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 9
+      }
+    },
+    {
+      "id": "OL15839737W",
+      "slug": "the-secret-OL15839737W",
+      "title": "The Secret",
+      "authors": [
+        "Rhonda Byrne"
+      ],
+      "author_details": [
+        {
+          "name": "Rhonda Byrne",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "Fragments of a Great Secret have been found in the oral traditions, in literature, in religions and philosophies throughout the centuries. For the first time, all the pieces of The Secret come together in an incredible revelation that will be life-transforming for all who experience it. In this book, you'll learn how to use The Secret in every aspect of your life - money, health, relationships, happiness, and in every interaction you have in the world. You'll begin to understand the hidden, untapped power that's within you, and this revelation can bring joy to every aspect of your life. The Secret contains wisdom from modern-day teachers - men and women who have used it to achieve health, wealth, and happiness. By applying the knowledge of The Secret, they bring to light compelling stories of eradicating disease, acquiring massive wealth, overcoming obstacles, and achieving what many would regard as impossible.",
+      "subjects": [
+        "the Law of Attraction",
+        "positive thinking",
+        "New Thought",
+        "Success",
+        "Psychological aspects of Success",
+        "Psychological aspects",
+        "Self-actualization (Psychology)",
+        "Happiness",
+        "Self Help",
+        "Mind & Spirit / Personal Transformation\"\"",
+        "New Age Movement",
+        "Personal Guidance",
+        "Body, Mind & Spirit",
+        "Adult Nonfiction"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/845815-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL15839737W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 28
+      }
+    },
+    {
+      "id": "OL16085155W",
+      "slug": "steve-jobs-OL16085155W",
+      "title": "Steve Jobs",
+      "authors": [
+        "Walter Isaacson"
+      ],
+      "author_details": [
+        {
+          "name": "Walter Isaacson",
+          "bio": "Walter Isaacson, the CEO of the Aspen Institute, has been chairman of CNN and the managing editor of Time magazine. He is the author of Steve Jobs; Einstein: His Life and Universe; Benjamin Franklin: An American Life; and Kissinger: A Biography, and the coauthor of The Wise Men: Six Friends and the World They Made. He lives in Washington, DC.\r\n[(Source)][1]\r\n\r\n\r\n  [1]: http://authors.simonandschuster.com/Walter-Isaacson/697650",
+          "birth_date": "20 May 1952",
+          "death_date": null
+        }
+      ],
+      "description": "Based on more than forty interviews with Jobs conducted over two years -- as well as interviews with more than a hundred family members, friends, adversaries, competitors, and colleagues -- Walter Isaacson has written a riveting story of the roller-coaster life and searingly intense personality of a creative entrepreneur whose passion for perfection and ferocious drive revolutionized six industries: personal computers, animated movies, music, phones, tablet computing, and digital publishing. At a time when America is seeking ways to sustain its innovative edge, and when societies around the world are trying to build digital-age economies, Jobs stands as the ultimate icon of inventiveness and applied imagination. He knew that the best way to create value in the twenty-first century was to connect creativity with technology. He built a company where leaps of the imagination were combined with remarkable feats of engineering. Although Jobs cooperated with this book, he asked for no control over what was written nor even the right to read it before it was published. He put nothing off-limits. He encouraged the people he knew to speak honestly. And Jobs speaks candidly, sometimes brutally so, about the people he worked with and competed against. His friends, foes, and colleagues provide an unvarnished view of the passions, perfectionism, obsessions, artistry, devilry, and compulsion for control that shaped his approach to business and the innovative products that resulted. Driven by demons, Jobs could drive those around him to fury and despair. But his personality and products were interrelated, just as Apple's hardware and software tended to be, as if part of an integrated system. His tale is instructive and cautionary, filled with lessons about innovation, character, leadership, and values. - Publisher.",
+      "subjects": [
+        "TECHNOLOGY & ENGINEERING / General",
+        "History",
+        "Inc Apple Computer",
+        "BIOGRAPHY & AUTOBIOGRAPHY / Business",
+        "Computer engineers",
+        "Businesspeople",
+        "Biography",
+        "BUSINESS & ECONOMICS / General",
+        "New York Times bestseller",
+        "nyt:hardcover_business_books=2012-02-25",
+        "Chief executive officers",
+        "TECHNOLOGY & ENGINEERING",
+        "Life Change Events",
+        "Biographies",
+        "Businessmen",
+        "Autoformation",
+        "Business",
+        "Développement d'aptitudes",
+        "General",
+        "BIOGRAPHY & AUTOBIOGRAPHY",
+        "Relations humaines",
+        "Computer industry",
+        "BUSINESS & ECONOMICS",
+        "Reading Level-Grade 11",
+        "Reading Level-Grade 12",
+        "Apple computer, inc.",
+        "Jobs, steve, 1955-2011",
+        "Businesspeople, biography",
+        "Large type books",
+        "Negociantes",
+        "Ingenieros",
+        "Biografía",
+        "Ingenieros en computación",
+        "Empresarios",
+        "Industria de computadoras",
+        "Historia",
+        "nyt:combined-print-and-e-book-nonfiction=2011-11-13",
+        "New York Times reviewed",
+        "nyt:paperback-nonfiction=2013-09-29",
+        "Success in business",
+        "Leadership",
+        "Liderazgo",
+        "Apple Computers",
+        "University of Berkeley",
+        "Celebrities",
+        "Informaticiens",
+        "Apple Computer",
+        "Histoire",
+        "Chefs de direction",
+        "Vietnamese language materials",
+        "Gens d'affaires",
+        "Qi ye jia",
+        "Zhuan ji",
+        "Événements stressants de la vie",
+        "BUSINESS & ECONOMICS/Leadership/",
+        "BIOGRAPHY & AUTOBIOGRAPHY/Business/",
+        "COMPUTERS/History/",
+        "Science & Technology",
+        "Mechanical",
+        "Apple Computer Inc"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/12374726-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL16085155W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 113
+      }
+    },
+    {
+      "id": "OL27846746W",
+      "slug": "chip-war-OL27846746W",
+      "title": "Chip War",
+      "authors": [
+        "Chris Miller"
+      ],
+      "author_details": [
+        {
+          "name": "Chris Miller",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "An epic account of the decades-long battle to control what has emerged as the world's most critical resource—microchip technology—with the United States and China increasingly in conflict.\r\n\r\nYou may be surprised to learn that microchips are the new oil—the scarce resource on which the modern world depends. Today, military, economic, and geopolitical power are built on a foundation of computer chips. Virtually everything— from missiles to microwaves, smartphones to the stock market — runs on chips. Until recently, America designed and built the fastest chips and maintained its lead as the #1 superpower. Now, America's edge is slipping, undermined by competitors in Taiwan, Korea, Europe, and, above all, China. Today, as Chip War reveals, China, which spends more money each year importing chips than it spends importing oil, is pouring billions into a chip-building initiative to catch up to the US. At stake is America's military superiority and economic prosperity.\r\n\r\nEconomic historian Chris Miller explains how the semiconductor came to play a critical role in modern life and how the U.S. become dominant in chip design and manufacturing and applied this technology to military systems. America's victory in the Cold War and its global military dominance stems from its ability to harness computing power more effectively than any other power. But here, too, China is catching up, with its chip-building ambitions and military modernization going hand in hand. America has let key components of the chip-building process slip out of its grasp, contributing not only to a worldwide chip shortage but also a new Cold War with a superpower adversary that is desperate to bridge the gap.\r\n\r\nIlluminating, timely, and fascinating, Chip War shows that, to make sense of the current state of politics, economics, and technology, we must first understand the vital role played by chips.",
+      "subjects": [
+        "nyt:business-books=2022-11-13",
+        "New York Times bestseller"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/12968901-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL27846746W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 5
+      }
+    },
+    {
+      "id": "OL37625157W",
+      "slug": "ola-que-viene-tecnologa-poder-y-el-gran-dilema-del-siglo-xxi-the-coming-wave-OL37625157W",
+      "title": "Ola Que Viene : Tecnología, Poder y el Gran Dilema Del Siglo XXI / the Coming Wave",
+      "authors": [
+        "Mustafa Suleyman"
+      ],
+      "author_details": [
+        {
+          "name": "Mustafa Suleyman",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "No description available.",
+      "subjects": [],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://via.placeholder.com/500x750.png?text=No+Cover+Art",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL37625157W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 1
+      }
+    },
+    {
+      "id": "OL17814342W",
+      "slug": "hit-refresh-OL17814342W",
+      "title": "Hit Refresh",
+      "authors": [
+        "Satya Nadella"
+      ],
+      "author_details": [
+        {
+          "name": "Satya Nadella",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "No description available.",
+      "subjects": [
+        "Microsoft Corporation",
+        "Biography",
+        "Employees",
+        "Chief executive officers",
+        "Computer software industry",
+        "Information society",
+        "Technology",
+        "Organizational change",
+        "Empathy",
+        "Social aspects",
+        "Businessmen",
+        "History",
+        "Corporate culture",
+        "Technological innovations",
+        "Microsoft corporation",
+        "Businesspeople, biography",
+        "Technology, social aspects",
+        "nyt:business-books=2017-10-08",
+        "New York Times bestseller",
+        "BIOGRAPHY & AUTOBIOGRAPHY",
+        "Business",
+        "BUSINESS & ECONOMICS",
+        "Corporate & Business History",
+        "Industries",
+        "Computer Industry"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/10209037-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL17814342W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 9
+      }
+    },
+    {
+      "id": "OL28098879W",
+      "slug": "dont-believe-everything-you-think-OL28098879W",
+      "title": "Don't Believe Everything You Think",
+      "authors": [
+        "Joseph Nguyen"
+      ],
+      "author_details": [
+        {
+          "name": "Joseph Nguyen",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "No description available.",
+      "subjects": [
+        "Self-help techniques",
+        "Spirituality"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://via.placeholder.com/500x750.png?text=No+Cover+Art",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL28098879W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 1
+      }
+    },
+    {
+      "id": "OL8257090W",
+      "slug": "mans-search-for-ultimate-meaning-OL8257090W",
+      "title": "Man's Search for Ultimate Meaning",
+      "authors": [
+        "Viktor E. Frankl"
+      ],
+      "author_details": [
+        {
+          "name": "Viktor E. Frankl",
+          "bio": "Viktor Emil Frankl was an Austrian neurologist and psychiatrist as well as a Holocaust survivor. He was the founder of logotherapy, which is a form of existential analysis, the \"Third Viennese School of Psychotherapy\".",
+          "birth_date": "26 March 1905",
+          "death_date": "2 September 1997"
+        }
+      ],
+      "description": "it is about the life of author victor frankl in the concentration camp of hitler",
+      "subjects": [
+        "Psychiatry and religion",
+        "Psychotherapy",
+        "Logotherapy",
+        "Maturation (Psychologie)",
+        "Logothérapie",
+        "Frankl, Viktor E. (Viktor Emil), 1905-",
+        "Existential psychotherapy",
+        "Meaning (psychology)",
+        "Psychology and religion"
+      ],
+      "publication_year": "1997",
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/465226-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL8257090W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 5
+      }
+    },
+    {
+      "id": "OL33647471W",
+      "slug": "one-hundred-years-of-solitude-OL33647471W",
+      "title": "One Hundred Years of Solitude",
+      "authors": [
+        "Gabriel Garcia Marquez"
+      ],
+      "author_details": [
+        {
+          "name": "Gabriel Garcia Marquez",
+          "bio": "Gabriel García Márquez is a Colombian novelist, short-story writer, screenwriter and journalist. García Márquez, affectionately known as \"Gabo\" throughout Latin America, is considered one of the most significant authors of the 20th century. In 1982, he was awarded the Nobel Prize in Literature. He pursued a self-directed education that resulted in his leaving law school for a career in journalism. From early on, he showed no inhibitions in his criticism of Colombian and foreign politics. In 1958, he married Mercedes Barcha; they have two sons, Rodrigo and Gonzalo.\r\n\r\nHe started as a journalist, and has written many acclaimed non-fiction works and short stories, but is best-known for his novels, such as One Hundred Years of Solitude (1967) and Love in the Time of Cholera (1985). His works have achieved significant critical acclaim and widespread commercial success, most notably for popularizing a literary style labeled as magical realism, which uses magical elements and events in otherwise ordinary and realistic situations. Some of his works are set in a fictional village called Macondo, and most of them express the theme of solitude. [1]\r\n\r\n [1]: http://en.wikipedia.org/wiki/Gabriel_Garc%C3%ADa_M%C3%A1rquez\r\n\r\nSource and more information: http://en.wikipedia.org/wiki/Gabriel_García_Márquez",
+          "birth_date": "1928",
+          "death_date": "2014"
+        }
+      ],
+      "description": "No description available.",
+      "subjects": [],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://via.placeholder.com/500x750.png?text=No+Cover+Art",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL33647471W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 3
+      }
+    },
+    {
+      "id": "OL1874705W",
+      "slug": "how-to-talk-to-anyone-OL1874705W",
+      "title": "How to Talk to Anyone",
+      "authors": [
+        "Leil Lowndes"
+      ],
+      "author_details": [
+        {
+          "name": "Leil Lowndes",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "“You’ll not only break the ice, you’ll melt it away with your new skills.” — Larry King“The lost art of verbal communication may be revitalized by Leil Lowndes.” — Harvey McKay, author of “How to Swim with the Sharks Without Being Eaten Alive”What is that magic quality makes some people instantly loved and respected? Everyone wants to be their friend (or, if single, their lover!) In business, they rise swiftly to the top of the corporate ladder. What is their “Midas touch?”What it boils down to is a more skillful way of dealing with people.The author has spent her career teaching people how to communicate for success. In her book How to Talk to Anyone (Contemporary Books, October 2003) Lowndes offers 92 easy and effective sure-fire success techniques— she takes the reader from first meeting all the way up to sophisticated techniques used by the big winners in life. In this information-packed book you’ll find:9 ways to make a dynamite first impression14 ways to master small talk, “big talk,” and body language14 ways to walk and talk like a VIP or celebrity6 ways to sound like an insider in any crowd7 ways to establish deep subliminal rapport with anyone9 ways to feed someone’s ego (and know when NOT to!)11 ways to make your phone a powerful communications tool15 ways to work a party like a politician works a room7 ways to talk with tigers and not get eaten aliveIn her trademark entertaining and straight-shooting style, Leil gives the techniques catchy names so you’ll remember them when you really need them, including: “Rubberneck the Room,” “Be a Copyclass,” “Come Hither Hands,” “Bare Their Hot Button,” “The Great Scorecard in the Sky,” and “Play the Tombstone Game,” for big success in your social life, romance, and business.How to Talk to Anyone, which is an update of her popular book, Talking the Winner’s Way (see the 5-star reviews of the latter)is based on solid research about techniques that work!By the way, don’t confuse How to Talk to Anyone with one of Leil’s previous books, How to Talk to Anybody About Anything. This one is completely different!",
+      "subjects": [
+        "Interpersonal communication",
+        "Self-Improvement",
+        "Body language",
+        "Nonfiction",
+        "Nonverbal communication",
+        "Communication interpersonnelle",
+        "Langage du corps",
+        "LANGUAGE ARTS & DISCIPLINES",
+        "Communication Studies"
+      ],
+      "publication_year": "1999",
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/58950-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL1874705W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 9
+      }
+    },
+    {
+      "id": "OL39181496W",
+      "slug": "the-let-them-theory-OL39181496W",
+      "title": "The Let Them Theory",
+      "authors": [
+        "Mel Robbins"
+      ],
+      "author_details": [
+        {
+          "name": "Mel Robbins",
+          "bio": null,
+          "birth_date": "1968",
+          "death_date": null
+        }
+      ],
+      "description": "**A Life-Changing Tool Millions of People Can’t Stop Talking About**\r\n\r\nWhat if the key to happiness, success, and love was as simple as two words?\r\n\r\nIf you've ever felt stuck, overwhelmed, or frustrated with where you are, the problem isn't you. The problem is the power you give to other people. Two simple words—Let Them—will set you free. Free from the opinions, drama, and judgments of others. Free from the exhausting cycle of trying to manage everything and everyone around you. The Let Them Theory puts the power to create a life you love back in your hands—and this book will show you exactly how to do it.\r\n\r\nIn her latest groundbreaking book, The Let Them Theory, Mel Robbins—New York Times bestselling author and one of the world's most respected experts on motivation, confidence, and mindset—teaches you how to stop wasting energy on what you can't control and start focusing on what truly YOU. Your happiness. Your goals. Your life.\r\n\r\nUsing the same no-nonsense, science-backed approach that's made The Mel Robbins Podcast a global sensation, Robbins explains why The Let Them Theory is already loved by millions and how you can apply it in eight key areas of your life to make the biggest impact. Within a few pages, you'll realize how much energy and time you've been wasting trying to control the wrong things—at work, in relationships, and in pursuing your goals—and how this is keeping you from the happiness and success you deserve.\r\n\r\nWritten as an easy-to-understand guide, Robbins shares relatable stories from her own life, highlights key takeaways, relevant research and introduces you to world-renowned experts in psychology, neuroscience, relationships, happiness, and ancient wisdom who champion The Let Them Theory every step of the way.",
+      "subjects": [],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://via.placeholder.com/500x750.png?text=No+Cover+Art",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL39181496W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 4
+      }
+    },
+    {
+      "id": "OL20799952W",
+      "slug": "breath-OL20799952W",
+      "title": "Breath",
+      "authors": [
+        "James Nestor"
+      ],
+      "author_details": [
+        {
+          "name": "James Nestor",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "There is nothing more essential to our health and wellbeing than breathing: take air in, let it out, repeat 25,000 times a day. Yet, as a species, humans have lost the ability to breathe correctly, with grave consequences. In Breath, journalist James Nestor travels the world to discover the hidden science behind ancient breathing practices to figure out what went wrong and how to fix it.\r\n\r\nModern research is showing us that making even slight adjustments to the way we inhale and exhale can:\r\n\r\n- jump-start athletic performance\r\n- rejuvenate internal organs\r\n- halt snoring, allergies, asthma and autoimmune disease, and even straighten scoliotic spines\r\n\r\nNone of this should be possible, and yet it is. Drawing on thousands of years of ancient wisdom and cutting-edge studies in pulmonology, psychology, biochemistry and human physiology, Breath turns the conventional wisdom of what we thought we knew about our most basic biological function on its head.",
+      "subjects": [
+        "Breathing exercises",
+        "Respiration",
+        "nyt:combined-print-and-e-book-nonfiction=2020-06-14",
+        "New York Times bestseller"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/10096454-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL20799952W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 6
+      }
+    },
+    {
+      "id": "OL17825963W",
+      "slug": "you-dont-know-js-OL17825963W",
+      "title": "You Don't Know JS",
+      "authors": [
+        "Kyle Simpson"
+      ],
+      "author_details": [
+        {
+          "name": "Kyle Simpson",
+          "bio": null,
+          "birth_date": null,
+          "death_date": null
+        }
+      ],
+      "description": "No description available.",
+      "subjects": [
+        "Java (Computer program language)",
+        "JavaScript (Computer program language)"
+      ],
+      "publication_year": null,
+      "average_rating": null,
+      "page_count": null,
+      "cover_url": "https://covers.openlibrary.org/b/id/8117575-L.jpg",
+      "isbn_10": null,
+      "isbn_13": null,
+      "publisher": null,
+      "links": {
+        "open_library": "https://openlibrary.org/works/OL17825963W"
+      },
+      "source_api": "OpenLibrary",
+      "api_version_info": {
+        "work_revision": 5
       }
     }
   ]
