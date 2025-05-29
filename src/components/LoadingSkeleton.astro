@@ -1,0 +1,41 @@
+---
+interface Props {
+  className?: string;
+  width?: string;
+  height?: string;
+}
+
+const { className = '', width = 'full', height = '4', } = Astro.props;
+---
+
+<div class={`bg-gray-700 rounded animate-pulse h-${height} w-${width} ${className}`}></div>
+
+<script>
+  // Función para mostrar/ocultar elementos basados en la carga
+  const toggleLoadingState = (show: boolean) => {
+    const skeletons = document.querySelectorAll('[data-skeleton]');
+    const content = document.querySelectorAll('[data-content]');
+
+    skeletons.forEach(skeleton => {
+      skeleton.classList.toggle('hidden', !show);
+    });
+
+    content.forEach(element => {
+      element.classList.toggle('hidden', show);
+    });
+  };
+
+  // Mostrar skeletons inicialmente
+  toggleLoadingState(true);
+
+  // Cuando la página esté completamente cargada
+  window.addEventListener('load', () => {
+    // Pequeño delay para asegurar una transición suave
+    setTimeout(() => {
+      toggleLoadingState(false);
+    }, 300);
+  });
+
+  // Exportar la función para uso global
+  window.toggleLoadingState = toggleLoadingState;
+</script>

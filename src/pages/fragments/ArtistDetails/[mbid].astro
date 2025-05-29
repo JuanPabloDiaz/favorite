@@ -1,6 +1,7 @@
 ---
 import type { GetStaticPaths } from 'astro';
 import artistsData from '@data/artistDetails.json';
+import ArtistDetailsSkeleton from '@components/ArtistDetailsSkeleton.astro';
 
 const { mbid } = Astro.params;
 
@@ -30,8 +31,12 @@ if (artist?.genres && artist.genres.length > 0) {
 }
 ---
 
-{
-  artist ? (
+<div>
+  <ArtistDetailsSkeleton />
+
+  <div data-content class="hidden">
+    {artist ? (
+      
     <div class="artist-info border-b border-gray-800">
       {' '}
       {/* Adapted class name from movie-info */}
@@ -69,72 +74,45 @@ if (artist?.genres && artist.genres.length > 0) {
 
           <div class="mt-8">
             <h4 class="text-lg font-semibold text-gray-300">Biography</h4>
-            <p class="text-gray-300 mt-2">{artist.biography || 'Biography not available.'}</p>
+            <p class="text-gray-300 mt-2">Biography not available.</p>
           </div>
 
           <div class="mt-8">
             <h4 class="text-lg font-semibold text-gray-300">Discography Highlights</h4>
             <p class="text-gray-300 mt-2">
-              {/* Placeholder for discography - this would typically list albums or key tracks */}
               Discography information is not yet available.
             </p>
-            {/* Example of how releases could be listed if data was available:
-          {artist.releases && artist.releases.length > 0 ? (
-            <ul class="list-disc list-inside mt-2">
-              {artist.releases.slice(0, 5).map(release => (
-                <li key={release.id}>{release.title} ({release.date})</li>
-              ))}
-            </ul>
-          ) : (
-            <p class="text-gray-300 mt-2">No discography highlights available.</p>
-          )}
-          */}
           </div>
 
           <div class="mt-8">
             <h4 class="text-lg font-semibold text-gray-300">External Links</h4>
             <p class="text-gray-300 mt-2">
-              {/* Placeholder for external links - this would link to official sites, streaming, etc. */}
               External links are not yet available.
             </p>
-            {/* Example of how links could be listed:
-          {artist.urls && artist.urls.length > 0 ? (
-            <ul class="list-disc list-inside mt-2">
-              {artist.urls.map(urlRel => (
-                <li key={urlRel.type}>
-                  <a href={urlRel.url.resource} target="_blank" rel="noopener noreferrer" class="hover:text-orange-500">
-                    {urlRel.type.replace('-', ' ')}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p class="text-gray-300 mt-2">No external links available.</p>
-          )}
-          */}
           </div>
         </div>
       </div>
     </div>
-  ) : (
-    <div class="container mx-auto px-4 py-16">
-      <p class="text-2xl text-center">Artist not found.</p>
-      <p class="text-center mt-4">
-        The artist you are looking for with MBID <span class="font-mono">{mbid}</span> could not be
-        found in our records. This might be a temporary issue, or the artist may not be in our
-        current favorites list.
-      </p>
-      <div class="text-center mt-8">
-        <a
-          href="/artists"
-          class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition duration-300"
-        >
-          Back to Artists List
-        </a>
+    ) : (
+      <div class="container mx-auto px-4 py-16">
+        <p class="text-2xl text-center">Artist not found.</p>
+        <p class="text-center mt-4">
+          The artist you are looking for with MBID <span class="font-mono">{mbid}</span> could not be
+          found in our records. This might be a temporary issue, or the artist may not be in our
+          current favorites list.
+        </p>
+        <div class="text-center mt-8">
+          <a
+            href="/artists"
+            class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition duration-300"
+          >
+            Back to Artists List
+          </a>
+        </div>
       </div>
-    </div>
-  )
-}
+    )}
+  </div>
+</div>
 
 {/* Placeholder for other sections like a more detailed discography, related artists, etc. */}
 {/* <div class="artist-cast border-b border-gray-800">

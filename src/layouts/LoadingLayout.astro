@@ -1,0 +1,30 @@
+---
+import LoadingSkeleton from '../components/LoadingSkeleton.astro';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<div class="relative">
+  {/* Skeleton Loading */}
+  <div data-skeleton class="space-y-4 p-4">
+    <LoadingSkeleton height="8" width="3/4" />
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      {Array(8).fill(0).map(() => (
+        <div class="space-y-4">
+          <LoadingSkeleton height="48" />
+          <LoadingSkeleton height="6" width="3/4" />
+          <LoadingSkeleton height="4" width="1/2" />
+        </div>
+      ))}
+    </div>
+  </div>
+
+  {/* Real Content */}
+  <div data-content class="hidden">
+    <slot />
+  </div>
+</div>
