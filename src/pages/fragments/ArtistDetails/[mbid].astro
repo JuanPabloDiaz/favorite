@@ -1,0 +1,147 @@
+---
+import type { GetStaticPaths } from 'astro';
+import artistsData from '@data/artistDetails.json';
+
+const { mbid } = Astro.params;
+
+// Find the artist by mbid from the imported JSON data
+const artist = artistsData.allArtists?.find((a) => a.id === mbid);
+
+export const getStaticPaths = (() => {
+  const artistEntries = artistsData.allArtists || [];
+  return artistEntries.map((artist) => ({
+    params: { mbid: artist.id },
+  }));
+}) satisfies GetStaticPaths;
+
+const artistName = artist?.disambiguation
+  ? `${artist.name} (${artist.disambiguation})`
+  : artist?.name;
+const imageUrl =
+  artist?.image_url ||
+  `https://via.placeholder.com/500x750.png?text=${encodeURIComponent(artist?.name || 'Unknown Artist')}`;
+const displayOrigin = artist?.area?.name || artist?.country || 'Origin Unknown';
+
+let displayGenres = 'Genres not available';
+if (artist?.genres && artist.genres.length > 0) {
+  displayGenres = artist.genres.map((g) => g.name).join(', ');
+} else if (artist?.tags && artist.tags.length > 0) {
+  displayGenres = artist.tags.map((t) => t.name).join(', '); // Fallback to tags
+}
+---
+
+{
+  artist ? (
+    <div class="artist-info border-b border-gray-800">
+      {' '}
+      {/* Adapted class name from movie-info */}
+      <div class="container mx-auto px-4 py-16 flex flex-col md:flex-row">
+        <div class="flex-none">
+          <img
+            src={imageUrl}
+            alt={`${artistName} main image`}
+            class="w-64 md:w-96 rounded-lg shadow-lg"
+            width="500"
+            height="750"
+          />
+        </div>
+        <div class="md:ml-24">
+          <h2 class="text-4xl font-semibold">{artistName}</h2>
+          <div class="flex flex-wrap items-center text-gray-400 text-sm mt-2">
+            {artist.rating && artist.rating.value && (
+              <>
+                <svg class="fill-current text-orange-500 w-4" viewBox="0 0 24 24">
+                  <g data-name="Layer 2">
+                    <path
+                      d="M17.56 21a1 1 0 01-.46-.11L12 18.22l-5.1 2.67a1 1 0 01-1.45-1.06l1-5.63-4.12-4a1 1 0 01-.25-1 1 1 0 01.81-.68l5.7-.83 2.51-5.13a1 1 0 011.8 0l2.54 5.12 5.7.83a1 1 0 01.81.68 1 1 0 01-.25 1l-4.12 4 1 5.63a1 1 0 01-.4 1 1 1 0 01-.62.18z"
+                      data-name="star"
+                    />
+                  </g>
+                </svg>
+                <span class="ml-1">{artist.rating.value.toFixed(1)}</span>
+                <span class="mx-2">|</span>
+              </>
+            )}
+            <span>{displayOrigin}</span>
+            <span class="mx-2">|</span>
+            <span>{displayGenres}</span>
+          </div>
+
+          <div class="mt-8">
+            <h4 class="text-lg font-semibold text-gray-300">Biography</h4>
+            <p class="text-gray-300 mt-2">{artist.biography || 'Biography not available.'}</p>
+          </div>
+
+          <div class="mt-8">
+            <h4 class="text-lg font-semibold text-gray-300">Discography Highlights</h4>
+            <p class="text-gray-300 mt-2">
+              {/* Placeholder for discography - this would typically list albums or key tracks */}
+              Discography information is not yet available.
+            </p>
+            {/* Example of how releases could be listed if data was available:
+          {artist.releases && artist.releases.length > 0 ? (
+            <ul class="list-disc list-inside mt-2">
+              {artist.releases.slice(0, 5).map(release => (
+                <li key={release.id}>{release.title} ({release.date})</li>
+              ))}
+            </ul>
+          ) : (
+            <p class="text-gray-300 mt-2">No discography highlights available.</p>
+          )}
+          */}
+          </div>
+
+          <div class="mt-8">
+            <h4 class="text-lg font-semibold text-gray-300">External Links</h4>
+            <p class="text-gray-300 mt-2">
+              {/* Placeholder for external links - this would link to official sites, streaming, etc. */}
+              External links are not yet available.
+            </p>
+            {/* Example of how links could be listed:
+          {artist.urls && artist.urls.length > 0 ? (
+            <ul class="list-disc list-inside mt-2">
+              {artist.urls.map(urlRel => (
+                <li key={urlRel.type}>
+                  <a href={urlRel.url.resource} target="_blank" rel="noopener noreferrer" class="hover:text-orange-500">
+                    {urlRel.type.replace('-', ' ')}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p class="text-gray-300 mt-2">No external links available.</p>
+          )}
+          */}
+          </div>
+        </div>
+      </div>
+    </div>
+  ) : (
+    <div class="container mx-auto px-4 py-16">
+      <p class="text-2xl text-center">Artist not found.</p>
+      <p class="text-center mt-4">
+        The artist you are looking for with MBID <span class="font-mono">{mbid}</span> could not be
+        found in our records. This might be a temporary issue, or the artist may not be in our
+        current favorites list.
+      </p>
+      <div class="text-center mt-8">
+        <a
+          href="/artists"
+          class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition duration-300"
+        >
+          Back to Artists List
+        </a>
+      </div>
+    </div>
+  )
+}
+
+{/* Placeholder for other sections like a more detailed discography, related artists, etc. */}
+{/* <div class="artist-cast border-b border-gray-800">
+  <div class="container mx-auto px-4 py-16">
+    <h2 class="text-4xl font-semibold">Related Artists</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+      { Placeholders for related artist cards }
+    </div>
+  </div>
+</div> */}

@@ -4,14 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
     "format": "prettier --write \"src/**/*.{js,astro,css}\"",
-    "fetch-data": "node scripts/fetch-tmdb.js"
+    "fetch-movies": "node scripts/fetch-tmdb.js",
+    "fetch-music": "node scripts/fetch-musicbrainz.js"
   },
   "devDependencies": {
+    "@astrojs/cloudflare": "^10.4.0",
+    "@astrojs/sitemap": "^3.4.0",
     "@astrojs/tailwind": "^5.1.0",
     "astro": "^4.10.2",
     "dotenv": "^16.5.0",
@@ -20,8 +20,5 @@
     "prettier-plugin-astro": "^0.14.1",
     "wrangler": "^4.17.0"
   },
-  "dependencies": {
-    "@astrojs/cloudflare": "^10.4.0",
-    "@astrojs/sitemap": "^3.4.0"
-  }
+  "dependencies": {}
 }
