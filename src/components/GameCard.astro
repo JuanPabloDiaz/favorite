@@ -1,0 +1,112 @@
+---
+// src/components/GameCard.astro
+const { game } = Astro.props; // Expect a game object as a prop
+
+// Placeholder image URL - should match the one in fetch-games.js if possible
+const placeholderImageUrl = 'https://via.placeholder.com/500x750.png?text=No+Cover+Art';
+
+const imageUrl =
+  game.background_image && game.background_image !== placeholderImageUrl
+    ? game.background_image
+    : placeholderImageUrl;
+
+const gameTitle = game.name || 'Title Unknown';
+const gameUrl = `/games/${game.slug}`;
+
+// Display developer, fallback to publisher
+let primaryCredit = 'N/A';
+if (game.developers && game.developers.length > 0) {
+  primaryCredit = game.developers[0];
+} else if (game.publishers && game.publishers.length > 0) {
+  primaryCredit = game.publishers[0];
+}
+
+const displayGenres = game.genres && game.genres.length > 0 ? game.genres.join(', ') : 'N/A';
+const displayReleaseDate = game.released ? game.released.split('-')[0] : 'Unknown Year'; // Display only year for brevity
+---
+
+<div class="mt-8">
+  <a
+    href={gameUrl}
+    class="block aspect-[2/3] bg-gray-800 rounded-lg overflow-hidden"
+    title={gameTitle}
+  >
+    <div class="relative w-full h-full">
+      <img
+        src={imageUrl}
+        alt={`Cover art for ${gameTitle}`}
+        width="500"
+        height="750"
+        loading="lazy"
+        decoding="async"
+        class="thumbnail w-full h-full object-cover rounded-lg shadow-sm shadow-slate-600 hover:opacity-75 transition ease-in-out duration-300 hover:shadow-slate-50"
+        id={`game-poster-${game.id}`}
+      />
+      <!-- Skeleton loader, hidden by default, managed by imageLoading.js -->
+      <div class="absolute inset-0 bg-gray-800 animate-pulse" style="display: none;"></div>
+    </div>
+  </a>
+  <div class="mt-2">
+    <a href={gameUrl} class="text-lg mt-2 hover:text-gray-300" title={gameTitle}>{gameTitle}</a>
+
+    <div class="text-gray-400 text-sm mt-1">
+      <span>{primaryCredit}</span>
+    </div>
+
+    {
+      game.metacritic && (
+        <div class="flex items-center text-gray-400 text-sm mt-1">
+          <svg class="fill-current text-orange-500 w-4 h-4" viewBox="0 0 24 24">
+            <path d="M17.56 21a1 1 0 01-.46-.11L12 18.22l-5.1 2.67a1 1 0 01-1.45-1.06l1-5.63-4.12-4a1 1 0 01-.25-1 1 1 0 01.81-.68l5.7-.83 2.51-5.13a1 1 0 011.8 0l2.54 5.12 5.7.83a1 1 0 01.81.68 1 1 0 01-.25 1l-4.12 4 1 5.63a1 1 0 01-.4 1 1 1 0 01-.62.18z" />
+          </svg>
+          <span class="ml-1">{game.metacritic}</span>
+          <span class="mx-2">|</span>
+          <span>{displayReleaseDate}</span>
+        </div>
+      )
+    }
+    {
+      !game.metacritic && (
+        <div class="text-gray-400 text-sm mt-1">
+          <span>{displayReleaseDate}</span>
+        </div>
+      )
+    }
+
+    {
+      game.genres && game.genres.length > 0 && (
+        <div class="text-gray-400 text-sm mt-1 truncate" title={displayGenres}>
+          {displayGenres}
+        </div>
+      )
+    }
+
+    {
+      game.platforms && game.platforms.length > 0 && (
+        <div class="flex flex-wrap gap-1 mt-2">
+          {game.platforms.slice(0, 5).map(
+            (
+              platform // Limit to 5 platforms to avoid overflow
+            ) => (
+              <span class="bg-gray-700 text-gray-300 text-xs px-2 py-0.5 rounded-full">
+                {platform}
+              </span>
+            )
+          )}
+        </div>
+      )
+    }
+  </div>
+</div>
+
+<script>
+  // Assuming imageLoading.js is correctly set up in the project to handle .thumbnail
+  // No specific import needed here if it's globally applied or via a layout.
+  // If direct import is preferred:
+  // import { setupImageLoading } from '@scripts/imageLoading.js';
+  // document.addEventListener('DOMContentLoaded', setupImageLoading);
+
+  // Based on PodcastCard.astro, the following is used:
+  import { setupImageLoading } from '@scripts/imageLoading.js';
+  document.addEventListener('DOMContentLoaded', setupImageLoading);
+</script>

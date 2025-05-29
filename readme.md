@@ -65,7 +65,39 @@ Once you have your API key, add it to your `.env` file like this:
 LISTEN_NOTES_API_KEY=YOUR_LISTEN_NOTES_API_KEY
 ```
 
-After adding your API keys, you'll need to fetch the initial data. See the "Fetching Data" section under "Available Scripts" for more details (e.g., run `npm run fetch-data`).
+### IGDB API Credentials (for Game Data)
+
+This project uses the Internet Game Database (IGDB) API, via the Twitch Developer portal, to fetch video game data. To use it, you'll need to register an application on Twitch and get a Client ID and Client Secret.
+
+**Steps to get your IGDB Credentials:**
+
+1.  **Go to the Twitch Developer Portal:** Navigate to [https://dev.twitch.tv/](https://dev.twitch.tv/).
+2.  **Log In/Sign Up:** Log in with your existing Twitch account, or create one if you don't have it.
+3.  **Register Your Application:**
+    *   Once logged in, go to your Dashboard or the "Applications" section.
+    *   Click on "Register Your Application" (or a similar button like "+ Register Application").
+    *   **Name:** Give your application a unique name (e.g., "MyFavoritesSite_Games").
+    *   **OAuth Redirect URLs:** For this project, you can typically set this to `http://localhost:3000` or any placeholder URL if you don't intend to use OAuth for user authentication (the script uses server-to-server authentication).
+    *   **Category:** Choose "API" or "Application Integration" (select the most fitting category available).
+    *   Click "Create".
+4.  **Get Your Client ID:** After your application is registered, you will be taken to its management page. Your **Client ID** will be visible here. Copy it.
+5.  **Generate a Client Secret:** On the same application management page, find the button to generate a "New Secret" (or similar). Click it to generate your **Client Secret**.
+    *   **Important:** Copy your new Client Secret immediately and store it securely. Twitch will only show it to you once. If you lose it, you'll need to generate a new one.
+6.  **Set Up Environment Variables:**
+    *   If you haven't already, create a `.env` file in the root of the project by copying the example file:
+        ```bash
+        cp .env.example .env
+        ```
+    *   Open the `.env` file and add your credentials:
+        ```env
+        IGDB_CLIENT_ID=your_twitch_client_id_here
+        IGDB_CLIENT_SECRET=your_twitch_client_secret_here
+        ```
+        Replace `your_twitch_client_id_here` and `your_twitch_client_secret_here` with your actual credentials.
+
+These Client ID and Client Secret will be used by the `fetch-games.js` script to automatically obtain an OAuth access token from Twitch. This token is then used to authorize requests to the IGDB API.
+
+After adding your API keys and credentials, you'll need to fetch the initial data. See the "Fetching Data" section under "Available Scripts" for more details (e.g., run `npm run fetch-data`).
 
 ### Managing Favorite Podcasts
 

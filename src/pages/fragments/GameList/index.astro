@@ -1,0 +1,82 @@
+---
+import GameCard from '@components/GameCard.astro';
+
+let allGames = [];
+let fetchError = null;
+
+try {
+  // Use Astro.glob to import the JSON data.
+  const results = await Astro.glob('@data/gameDetails.json');
+  if (results && results.length > 0) {
+    const gameJsonData = results[0].default || results[0]; // Astro.glob provides parsed JSON
+    if (gameJsonData && gameJsonData.allGames) {
+      allGames = gameJsonData.allGames;
+    } else {
+      console.warn(
+        'No "allGames" key found in the imported gameDetails.json or data is null/malformed.'
+      );
+      fetchError = 'Game data is not in the expected format. Ensure "allGames" array exists.';
+      allGames = [];
+    }
+  } else {
+    console.warn('gameDetails.json file not found via Astro.glob.');
+    // This can happen if the fetch script hasn't run yet.
+    fetchError =
+      'Game data file (gameDetails.json) not found. Please run the data fetching script (e.g., `npm run fetch-data` or `npm run fetch-games`).';
+    allGames = [];
+  }
+} catch (error) {
+  console.error('Error loading or processing gameDetails.json via Astro.glob:', error);
+  fetchError = `Failed to load game data. Details: ${error.message}`;
+  allGames = []; // Ensure it's an array
+}
+---
+
+<div class="container mx-auto px-4 pt-16">
+  <div class="popular-games">
+    {/* Changed class name for specificity, though styling might be shared */}
+    <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">Favorite Games</h2>
+    {
+      fetchError && (
+        <div class="text-red-500 bg-red-100 border border-red-400 rounded p-4 my-4 text-sm">
+          <p>
+            <strong>Error loading games:</strong>
+          </p>
+          <p>{fetchError}</p>
+          <p class="mt-2">
+            Please ensure you have run the command <code>npm run fetch-games</code> (or{' '}
+            <code>npm run fetch-data</code>) after setting up your <code>.env</code> file with your
+            IGDB Client ID and Secret, and adding games to
+            <code>src/data/myFavGames.json</code>.
+          </p>
+        </div>
+      )
+    }
+    {
+      allGames.length === 0 && !fetchError && (
+        <div class="text-gray-400 bg-gray-800 border border-gray-700 rounded p-4 my-4 text-sm">
+          <p>
+            No games found in <code>src/data/gameDetails.json</code>.
+          </p>
+          <p class="mt-2">To see your favorite games here, please:</p>
+          <ol class="list-decimal list-inside mt-1">
+            <li>
+              Ensure you have added games to <code>src/data/myFavGames.json</code>.
+            </li>
+            <li>
+              Set up your IGDB Client ID and Secret in the <code>.env</code> file (see Readme for
+              instructions).
+            </li>
+            <li>
+              Run the command <code>npm run fetch-games</code> (or <code>npm run fetch-data</code>)
+              to fetch the game details.
+            </li>
+          </ol>
+        </div>
+      )
+    }
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+      {allGames.map((game) => <GameCard game={game} />)}
+    </div>
+  </div>
+</div>

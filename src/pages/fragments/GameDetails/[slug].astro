@@ -1,0 +1,186 @@
+---
+import { SITE_TITLE } from '@consts'; // Assuming you have a site title constant
+
+const { slug } = Astro.params; // Get the game slug from the URL
+let game = null;
+let fetchError = null;
+
+try {
+  const results = await Astro.glob('@data/gameDetails.json');
+  if (results && results.length > 0) {
+    const gameJsonData = results[0].default || results[0];
+    if (gameJsonData && gameJsonData.allGames) {
+      game = gameJsonData.allGames.find((g) => g.slug === slug);
+      if (!game) {
+        fetchError = `Game with slug "${slug}" not found.`;
+      } else {
+        // Dynamically set page title - this is an experimental way and might not work as expected
+        // A more common way is to pass title to Layout from the page itself.
+        // For fragments, this is less direct.
+        // Astro.props.title = `${game.name} — ${SITE_TITLE}`; // This won't work directly
+        // If htmx is used for fragment swaps, one might set HX-Set-Title header.
+        // For now, title is set in src/pages/games/[slug].astro
+      }
+    } else {
+      fetchError =
+        'Game data is not in the expected format or "allGames" key is missing in imported JSON.';
+    }
+  } else {
+    fetchError = 'Game data file (gameDetails.json) not found. Please run `npm run fetch-games`.';
+  }
+} catch (error) {
+  console.error(`Error loading or processing gameDetails.json for game slug "${slug}":`, error);
+  fetchError = `Failed to load game data. Details: ${error.message}`;
+}
+
+const placeholderImageUrl = 'https://via.placeholder.com/500x750.png?text=No+Cover+Art'; // For main cover
+const screenshotPlaceholder = 'https://via.placeholder.com/300x200.png?text=No+Screenshot';
+
+const mainImageUrl =
+  game?.background_image && game.background_image !== placeholderImageUrl
+    ? game.background_image
+    : placeholderImageUrl;
+
+// Helper to format arrays for display
+const formatArray = (arr) => (arr && arr.length > 0 ? arr.join(', ') : 'N/A');
+
+// Helper to format release date (show only year for now, or full date if desired)
+const formatDate = (dateString) => {
+  if (!dateString) return 'N/A';
+  // return new Date(dateString).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  return dateString.split('-')[0]; // Just year
+};
+---
+
+{
+  fetchError && (
+    <div class="container mx-auto px-4 py-8">
+      <div class="text-red-500 bg-red-100 border border-red-400 rounded p-4 my-4 text-sm">
+        <p>
+          <strong>Error loading game details:</strong>
+        </p>
+        <p>{fetchError}</p>
+        <p class="mt-2">
+          <a href="/games" class="text-orange-500 hover:underline">
+            Return to Games List
+          </a>
+        </p>
+      </div>
+    </div>
+  )
+}
+
+{
+  game && !fetchError && (
+    <>
+      {/* Game Info Header Section - Similar to movie/podcast details */}
+      <div class="game-info border-b border-gray-800">
+        <div class="container mx-auto px-4 py-16 flex flex-col md:flex-row">
+          <div class="flex-none w-full md:w-80 lg:w-96">
+            <img
+              src={mainImageUrl}
+              alt={`Cover for ${game.name}`}
+              class="w-full h-auto object-cover md:object-contain rounded-lg shadow-lg bg-gray-800 aspect-[2/3]"
+              width="500"
+              height="750"
+            />
+          </div>
+          <div class="md:ml-16 lg:ml-24 mt-8 md:mt-0">
+            <h2 class="text-4xl font-semibold">{game.name}</h2>
+
+            <div class="flex flex-wrap items-center text-gray-400 text-sm mt-3">
+              {game.metacritic && (
+                <>
+                  <svg class="fill-current text-orange-500 w-4 h-4 mr-1" viewBox="0 0 24 24">
+                    <path d="M17.56 21a1 1 0 01-.46-.11L12 18.22l-5.1 2.67a1 1 0 01-1.45-1.06l1-5.63-4.12-4a1 1 0 01-.25-1 1 1 0 01.81-.68l5.7-.83 2.51-5.13a1 1 0 011.8 0l2.54 5.12 5.7 .83a1 1 0 01.81.68 1 1 0 01-.25 1l-4.12 4 1 5.63a1 1 0 01-.4 1 1 1 0 01-.62.18z" />
+                  </svg>
+                  <span class="mr-1">{game.metacritic} Metascore</span>
+                  <span class="mx-2">|</span>
+                </>
+              )}
+              <span>Released: {formatDate(game.released)}</span>
+            </div>
+
+            {game.platforms && game.platforms.length > 0 && (
+              <div class="mt-4">
+                <h4 class="text-white font-semibold text-md">Platforms:</h4>
+                <div class="flex flex-wrap gap-2 mt-1">
+                  {game.platforms.map((platform) => (
+                    <span class="bg-gray-700 text-gray-300 text-xs px-3 py-1 rounded-full">
+                      {platform}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <p class="text-gray-300 mt-6 text-justify leading-relaxed">
+              {game.description_raw || 'No description available.'}
+            </p>
+
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 text-sm">
+              <div>
+                <h4 class="text-white font-semibold">Developers:</h4>
+                <p class="text-gray-400">{formatArray(game.developers)}</p>
+              </div>
+              <div>
+                <h4 class="text-white font-semibold">Publishers:</h4>
+                <p class="text-gray-400">{formatArray(game.publishers)}</p>
+              </div>
+              <div>
+                <h4 class="text-white font-semibold">Genres:</h4>
+                <p class="text-gray-400">{formatArray(game.genres)}</p>
+              </div>
+            </div>
+
+            {game.website && (
+              <div class="mt-8">
+                <a
+                  href={game.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center bg-orange-500 text-gray-900 rounded font-semibold px-5 py-3 hover:bg-orange-600 transition ease-in-out duration-150"
+                >
+                  <svg class="w-6 fill-current mr-2" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M19 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm-1 14H6c-.55 0-1-.45-1-1V8h14v9c0 .55-.45 1-1 1zm1-11H5V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v1z" />
+                  </svg>
+                  Visit Website
+                </a>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* Short Screenshots Section */}
+      {game.short_screenshots && game.short_screenshots.length > 0 && (
+        <div class="screenshots-section border-b border-gray-800">
+          <div class="container mx-auto px-4 py-16">
+            <h2 class="text-3xl font-semibold mb-8">Screenshots</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              {game.short_screenshots.map((screenshot) => (
+                <div class="aspect-video bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                  <img
+                    src={screenshot || screenshotPlaceholder}
+                    alt="Game screenshot"
+                    class="w-full h-full object-cover hover:opacity-80 transition-opacity duration-150"
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+      {/* Add other sections like "More Like This" if data is available and desired */}
+    </>
+  )
+}
+---
+<style>
+  /* Add any component-specific styles here if needed */
+  .aspect-video {
+    aspect-ratio: 16 / 9;
+  }
+</style>
