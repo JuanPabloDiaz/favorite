@@ -3,15 +3,28 @@
 ---
 
 <div class="relative mt-3 md:mt-0 md:ml-4">
-  <form action="/search" method="GET" class="flex items-center">
+  <form
+    role="search"
+    action="/search"
+    method="GET"
+    class="flex items-center"
+    aria-label="Search movies and TV shows"
+  >
+    <label for="search-input" class="sr-only">Search movies and TV shows</label>
     <input
-      type="text"
+      id="search-input"
+      type="search"
       name="query"
-      class="bg-gray-800 rounded-full w-64 px-4 pl-8 py-1 focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm"
+      class="bg-gray-800 rounded-full w-64 px-4 pl-12 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm"
       placeholder="Search movies and TV shows..."
+      aria-label="Search movies and TV shows"
     />
-    <button type="submit" class="absolute left-2">
-      <svg class="fill-current w-4 text-gray-500" viewBox="0 0 24 24">
+    <button
+      type="submit"
+      class="absolute left-2 p-2 hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 rounded-full"
+      aria-label="Submit search"
+    >
+      <svg class="fill-current w-5 h-5 text-gray-500" viewBox="0 0 24 24" aria-hidden="true">
         <path
           class="heroicon-ui"
           d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"
