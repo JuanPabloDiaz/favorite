@@ -7,14 +7,13 @@ let fetchError = null;
 
 try {
   // Adjust path as necessary, assuming data file is in src/data/
-  const podcastDataPath = 'src/data/podcastDetails.json';
+  const podcastDataPath = 'src/data/myFavPodcasts.json';
   const podcastJsonData = await readFile(podcastDataPath, 'utf-8');
   const parsedData = JSON.parse(podcastJsonData);
-  if (parsedData && parsedData.allPodcasts) {
-    allPodcasts = parsedData.allPodcasts;
+  if (Array.isArray(parsedData)) {
+    allPodcasts = parsedData;
   } else {
-    console.warn('No "allPodcasts" key found in podcastDetails.json or data is null.');
-    fetchError = 'Podcast data is not in the expected format.';
+    fetchError = 'Podcast data is not in the expected array format.';
   }
 } catch (error) {
   console.error('Error reading or parsing podcastDetails.json:', error);
