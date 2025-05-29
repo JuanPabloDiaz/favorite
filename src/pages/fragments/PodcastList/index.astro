@@ -1,0 +1,10 @@
+---
+import PodcastCard from '@components/PodcastCard.astro';
+import { getPodcasts } from '@services/podcasts';
+
+const podcasts = await getPodcasts();
+---
+
+<section class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+  {podcasts.map((podcast) => <PodcastCard podcast={podcast} />)}
+</section>

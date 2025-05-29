@@ -1,0 +1,63 @@
+---
+// src/components/PodcastCard.astro
+const { podcast } = Astro.props; // Expect a podcast object as a prop
+
+// Use placeholder if image is not available or is set to the known placeholder URL from the fetch script
+const placeholderUrl = "https://via.placeholder.com/500x500.png?text=No+Artwork"; // This should match the one in fetch-podcasts.js
+const imageUrl = podcast.image && podcast.image !== placeholderUrl && podcast.image !== "https://via.placeholder.com/500x750.png?text=No%20Artwork" ? podcast.image : placeholderUrl;
+
+
+const podcastTitle = podcast.title || "Title Unknown";
+const displayPublisher = podcast.publisher || "Publisher Unknown";
+// Ensure the link points to the detail page structure: /podcasts/[id]
+const podcastSlug = podcast.id; // Assuming podcast.id is the ListenNotes ID string
+const podcastUrl = `/podcasts/${podcastSlug}`;
+
+---
+
+<div class="mt-8">
+  <a
+    href={podcastUrl}
+    class="block aspect-[2/3] bg-gray-800 rounded-lg overflow-hidden"
+    title={podcastTitle}
+  >
+    <div class="relative w-full h-full">
+      <img
+        src={imageUrl}
+        alt={`Cover art for ${podcastTitle}`}
+        width="500"
+        height="750"
+        loading="lazy"
+        decoding="async"
+        class="thumbnail w-full h-full object-cover rounded-lg shadow-sm shadow-slate-600 hover:opacity-75 transition ease-in-out duration-300 hover:shadow-slate-50"
+        id={`podcast-poster-${podcast.id}`}
+      />
+      <div class="absolute inset-0 bg-gray-800 animate-pulse" style="display: none;"></div>
+    </div>
+  </a>
+  <div class="mt-2">
+    <a href={podcastUrl} class="text-lg mt-2 hover:text-gray-300" title={podcastTitle}>{podcastTitle}</a>
+    <div class="flex items-center text-gray-400 text-sm mt-1">
+      <span>{displayPublisher}</span>
+    </div>
+    {
+      podcast.genres && podcast.genres.length > 0 && (
+        <div class="text-gray-400 text-sm mt-1 truncate" title={podcast.genres.join(', ')}>
+          {podcast.genres.join(', ')}
+        </div>
+      )
+    }
+    {
+      podcast.episode_count != null && ( // Check for null or undefined specifically
+        <div class="text-gray-400 text-sm mt-1">
+          <span>{podcast.episode_count} episodes</span>
+        </div>
+      )
+    }
+  </div>
+</div>
+
+<script>
+  import { setupImageLoading } from '../scripts/imageLoading.js';
+  document.addEventListener('DOMContentLoaded', setupImageLoading);
+</script>

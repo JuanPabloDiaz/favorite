@@ -48,6 +48,16 @@ cp .env.example .env
 ```
 Edit the `.env` file and replace `YOUR_TMDB_API_KEY` with your TMDB API key.
 
+### Listen Notes API Key
+
+Additionally, this project uses the Listen Notes API for podcast data. You'll need to obtain an API key from [Listen Notes](https://www.listennotes.com/api/).
+
+Once you have your API key, add it to your `.env` file like this:
+
+```
+LISTEN_NOTES_API_KEY=YOUR_LISTEN_NOTES_API_KEY
+```
+
 4. Start the development server:
 ```bash
 npm run dev

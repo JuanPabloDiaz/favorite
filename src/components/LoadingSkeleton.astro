@@ -11,31 +11,37 @@ const { className = '', width = 'full', height = '4', } = Astro.props;
 <div class={`bg-gray-700 rounded animate-pulse h-${height} w-${width} ${className}`}></div>
 
 <script>
-  // Función para mostrar/ocultar elementos basados en la carga
-  const toggleLoadingState = (show: boolean) => {
+  function toggleLoadingState() {
+    const skeletons = document.querySelectorAll('[data-skeleton]');
+    const content = document.querySelectorAll('[data-content]');
+
+    // Ocultar skeletons y mostrar contenido después de un pequeño delay
+    setTimeout(() => {
+      skeletons.forEach(skeleton => {
+        skeleton.classList.add('hidden');
+      });
+
+      content.forEach(element => {
+        element.classList.remove('hidden');
+      });
+    }, 300);
+  }
+
+  // Cuando el DOM esté listo
+  document.addEventListener('DOMContentLoaded', () => {
+    // Asegurarse de que los skeletons estén visibles y el contenido oculto inicialmente
     const skeletons = document.querySelectorAll('[data-skeleton]');
     const content = document.querySelectorAll('[data-content]');
 
     skeletons.forEach(skeleton => {
-      skeleton.classList.toggle('hidden', !show);
+      skeleton.classList.remove('hidden');
     });
 
     content.forEach(element => {
-      element.classList.toggle('hidden', show);
+      element.classList.add('hidden');
     });
-  };
-
-  // Mostrar skeletons inicialmente
-  toggleLoadingState(true);
-
-  // Cuando la página esté completamente cargada
-  window.addEventListener('load', () => {
-    // Pequeño delay para asegurar una transición suave
-    setTimeout(() => {
-      toggleLoadingState(false);
-    }, 300);
   });
 
-  // Exportar la función para uso global
-  window.toggleLoadingState = toggleLoadingState;
+  // Cuando la página esté completamente cargada
+  window.addEventListener('load', toggleLoadingState);
 </script>

@@ -3,6 +3,8 @@ import type { GetStaticPaths } from 'astro';
 import artistsData from '@data/artistDetails.json';
 import ArtistDetailsSkeleton from '@components/ArtistDetailsSkeleton.astro';
 
+export const prerender = true;
+
 const { mbid } = Astro.params;
 
 // Find the artist by mbid from the imported JSON data
@@ -33,8 +35,7 @@ if (artist?.genres && artist.genres.length > 0) {
 
 <div>
   <ArtistDetailsSkeleton />
-
-  <div data-content class="hidden">
+  <div data-content>
     {artist ? (
       
     <div class="artist-info border-b border-gray-800">

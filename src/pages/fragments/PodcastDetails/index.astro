@@ -1,0 +1,49 @@
+---
+import PodcastCard from '@components/PodcastCard.astro';
+import { readFile } from 'node:fs/promises'; // Use node:fs/promises
+
+let allPodcasts = [];
+let fetchError = null;
+
+try {
+  // Adjust path as necessary, assuming data file is in src/data/
+  const podcastDataPath = 'src/data/podcastDetails.json';
+  const podcastJsonData = await readFile(podcastDataPath, 'utf-8');
+  const parsedData = JSON.parse(podcastJsonData);
+  if (parsedData && parsedData.allPodcasts) {
+    allPodcasts = parsedData.allPodcasts;
+  } else {
+    console.warn('No "allPodcasts" key found in podcastDetails.json or data is null.');
+    fetchError = 'Podcast data is not in the expected format.';
+  }
+} catch (error) {
+  console.error('Error reading or parsing podcastDetails.json:', error);
+  fetchError = `Failed to load podcast data. Please ensure 'npm run fetch-data' has been run successfully. Details: ${error.message}`;
+  // Set allPodcasts to empty array in case of error to prevent crash, error message will be shown
+  allPodcasts = [];
+}
+---
+
+<div class="container mx-auto px-4 pt-16">
+  <div class="popular-movies"> {/* Re-use existing class name for styling if appropriate, or use a new one like "popular-podcasts" if styles are specific */}
+    <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">Favorite Podcasts</h2>
+    {fetchError && (
+      <div class="text-red-500 bg-red-100 border border-red-400 rounded p-4 my-4">
+        <p><strong>Error loading podcasts:</strong></p>
+        <p>{fetchError}</p>
+      </div>
+    )}
+    {allPodcasts.length === 0 && !fetchError && (
+      <div class="text-gray-400 bg-gray-800 border border-gray-700 rounded p-4 my-4">
+        <p>No podcasts found. Please run `npm run fetch-data` to populate the list, or add podcasts to `src/data/myFavPodcasts.json` and then run the fetch command.</p>
+      </div>
+    )}
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+      {
+        allPodcasts.map((podcast) => (
+          <PodcastCard podcast={podcast} />
+        ))
+      }
+    </div>
+  </div>
+</div>

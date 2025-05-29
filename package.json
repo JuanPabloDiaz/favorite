@@ -7,7 +7,9 @@
     "build": "astro build",
     "format": "prettier --write \"src/**/*.{js,astro,css}\"",
     "fetch-movies": "node scripts/fetch-tmdb.js",
-    "fetch-music": "node scripts/fetch-musicbrainz.js"
+    "fetch-music": "node scripts/fetch-musicbrainz.js",
+    "fetch-podcasts": "node scripts/fetch-podcasts.js",
+    "fetch-data": "npm run fetch-movies && npm run fetch-music && npm run fetch-podcasts"
   },
   "devDependencies": {
     "@astrojs/cloudflare": "^10.4.0",

@@ -1,0 +1,128 @@
+---
+import { readFile } from 'node:fs/promises';
+
+const { id } = Astro.params; // Get the podcast ID from the URL
+let podcast = null;
+let fetchError = null;
+
+try {
+  const podcastDataPath = 'src/data/podcastDetails.json'; // Adjust path if needed
+  const podcastJsonData = await readFile(podcastDataPath, 'utf-8');
+  const parsedData = JSON.parse(podcastJsonData);
+  if (parsedData && parsedData.allPodcasts) {
+    podcast = parsedData.allPodcasts.find(p => p.id.toString() === id.toString());
+    if (!podcast) {
+      fetchError = `Podcast with ID "${id}" not found.`;
+    }
+  } else {
+    fetchError = 'Podcast data is not in the expected format or "allPodcasts" key is missing.';
+  }
+} catch (error) {
+  console.error(`Error reading or parsing podcastDetails.json for podcast ${id}:`, error);
+  fetchError = `Failed to load podcast data. Details: ${error.message}`;
+}
+
+// Placeholder for missing image
+const placeholderUrl = "https://via.placeholder.com/500x750.png?text=No+Artwork"; // Note: This placeholder is for a 2:3 ratio.
+const imagePlaceholderForDetails = "https://via.placeholder.com/600x600.png?text=No+Artwork"; // A square one might be better for details page if original is missing
+const imageUrl = podcast?.image ? podcast.image : imagePlaceholderForDetails; // Use podcast.image if available, else placeholder
+
+
+// Helper to format dates if needed, e.g., for latest episode date
+function formatDate(timestampMs) {
+  if (!timestampMs) return 'N/A';
+  return new Date(timestampMs).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+}
+---
+
+{fetchError && (
+  <div class="container mx-auto px-4 py-8">
+    <div class="text-red-500 bg-red-100 border border-red-400 rounded p-4 my-4">
+      <p><strong>Error loading podcast details:</strong></p>
+      <p>{fetchError}</p>
+      <p><a href="/podcasts" class="text-orange-500 hover:underline">Return to Podcasts List</a></p>
+    </div>
+  </div>
+)}
+
+{podcast && !fetchError && (
+  <>
+    {/* Podcast Header Section - Similar to movie-info border-b border-gray-800 */}
+    <div class="podcast-info border-b border-gray-800">
+      <div class="container mx-auto px-4 py-16 flex flex-col md:flex-row">
+        <img
+          src={imageUrl}
+          alt={`Cover for ${podcast.title}`}
+          class="w-full md:w-80 lg:w-96 h-auto md:h-auto object-contain rounded-lg shadow-lg bg-gray-800" {/* Changed to object-contain and added bg-gray-800 for padding if image is smaller */}
+          width="600" /* Adjusted width to match potential placeholder */
+          height="600" /* Adjusted height */
+        />
+        <div class="md:ml-16 lg:ml-24 mt-8 md:mt-0">
+          <h2 class="text-4xl font-semibold">{podcast.title}</h2>
+          <div class="flex flex-wrap items-center text-gray-400 text-sm mt-2">
+            {podcast.publisher && (
+              <>
+                <span>{podcast.publisher}</span>
+                <span class="mx-2">|</span>
+              </>
+            )}
+            {podcast.episode_count != null && (
+              <>
+                <span>{podcast.episode_count} episodes</span>
+                <span class="mx-2">|</span>
+              </>
+            )}
+            {podcast.latest_pub_date_ms && (
+              <>
+                <span>Latest: {formatDate(podcast.latest_pub_date_ms)}</span>
+              </>
+            )}
+          </div>
+          {podcast.genres && podcast.genres.length > 0 && (
+            <p class="text-gray-300 mt-4">
+              <strong>Genres:</strong> {podcast.genres.join(', ')}
+            </p>
+          )}
+          <p class="text-gray-300 mt-8 text-justify"> {/* Added text-justify */}
+            {podcast.description || "No description available."}
+          </p>
+
+          {/* External Links */}
+          <div class="mt-12">
+            <h4 class="text-white font-semibold">Links</h4>
+            <div class="flex mt-4 flex-wrap"> {/* Added flex-wrap for better responsiveness */}
+              {podcast.website && (
+                <a
+                  href={podcast.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center bg-orange-500 text-gray-900 rounded font-semibold px-5 py-3 hover:bg-orange-600 transition ease-in-out duration-150 mr-3 mb-3" /* Adjusted padding and margin */
+                >
+                  <svg class="w-6 fill-current" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm-1 14H6c-.55 0-1-.45-1-1V8h14v9c0 .55-.45 1-1 1zm1-11H5V6c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v1z"/></svg>
+                  <span class="ml-2">Website</span>
+                </a>
+              )}
+              {podcast.listennotes_url && (
+                <a
+                  href={podcast.listennotes_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center bg-gray-700 text-white rounded font-semibold px-5 py-3 hover:bg-gray-600 transition ease-in-out duration-150 mr-3 mb-3" /* Adjusted padding and margin */
+                >
+                  <svg class="w-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                  <span class="ml-2">Listen Notes</span>
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* No episodes list section for now */}
+  </>
+)}

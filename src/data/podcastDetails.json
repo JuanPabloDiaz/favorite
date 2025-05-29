@@ -1,0 +1,32 @@
+{
+  "podcastDetails": {
+    "1": {
+      "episodes": [],
+      "rating": 4.8,
+      "totalEpisodes": 404,
+      "language": "English",
+      "categories": ["Technology", "Science", "Philosophy"]
+    },
+    "2": {
+      "episodes": [],
+      "rating": 4.9,
+      "totalEpisodes": 150,
+      "language": "English",
+      "categories": ["Science", "Health", "Education"]
+    },
+    "3": {
+      "episodes": [],
+      "rating": 4.7,
+      "totalEpisodes": 2000,
+      "language": "English",
+      "categories": ["Society & Culture", "Comedy", "Talk"]
+    },
+    "4": {
+      "episodes": [],
+      "rating": 4.9,
+      "totalEpisodes": 140,
+      "language": "English",
+      "categories": ["Technology", "Cybersecurity", "True Crime"]
+    }
+  }
+}

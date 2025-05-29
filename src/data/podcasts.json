@@ -1,0 +1,11 @@
+{
+  "podcasts": [
+    {
+      "id": "1",
+      "title": "Darknet Diaries",
+      "description": "Historias reales del lado oscuro de Internet. Explora hacks, brechas de datos, y el cibercrimen.",
+      "imageUrl": "https://production.listennotes.com/podcasts/darknet-diaries-jack-rhysider-ztuNyvC2F_O-oZEsG7VKC8x.1400x1400.jpg",
+      "url": "https://darknetdiaries.com/"
+    }
+  ]
+}

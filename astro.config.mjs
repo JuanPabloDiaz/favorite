@@ -19,6 +19,15 @@ export default defineConfig({
   vite: {
     define: {
       "process.env.TMDB_API_KEY": JSON.stringify(process.env.TMDB_API_KEY),
+      "process.env.LISTEN_NOTES_API_KEY": JSON.stringify(process.env.LISTEN_NOTES_API_KEY)
     },
+    resolve: {
+      alias: {
+        '@services': '/src/services',
+        '@data': '/src/data',
+        '@components': '/src/components',
+        '@layouts': '/src/layouts'
+      }
+    }
   },
 });
