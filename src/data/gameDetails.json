@@ -1,35 +1,640 @@
 {
   "allGames": [
     {
-      "id": 237895,
-      "slug": "the-legend-of-zelda-breath-of-the-wild-and-the-legend-of-zelda-breath-of-the-wild-expansion-pass-bundle",
-      "name": "The Legend of Zelda: Breath of the Wild and The Legend of Zelda: Breath of the Wild Expansion Pass Bundle",
-      "description_raw": "The Legend of Zelda: Breath of the Wild game packs countless hours of play into a vast world of discovery. That makes it an ideal foundation for more adventures! This special bundle comes with the full game for the Nintendo Switch system and the Expansion Pass, which grants access to three new treasure chests, The Master Trials DLC Pack 1, and The Champions Ballad DLC Pack 2.",
-      "metacritic": null,
-      "released": "2017-12-07",
-      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co67oa.jpg",
-      "website": null,
+      "id": 137001,
+      "slug": "call-of-duty-black-ops-cold-war",
+      "name": "Call of Duty: Black Ops Cold War",
+      "description_raw": "The iconic Black Ops series is back with Call of Duty: Black Ops Cold War - the direct sequel to the original and fan-favorite Call of Duty: Black Ops. Black Ops Cold War will drop fans into the depths of the Cold War’s volatile geopolitical battle of the early 1980s. Nothing is ever as it seems in a gripping single-player Campaign, where players will come face-to-face with historical figures and hard truths, as they battle around the globe through iconic locales like East Berlin, Vietnam, Turkey, Soviet KGB headquarters and more.\n\nBeyond the Campaign, players will bring a Cold War arsenal of weapons and equipment into the next generation of Multiplayer and Zombies experiences. Welcome to the brink. Welcome to Call of Duty: Black Ops Cold War.",
+      "metacritic": 77,
+      "released": "2020-11-12",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2n6j.jpg",
+      "website": "https://www.callofduty.com/blackopscoldwar",
       "platforms": [
-        "Nintendo Switch"
+        "Xbox Series X|S",
+        "PlayStation 4",
+        "PC (Microsoft Windows)",
+        "PlayStation 5",
+        "Xbox One"
       ],
       "developers": [
-        "Nintendo",
-        "Nintendo EPD Production Group No. 3"
+        "Treyarch"
       ],
       "publishers": [
-        "Nintendo"
+        "Activision"
       ],
       "genres": [
-        "Role-playing (RPG)",
+        "Shooter"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8j4h.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8j4i.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8j4j.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8j4l.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8j4k.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctjad.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctjae.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctjaf.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctjag.jpg"
+      ]
+    },
+    {
+      "id": 165067,
+      "slug": "call-of-duty-vanguard",
+      "name": "Call of Duty: Vanguard",
+      "description_raw": "This is WWII combat like never before. Witness the origins of Special Forces as you play a pivotal role and change the face of history, forming Task Force One in a gripping Campaign across four major theaters of war. Become an original Special Forces Operator in an online Multiplayer rich in innovation with 20 maps available at launch. Prepare for a franchise-first, universe-expanding Zombies crossover. Immerse yourself in a fully integrated Call of Duty: Warzone experience featuring a new and massive map. This is the most connected Call of Duty ever, all powered by the next generation Call of Duty engine introduced in Modern Warfare.\n\nThis is Call of Duty: Vanguard.",
+      "metacritic": 75,
+      "released": "2021-11-04",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3kq8.jpg",
+      "website": "https://www.callofduty.com/vanguard",
+      "platforms": [
+        "Xbox Series X|S",
+        "PlayStation 4",
+        "PC (Microsoft Windows)",
+        "PlayStation 5",
+        "Xbox One"
+      ],
+      "developers": [
+        "Sledgehammer Games"
+      ],
+      "publishers": [
+        "Activision"
+      ],
+      "genres": [
+        "Shooter"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sccqto.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sccqtp.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sccqtq.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sccqtl.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sccqtm.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sccqtn.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sccqtr.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctj9e.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctj9f.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctj9d.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctj9g.jpg"
+      ]
+    },
+    {
+      "id": 6632,
+      "slug": "call-of-duty-advanced-warfare",
+      "name": "Call of Duty: Advanced Warfare",
+      "description_raw": "Call of Duty: Advanced Warfare envisions the powerful battlegrounds of the future, where both technology and tactic have evolved to usher in a new era of combat for the franchise. Delivering a stunning performance, Academy Award winning actor Kevin Spacey stars as Jonathan Irons – one of the most powerful men in the world – shaping this chilling vision of the future of war.",
+      "metacritic": 80,
+      "released": "2014-11-02",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wky.jpg",
+      "website": "http://www.callofduty.com/advancedwarfare",
+      "platforms": [
+        "PlayStation 3",
+        "PlayStation 4",
+        "PC (Microsoft Windows)",
+        "Xbox 360",
+        "Xbox One"
+      ],
+      "developers": [
+        "Sledgehammer Games"
+      ],
+      "publishers": [
+        "Activision",
+        "Square Enix"
+      ],
+      "genres": [
+        "Shooter"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/cpx6xdycg3hdbbnonioh.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/otojxi2pmbshs8t3snfm.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/thidhbpeiftbn5eqwekk.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/ugsyj95yehrl895uwdvb.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/dvn09hega4jagahmfm2z.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctkgn.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctkgo.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctkgm.jpg"
+      ]
+    },
+    {
+      "id": 28204,
+      "slug": "call-of-duty-wwii",
+      "name": "Call of Duty: WWII",
+      "description_raw": "Call of Duty: WWII creates the definitive World War II next generation experience across three different game modes: Campaign, Multiplayer, and Co-Operative. Featuring stunning visuals, the Campaign transports players to the European theater as they engage in an all-new Call of Duty story set in iconic World War II battles. Multiplayer marks a return to original, boots-on-the ground Call of Duty gameplay. Authentic weapons and traditional run-and-gun action immerse you in a vast array of World War II-themed locations. The Co-Operative mode unleashes a new and original story in a standalone game experience full of unexpected, adrenaline-pumping moments.",
+      "metacritic": 75,
+      "released": "2017-11-01",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rdj.jpg",
+      "website": "https://www.callofduty.com/wwii",
+      "platforms": [
+        "PlayStation 4",
+        "PC (Microsoft Windows)",
+        "Xbox One"
+      ],
+      "developers": [
+        "Sledgehammer Games"
+      ],
+      "publishers": [
+        "Activision"
+      ],
+      "genres": [
+        "Shooter"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/snkucsvixsexyfcvi1ks.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/uaxzlzruz9be57tq5ayf.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/ijoenntauq5gfurpayt1.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/ccxizgajbolu4kw5iild.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/vdmxnihoegzdbyahjpat.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/zum4prw3m27jsqv2lobq.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/mno7spxuafapa8ajvixm.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/o9mbl0rabu0sazsbxiji.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/qslsn7dl1nmjvlidmlc6.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/m7j8nno7wpfdvxrvnam3.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/duzljmjdctiljgu4bzkt.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/fvyd4c4ybhw5asidd0tk.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctj8v.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctj8w.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctj8x.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctj8y.jpg"
+      ]
+    },
+    {
+      "id": 260780,
+      "slug": "call-of-duty-modern-warfare-iii",
+      "name": "Call of Duty: Modern Warfare III",
+      "description_raw": "The game brings \"open combat, \" offering players more choices in approaching the single-player missions. Makarov returns as the chief villain of the new campaign.\n\nThe newly introduced Carry Forward system will let players keep their progression and inventory from Modern Warfare II. Multiplayer fans can expect 16 maps at the launch and at least 12 coming later. Zombies mode will also return and should offer the largest zombie map to date.",
+      "metacritic": 62,
+      "released": "2023-11-09",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7ctx.jpg",
+      "website": "https://www.callofduty.com/modernwarfare3",
+      "platforms": [
+        "Xbox Series X|S",
+        "PlayStation 4",
+        "PC (Microsoft Windows)",
+        "PlayStation 5",
+        "Xbox One"
+      ],
+      "developers": [
+        "Sledgehammer Games"
+      ],
+      "publishers": [
+        "Activision"
+      ],
+      "genres": [
+        "Shooter"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scnzhw.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scnzhx.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scnzhy.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scnzhz.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scnzi0.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scnzi1.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scnzi2.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scnzi3.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scnzi4.jpg"
+      ]
+    },
+    {
+      "id": 83727,
+      "slug": "call-of-duty-black-ops-4",
+      "name": "Call of Duty: Black Ops 4",
+      "description_raw": "Black Ops is back! Featuring gritty, grounded, fluid Multiplayer combat, the biggest Zombies offering ever with three full undead adventures at launch, and Blackout, where the universe of Black Ops comes to life in one massive battle royale experience featuring the largest map in Call of Duty history, signature Black Ops combat, characters, locations and weapons from the entire Black Ops series.",
+      "metacritic": 83,
+      "released": "2018-10-11",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wkf.jpg",
+      "website": "https://www.callofduty.com",
+      "platforms": [
+        "PlayStation 4",
+        "PC (Microsoft Windows)",
+        "Xbox One"
+      ],
+      "developers": [
+        "Treyarch"
+      ],
+      "publishers": [
+        "Activision"
+      ],
+      "genres": [
+        "Shooter"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/jqzxwgalunogmu6nn2x3.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/zz3shb5i0awagmgyrgwi.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/dwwulxqveft3ljygw4hj.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/r5sbfsnwsps0xhjeet2f.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/zuehx1upexu3z3mi2eo9.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/jhvj4m5dz9ty9iwalwbv.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/kejyntwkyj5cor0gwpdk.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/yyynkripplx43svs9ifw.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/gxrqetgeesus7abzlxsu.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/bofvxbntojlvpwueihdg.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctj9p.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctj9q.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctj9r.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctj9s.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctj9t.jpg"
+      ]
+    },
+    {
+      "id": 136212,
+      "slug": "call-of-duty-black-ops-iii--1",
+      "name": "Call of Duty: Black Ops III",
+      "description_raw": "The PlayStation 3 and Xbox 360 versions of Call of Duty: Black Ops III were developed by Beenox and Mercenary Technology while the PlayStation 4, Xbox One, PC versions of the game were developed by Treyarch. Due to the last generation consoles' inferior hardware, significant changes had to be made.\n\nThese changes include:\n\n- The campaign is not available.\n- Nightmares mode is not available.\n- Ground War is not available.\n- The Season Pass is not available\n- Only the bonus Zombies map, The Giant and the Awakening DLC pack are available to download\n- Reduced graphics quality and performance",
+      "metacritic": null,
+      "released": "2015-11-05",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co60bm.jpg",
+      "website": "https://www.callofduty.com/uk/en/blackops3",
+      "platforms": [
+        "PlayStation 3",
+        "Xbox 360"
+      ],
+      "developers": [
+        "Treyarch"
+      ],
+      "publishers": [
+        "Microsoft",
+        "Sony Interactive Entertainment",
+        "Activision"
+      ],
+      "genres": [
+        "Shooter"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scdwft.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scdwfu.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scdwfv.jpg"
+      ]
+    },
+    {
+      "id": 18968,
+      "slug": "call-of-duty-infinite-warfare",
+      "name": "Call of Duty: Infinite Warfare",
+      "description_raw": "Call of Duty: Infinite Warfare delivers three unique game modes: Campaign, Multiplayer, and Zombies. Campaign is a return to the gritty, military roots of the franchise, while boldly looking ahead, delivering a rich and engaging narrative that is unlike anything to date in a Call of Duty game. The player will embark on a classically-styled story about grand scale warfare, set in a future where human conflict has spread throughout our solar system.\n\nMultiplayer combines popular mechanics such as the chained-based movement system, with a load of gameplay innovations to deliver one of the deepest and most engaging online experiences in gaming. The new Zombies mode will thrill co-op players with an original, distinctive approach and an uproarious narrative sure to excite fans. The title introduces stunning, multi-planetary environments, new weaponry, and all-new player abilities.",
+      "metacritic": 77,
+      "released": "2016-11-03",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wkp.jpg",
+      "website": "https://www.callofduty.com/infinitewarfare",
+      "platforms": [
+        "PlayStation 4",
+        "PC (Microsoft Windows)",
+        "Xbox One"
+      ],
+      "developers": [
+        "Infinity Ward"
+      ],
+      "publishers": [
+        "Activision"
+      ],
+      "genres": [
+        "Shooter",
         "Adventure"
       ],
       "short_screenshots": [
-        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sclbsx.jpg",
-        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sclbsy.jpg",
-        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sclbt0.jpg",
-        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sclbt1.jpg",
-        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sclbsz.jpg",
-        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sclbt2.jpg"
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/s1ibtjmvd1iobsudmft7.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/rvn0f6wnh9742p6g2fcd.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/esorvxsuzcwpvppnmm1g.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/mvaw7so5br49vq8jphdt.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/ktaojdhcbicmno9uo2ju.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctj90.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctj8z.jpg"
+      ]
+    },
+    {
+      "id": 559,
+      "slug": "call-of-duty-modern-warfare-2",
+      "name": "Call of Duty: Modern Warfare 2",
+      "description_raw": "Call of Duty: Modern Warfare 2 is a first-person shooter video game developed by Infinity Ward and published by Activision for the Xbox 360 and PlayStation 3 video game consoles and the Microsoft Windows operating system. Officially announced on February 11, 2009, the game was released worldwide on November 10, 2009. It is the sixth installment of the Call of Duty series and the direct sequel to Call of Duty 4: Modern Warfare, continuing the same storyline, with Call of Duty: Modern Warfare 3 set to end the storyline.",
+      "metacritic": 85,
+      "released": "2009-11-09",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3cwt.jpg",
+      "website": "https://www.callofduty.com/",
+      "platforms": [
+        "PlayStation 3",
+        "PC (Microsoft Windows)",
+        "Mac",
+        "Xbox 360"
+      ],
+      "developers": [
+        "Infinity Ward"
+      ],
+      "publishers": [
+        "Activision"
+      ],
+      "genres": [
+        "Shooter"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/fkb70asrevsakb59nw4u.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/s8ktfgdgraigmjksthd4.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/b21jr7nss4jikmgett1i.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/ibfg74pbx0sv6t6tunfy.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/st4aq06veb9xtawaxqwy.jpg"
+      ]
+    },
+    {
+      "id": 260780,
+      "slug": "call-of-duty-modern-warfare-iii",
+      "name": "Call of Duty: Modern Warfare III",
+      "description_raw": "The game brings \"open combat, \" offering players more choices in approaching the single-player missions. Makarov returns as the chief villain of the new campaign.\n\nThe newly introduced Carry Forward system will let players keep their progression and inventory from Modern Warfare II. Multiplayer fans can expect 16 maps at the launch and at least 12 coming later. Zombies mode will also return and should offer the largest zombie map to date.",
+      "metacritic": 62,
+      "released": "2023-11-09",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co7ctx.jpg",
+      "website": "https://www.callofduty.com/modernwarfare3",
+      "platforms": [
+        "Xbox Series X|S",
+        "PlayStation 4",
+        "PC (Microsoft Windows)",
+        "PlayStation 5",
+        "Xbox One"
+      ],
+      "developers": [
+        "Sledgehammer Games"
+      ],
+      "publishers": [
+        "Activision"
+      ],
+      "genres": [
+        "Shooter"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scnzhw.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scnzhx.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scnzhy.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scnzhz.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scnzi0.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scnzi1.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scnzi2.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scnzi3.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scnzi4.jpg"
+      ]
+    },
+    {
+      "id": 239064,
+      "slug": "grand-theft-auto-v--2",
+      "name": "Grand Theft Auto V",
+      "description_raw": "This bundle contains the original version of Grand Theft Auto V, the standalone game Grand Theft Auto Online and the story mode add-on of Grand Theft Auto V.",
+      "metacritic": null,
+      "released": "2015-04-13",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9751.jpg",
+      "website": null,
+      "platforms": [
+        "Xbox Series X|S",
+        "PlayStation 4",
+        "PC (Microsoft Windows)",
+        "PlayStation 5",
+        "Xbox One"
+      ],
+      "developers": [
+        "Rockstar North"
+      ],
+      "publishers": [
+        "Rockstar Games"
+      ],
+      "genres": [
+        "Shooter",
+        "Arcade"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scocxg.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scocxe.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scocxf.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scocxh.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scocxi.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scocxj.jpg"
+      ]
+    },
+    {
+      "id": 731,
+      "slug": "grand-theft-auto-iv",
+      "name": "Grand Theft Auto IV",
+      "description_raw": "Grand Theft Auto IV is an action-adventure video game developed by Rockstar North and published by Rockstar Games. It is the eleventh title in the Grand Theft Auto series, and the first main entry since 2004's Grand Theft Auto: San Andreas.\n\nThe game is played from a third-person perspective and its world is navigated on-foot or by vehicle. Throughout the single-player mode, players play as Niko Bellic. An online multiplayer mode is included with the game, allowing up to 32 players to engage in both co-operative and competitive gameplay in a recreation of the single-player setting.\n\nTwo expansion packs were later released for the game, The Lost and Damned and The Ballad of Gay Tony, which both feature new plots that are interconnected with the main Grand Theft Auto IV storyline, and follow new protagonists.",
+      "metacritic": 88,
+      "released": "2008-04-28",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lbv.jpg",
+      "website": "http://www.rockstargames.com/iv",
+      "platforms": [
+        "PlayStation 3",
+        "PC (Microsoft Windows)",
+        "Xbox 360"
+      ],
+      "developers": [
+        "Rockstar North"
+      ],
+      "publishers": [
+        "Take-Two Interactive",
+        "Rockstar Games"
+      ],
+      "genres": [
+        "Shooter",
+        "Racing",
+        "Adventure"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/ywnl0sqqi9wslnyw60l9.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/kpaqc6q3il0dtjhrdpcd.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/rfvuzw0pjfkxq1d820a4.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/smxamwmtgvmoqmqqmdbs.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/bsnm6temoasfzkwkhiop.jpg"
+      ]
+    },
+    {
+      "id": 730,
+      "slug": "grand-theft-auto-iii",
+      "name": "Grand Theft Auto III",
+      "description_raw": "Featuring a fully 3-D living city, a combination of narrative driven and non-linear gameplay and a completely open environment, Grand Theft Auto III represents a huge leap forward in interactive entertainment. For the first time, players are put at the heart of their very own gangster movie, and let loose in a fully-realised 3 dimensional city, in which anything can happen and probably will.\n\nWith a cast of hundreds, 50 plus vehicles, ranging from sports cars to ice cream trucks and from boats to buses, 3 hours of music, including opera, reggae, house, drum and bass, pop and disco, a huge array of street ready weapons and some of the seediest characters in video game history, Grand Theft Auto 3 is a sprawling epic which will show you that sometimes, crime can pay and sometimes it can pay you back. Available now for PlayStation2, Xbox, PC and Macintosh.",
+      "metacritic": 95,
+      "released": "2001-10-21",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lb8.jpg",
+      "website": "http://www.rockstargames.com/grandtheftauto3",
+      "platforms": [
+        "Xbox",
+        "PlayStation 4",
+        "PC (Microsoft Windows)",
+        "iOS",
+        "Mac",
+        "PlayStation 2"
+      ],
+      "developers": [
+        "DMA Design",
+        "TransGaming Inc."
+      ],
+      "publishers": [
+        "Rockstar Games",
+        "Take-Two Interactive"
+      ],
+      "genres": [
+        "Shooter",
+        "Racing",
+        "Simulator",
+        "Adventure"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sch5kn.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sch5kp.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sch5kq.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sch5ky.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sch5l1.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sch5l2.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sch5l3.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sch5l4.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sch5l5.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sch5kw.jpg"
+      ]
+    },
+    {
+      "id": 732,
+      "slug": "grand-theft-auto-san-andreas",
+      "name": "Grand Theft Auto: San Andreas",
+      "description_raw": "Returning after his mother's murder to the semi-fictional city of Los Santos (based on Los Angeles), Carl Johnson, a former gang banger, must take back the streets for his family and friends by gaining respect and once again gaining control over the streets. However, a story filled with crime, lies and corruption will lead him to trudge the entire state of San Andreas (based on California and Nevada) to rebuild his life.",
+      "metacritic": 93,
+      "released": "2004-10-25",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lb9.jpg",
+      "website": "http://www.rockstargames.com/sanandreas/pc",
+      "platforms": [
+        "Xbox",
+        "PlayStation 3",
+        "PlayStation 4",
+        "Android",
+        "PC (Microsoft Windows)",
+        "iOS",
+        "Mac",
+        "Xbox 360",
+        "PlayStation 2"
+      ],
+      "developers": [
+        "Rockstar North"
+      ],
+      "publishers": [
+        "Take-Two Interactive",
+        "Rockstar Games"
+      ],
+      "genres": [
+        "Shooter",
+        "Racing",
+        "Adventure"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/eswubyh9h3uereuyumjq.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/e11zpyhhjc9qdqgrx7v0.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/hircn6ewsgu70ynlzis5.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sojdbdt93e06wojplpsj.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/dbbtmdz0q1536npbpr5o.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scgoqe.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scgoqf.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scgoqg.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scgoqh.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scgoqi.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scgoqj.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scgoqk.jpg"
+      ]
+    },
+    {
+      "id": 3262,
+      "slug": "grand-theft-auto-vice-city-stories",
+      "name": "Grand Theft Auto: Vice City Stories",
+      "description_raw": "The PlayStation Portable follow-up to Rockstar's monumental handheld entry in the series, Grand Theft Auto: Liberty City Stories. As in Liberty City Stories, this game ventures back to the location of the second PS2 game.",
+      "metacritic": 73,
+      "released": "2006-10-30",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2lc8.jpg",
+      "website": null,
+      "platforms": [
+        "PlayStation 3",
+        "PlayStation Portable",
+        "PlayStation 2"
+      ],
+      "developers": [
+        "Rockstar Leeds",
+        "Rockstar North"
+      ],
+      "publishers": [
+        "Take-Two Interactive",
+        "Rockstar Games"
+      ],
+      "genres": [
+        "Racing",
+        "Adventure"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/ig6unih5hvea9aurbd1c.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/cdem3oyqr712ngtie8tn.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/u8admqzvqtrehyy9n9du.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sckh44.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sckh45.jpg"
+      ]
+    },
+    {
+      "id": 215550,
+      "slug": "grand-theft-auto-vice-city--2",
+      "name": "Grand Theft Auto: Vice City",
+      "description_raw": "In the year 1986, Tommy Vercetti is heavily indebted to his mafia superiors after a drug deal gone awry, but his dreams of taking over Vice City (based on Miami) push him down a different path. Featuring a wide variety of vehicles and weapons, radio stations playing hit songs from the era and an intense atmosphere, GTA: Vice City is an open-world sandbox satire of '80's Miami.",
+      "metacritic": null,
+      "released": "2013-01-28",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co565f.jpg",
+      "website": null,
+      "platforms": [
+        "PlayStation 3",
+        "PlayStation 4"
+      ],
+      "developers": [
+        "Rockstar Games"
+      ],
+      "publishers": [
+        "Rockstar Games"
+      ],
+      "genres": [
+        "Racing",
+        "Hack and slash/Beat 'em up",
+        "Adventure",
+        "Arcade"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scmew3.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scmew4.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scmew5.jpg"
+      ]
+    },
+    {
+      "id": 19560,
+      "slug": "god-of-war--1",
+      "name": "God of War",
+      "description_raw": "God of War is the sequel to God of War III as well as a continuation of the canon God of War chronology. Unlike previous installments, this game focuses on Norse mythology and follows an older and more seasoned Kratos and his son Atreus in the years since the third game. It is in this harsh, unforgiving world that he must fight to survive… and teach his son to do the same.",
+      "metacritic": 96,
+      "released": "2018-04-19",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1tmu.jpg",
+      "website": "https://godofwar.playstation.com",
+      "platforms": [
+        "PlayStation 4",
+        "PC (Microsoft Windows)"
+      ],
+      "developers": [
+        "SIE Santa Monica Studio"
+      ],
+      "publishers": [
+        "Sony Interactive Entertainment"
+      ],
+      "genres": [
+        "Role-playing (RPG)",
+        "Hack and slash/Beat 'em up",
+        "Adventure"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/rm35ytrytuka9qkylqyk.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/ywrkjcrbeemmb51flsfj.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/qseegzssgetrybgbplrv.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/jvdoaxza3cawklvof1sl.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/gpt3d0gpue5mat4kkso6.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/s2zdtxopibrfjbxvpj5h.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/r7hpzsqic1bjwyzn1bnq.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/mzg7f3xx57sf8rt7tja8.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/nee23o7rtpaqbu8g7byx.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/o4mg2wvhlcikaogvvzqe.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/wunlbofh23trw0u67gms.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/w5eazrrf4wdxjl4idfya.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctzwg.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctzwh.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctzwi.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctzwj.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctzwk.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctzwl.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctzwm.jpg"
       ]
     },
     {
@@ -74,48 +679,6 @@
         "https://images.igdb.com/igdb/image/upload/t_screenshot_med/mptosgjarjlyqxy7lqsm.jpg",
         "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctkgp.jpg",
         "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctkgq.jpg"
-      ]
-    },
-    {
-      "id": 135400,
-      "slug": "minecraft--1",
-      "name": "Minecraft",
-      "description_raw": "Minecraft focuses on allowing the player to explore, interact with, and modify a dynamically-generated map made of one-cubic-meter-sized blocks. In addition to blocks, the environment features plants, mobs, and items. Some activities in the game include mining for ore, fighting hostile mobs, and crafting new blocks and tools by gathering various resources found in the game. The game's open-ended model allows players to create structures, creations, and artwork on various multiplayer servers or their single-player maps. Other features include redstone circuits for logic computations and remote actions, minecarts and tracks, and a mysterious underworld called the Nether. A designated but completely optional goal of the game is to travel to a dimension called the End, and defeat the ender dragon.",
-      "metacritic": null,
-      "released": "2016-12-18",
-      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co8fu7.jpg",
-      "website": "https://www.minecraft.net/",
-      "platforms": [
-        "Amazon Fire TV",
-        "PlayStation 4",
-        "Windows Phone",
-        "Android",
-        "PC (Microsoft Windows)",
-        "iOS",
-        "PlayStation 5",
-        "Xbox One",
-        "Nintendo Switch"
-      ],
-      "developers": [
-        "Mojang Studios"
-      ],
-      "publishers": [
-        "Mojang Studios"
-      ],
-      "genres": [
-        "Simulator",
-        "Adventure"
-      ],
-      "short_screenshots": [
-        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8d2m.jpg",
-        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8d2k.jpg",
-        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8d2n.jpg",
-        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8d2l.jpg",
-        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8d2p.jpg",
-        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8d2o.jpg",
-        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8d2s.jpg",
-        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8d2q.jpg",
-        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8d2r.jpg"
       ]
     },
     {
@@ -245,6 +808,529 @@
         "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sckx9x.jpg",
         "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sckx9v.jpg",
         "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sckx9w.jpg"
+      ]
+    },
+    {
+      "id": 359,
+      "slug": "final-fantasy-xv",
+      "name": "Final Fantasy XV",
+      "description_raw": "Play as Noctis, the Crown Prince of the Kingdom of Lucis, as you seek to reclaim your homeland from the imperial army. With your closet friends along for the ride, you’ll travel through the breath-taking world of Eos encountering larger-than-life beasts and unforgiving enemies. Face thrilling combat as you learn to master your weaponry and magic skills by channeling the power of your ancestors.",
+      "metacritic": 81,
+      "released": "2016-11-28",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co6nz1.jpg",
+      "website": "http://finalfantasyxv.com/",
+      "platforms": [
+        "Google Stadia",
+        "PlayStation 4",
+        "PC (Microsoft Windows)",
+        "Xbox One",
+        "Nintendo Switch"
+      ],
+      "developers": [
+        "Luminous Productions",
+        "Square Enix Business Division 2"
+      ],
+      "publishers": [
+        "Square Enix"
+      ],
+      "genres": [
+        "Role-playing (RPG)",
+        "Hack and slash/Beat 'em up",
+        "Adventure"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/oxj8f3hdmwehkcruvwnv.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/hxohr2c4he1ihtjlkmgf.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/nuhxdqmns2qk17m80lsn.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/tc0h3axfmy0gzorvuwgq.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/syj5nxjqoqthtwzxx31z.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/gggzxnyenxpmzeip2ck1.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/uzwreby9o7duzzrkwrus.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/rbabhd4gqbibzg4cho6w.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/dwnzpnqwqqvkkz3wvlde.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/fovl9fyq79camin87ljy.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/t7gmtxixzahltbciikkb.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scm3j5.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scm3j6.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scm3j7.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scm3j8.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scm3j9.jpg"
+      ]
+    },
+    {
+      "id": 28540,
+      "slug": "assassins-creed-origins",
+      "name": "Assassin's Creed Origins",
+      "description_raw": "For the last four years, the team behind Assassin’s Creed IV Black Flag has been crafting a new beginning for the Assassin’s Creed franchise.\n\nSet in Ancient Egypt, players will journey to the most mysterious place in history, during a crucial period that will shape the world and give rise to the Assassin’s Brotherhood. Plunged into a living, systemic and majestic open world, players are going to discover vibrant ecosystems, made of diverse and exotic landscapes that will provide them with infinite opportunities of pure exploration, adventures and challenges.\n\nPowered by a new fight philosophy, Assassin's Creed Origins embraces a brand new RPG direction where players level up, loot, and choose abilities to shape and customize their very own skilled Assassin as they grow in power and expertise while exploring the entire country of Ancient Egypt.",
+      "metacritic": 86,
+      "released": "2017-10-25",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rbe.jpg",
+      "website": "http://assassinscreed.ubisoft.com",
+      "platforms": [
+        "Google Stadia",
+        "Xbox Series X|S",
+        "PlayStation 4",
+        "PC (Microsoft Windows)",
+        "PlayStation 5",
+        "Xbox One"
+      ],
+      "developers": [
+        "Ubisoft Montreal"
+      ],
+      "publishers": [
+        "Ubisoft Entertainment"
+      ],
+      "genres": [
+        "Role-playing (RPG)",
+        "Adventure"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/giqtb8y4awm9ibt942cn.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/bdcceejc2e9vaimn0ngn.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/gxadfrdicxjlraalvltb.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/wzltqoi9xgmmgimnxsrq.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/l1nbqll4r42lqrz1wesv.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/nfwxynqhormtovylykxr.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/oh9o0c3d5eo7qnwkm9q2.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/uaxy3tjubonooualy5x8.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/efqqm3t15ey0jlkv0xqv.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/p5fjuotpkdecuturqw1c.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/dxbpxe7xewmvkz8dnrgp.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/wq0tjsduutk6jeaqakrh.jpg"
+      ]
+    },
+    {
+      "id": 74701,
+      "slug": "star-wars-jedi-fallen-order",
+      "name": "Star Wars Jedi: Fallen Order",
+      "description_raw": "Star Wars Jedi: Fallen Order is a narratively driven, single-player game puts you in the role of a Jedi Padawan who narrowly escaped the purge of Order 66 following the events of Episode III: Revenge of the Sith. On a quest to rebuild the Jedi Order, you must pick up the pieces of your shattered past to complete your training, develop new powerful Force abilities and master the art of the iconic lightsaber - all while staying one step ahead of the Empire and its deadly Inquisitors.",
+      "metacritic": 83,
+      "released": "2019-11-14",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rbi.jpg",
+      "website": "https://www.ea.com/games/starwars/jedi-fallen-order",
+      "platforms": [
+        "Google Stadia",
+        "Xbox Series X|S",
+        "PlayStation 4",
+        "PC (Microsoft Windows)",
+        "PlayStation 5",
+        "Xbox One"
+      ],
+      "developers": [
+        "Respawn Entertainment"
+      ],
+      "publishers": [
+        "Electronic Arts"
+      ],
+      "genres": [
+        "Adventure"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scgzto.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scgztp.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scgztq.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scgztr.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scgzts.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scgztt.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scgztu.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scgztv.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scgztw.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scgztx.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scgzty.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scgztz.jpg"
+      ]
+    },
+    {
+      "id": 109419,
+      "slug": "marvels-spider-man-the-heist",
+      "name": "Marvel's Spider-Man: The Heist",
+      "description_raw": "Felicia Hardy aka Black Cat, is back in town and leaving mysterious clues around Marvel’s New York to toy with Spider-Man.",
+      "metacritic": 73,
+      "released": "2018-10-22",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co4w2o.jpg",
+      "website": "https://insomniac.games/game/spider-man-ps4/",
+      "platforms": [
+        "PlayStation 4"
+      ],
+      "developers": [
+        "Insomniac Games"
+      ],
+      "publishers": [
+        "Sony Interactive Entertainment"
+      ],
+      "genres": [
+        "Hack and slash/Beat 'em up",
+        "Adventure"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc5iwp.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc5iwq.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc5iws.jpg"
+      ]
+    },
+    {
+      "id": 11171,
+      "slug": "tom-clancys-ghost-recon-wildlands",
+      "name": "Tom Clancy's Ghost Recon: Wildlands",
+      "description_raw": "Create a team with up to 3 friends in Tom Clancy's Ghost Recon Wildlands and enjoy the ultimate military shooter experience set in a massive, dangerous, and responsive open world.",
+      "metacritic": 73,
+      "released": "2017-03-05",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1ku7.jpg",
+      "website": "http://ghostrecon.com",
+      "platforms": [
+        "Google Stadia",
+        "PlayStation 4",
+        "PC (Microsoft Windows)",
+        "Xbox One"
+      ],
+      "developers": [
+        "Ubisoft Paris"
+      ],
+      "publishers": [
+        "Ubisoft Entertainment"
+      ],
+      "genres": [
+        "Shooter",
+        "Tactical",
+        "Adventure"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/cmwqf8hhbql7zbpvm8zr.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/chlagxmyd699yo7z1byh.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/o9ieibreka2vupprgoyb.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/htiqagqr6fj6ukkpfolz.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/vgrdm4nu22gfc1t0rdcw.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctdym.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctdyn.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctdyo.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctdyk.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctdyl.jpg"
+      ]
+    },
+    {
+      "id": 6036,
+      "slug": "the-last-of-us-remastered",
+      "name": "The Last of Us Remastered",
+      "description_raw": "The Last of Us Remastered is an updated release of the PS3 game The Last of Us. It is identical to the PS3 version but runs at a 1080p resolution and incorporates character models with a higher resolution. There are also improved shadows and lighting, upgraded textures, 60 frames per second and other types of improvements. In addition to the base game, two map packs and the expansion The Last of Us: Left Behind are included.",
+      "metacritic": 97,
+      "released": "2014-07-25",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co5zks.jpg",
+      "website": "http://www.thelastofus.playstation.com/index.html",
+      "platforms": [
+        "PlayStation 4"
+      ],
+      "developers": [
+        "Naughty Dog"
+      ],
+      "publishers": [
+        "Sony Computer Entertainment"
+      ],
+      "genres": [
+        "Shooter",
+        "Adventure"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/lqz37tmv2r4lcjaxczwx.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/iqzfweidhwepz0bf4fhr.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/oz4rxwu528bmckp1qqzt.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/wdzisarwedjsqeg5iah4.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/d64boffz2tkso1cuj1lk.jpg"
+      ]
+    },
+    {
+      "id": 75297,
+      "slug": "ea-sports-ufc-3",
+      "name": "EA Sports UFC 3",
+      "description_raw": "EA SPORTS UFC 3 revolutionizes authentic fighting movement with Real Player Motion Tech, a new animation technology that delivers the most responsive and authentic athletic motion in sports gaming. Every punch, kick, block, and counter has been recaptured and rebuilt on cutting-edge motion-capture tech to look and feel life-like and responsive, delivering a more competitive fighting experience. In G.O.A.T. Career Mode, players must build fight hype to gain fans, earn cash to train at new gyms, and create heated rivalries with other fighters to capture the world's attention. How you promote outside of the Octagon matters as much as how you perform inside of it as you progress to becoming the Greatest of All Time. In addition, an all-new suite of customizable multiplayer modes let you and your friends get into the Octagon and face off in fast, fun, intense pick-up-and-play bouts where a highlight-reel knockout is always only one strike away and victory happens in the blink of an eye.",
+      "metacritic": 80,
+      "released": "2018-02-01",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1o2w.jpg",
+      "website": "https://www.ea.com/games/ufc/ufc-3",
+      "platforms": [
+        "PlayStation 4",
+        "Xbox One"
+      ],
+      "developers": [
+        "EA Canada"
+      ],
+      "publishers": [
+        "Electronic Arts"
+      ],
+      "genres": [
+        "Fighting",
+        "Sport"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/h2fhqcvevrdkzg1zudub.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/ckdeljgnhpvjij7t0kpz.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/phgfygowffj3g3cite7j.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/tye6hok6w7k4cwilpgra.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/riemo6rwaw19nysgn2hp.jpg"
+      ]
+    },
+    {
+      "id": 126290,
+      "slug": "far-cry-6",
+      "name": "Far Cry 6",
+      "description_raw": "Dive into the gritty world of a modern-day guerrilla revolution to liberate a nation from its oppressive dictators. Welcome to Yara, a tropical paradise frozen in time. Far Cry 6 thrusts players into a modern-day guerrilla revolution. As dictator of Yara, Anton Castillo is intent on restoring his nation back to its former glory by any means, with his son, Diego, following in his bloody footsteps. Become a guerrilla fighter and liberate Yara.",
+      "metacritic": 82,
+      "released": "2021-10-06",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2npg.jpg",
+      "website": "https://www.ubisoft.com/en-us/game/far-cry/far-cry-6",
+      "platforms": [
+        "Google Stadia",
+        "Xbox Series X|S",
+        "PlayStation 4",
+        "PC (Microsoft Windows)",
+        "PlayStation 5",
+        "Xbox One"
+      ],
+      "developers": [
+        "Ubisoft Toronto"
+      ],
+      "publishers": [
+        "Ubisoft Entertainment"
+      ],
+      "genres": [
+        "Shooter",
+        "Adventure"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8geu.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8gev.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8gew.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8gex.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8gey.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctkbl.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctkbk.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctkbo.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctkbp.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctkbq.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctkbr.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctkbm.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctkbn.jpg"
+      ]
+    },
+    {
+      "id": 23240,
+      "slug": "pac-man-championship-edition-2",
+      "name": "Pac-Man Championship Edition 2",
+      "description_raw": "The much-awaited sequel to Pac-Man Championship Edition! Featuring eye-popping 3D graphics and funky visuals! New modes include Score Attack and an Adventure mode!",
+      "metacritic": 77,
+      "released": "2016-09-12",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2xg4.jpg",
+      "website": "http://www.bandainamcoent.eu",
+      "platforms": [
+        "PlayStation 4",
+        "PC (Microsoft Windows)",
+        "Xbox One"
+      ],
+      "developers": [
+        "Bandai Namco Studios"
+      ],
+      "publishers": [
+        "Bandai Namco Entertainment"
+      ],
+      "genres": [
+        "Puzzle",
+        "Arcade"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/md6sjbjqkqlkakmh7em0.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/b8ztscwcubpcyl0ax2nh.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/jaiftldkgaxdixjyizx8.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/jaw5ye0x2za0525pbezd.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/hqfkwuqe9vuhj3hxqutw.jpg"
+      ]
+    },
+    {
+      "id": 119947,
+      "slug": "nhl-20",
+      "name": "NHL 20",
+      "description_raw": "In NHL 20, your favorite NHL stars now look and feel more authentic with new Signature Shots and over 45 new shot types that make every attack a threat. A new broadcast package celebrates your biggest plays as you take on all-new game modes, including the new winner-take-all Eliminator mode where you play solo or team up with friends to take down the competition.",
+      "metacritic": 79,
+      "released": "2019-09-12",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2qub.jpg",
+      "website": null,
+      "platforms": [
+        "PlayStation 4",
+        "Xbox One"
+      ],
+      "developers": [
+        "EA Vancouver"
+      ],
+      "publishers": [
+        "EA Sports"
+      ],
+      "genres": [
+        "Sport"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc6r9s.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc6r9l.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc6r9n.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc6r9m.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc6r9o.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc6r9p.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc6r9r.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc6r9q.jpg"
+      ]
+    },
+    {
+      "id": 11072,
+      "slug": "madden-nfl-16",
+      "name": "Madden NFL 16",
+      "description_raw": "Madden NFL 16 delivers all-new controls that allow you to dominate in the battle for air supremacy. New QB mechanics including body-relative throws, plus touch and roll out passes provide you with unprecedented depth and control while under center. Combined with a new risk/reward catch and pass-defend system, get ready for the biggest WOW moments in franchise history.",
+      "metacritic": 84,
+      "released": "2015-08-24",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2qme.jpg",
+      "website": "http://www.easports.com/madden-nfl",
+      "platforms": [
+        "PlayStation 4",
+        "Xbox One"
+      ],
+      "developers": [
+        "EA Orlando"
+      ],
+      "publishers": [
+        "EA Sports"
+      ],
+      "genres": [
+        "Sport"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sblstyvujk48mmqqls7x.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/ntnmqjsx6sqdrgvcznig.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/r5oec2wgcdmq2jwlcat6.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/wiuyyvm1esjntcu2enno.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/x7v55v9fct2m9wwqpwlv.jpg"
+      ]
+    },
+    {
+      "id": 118218,
+      "slug": "tom-clancys-ghost-recon-breakpoint",
+      "name": "Tom Clancy's Ghost Recon: Breakpoint",
+      "description_raw": "Tom Clancy's Ghost Recon Breakpoint is a military shooter set in a diverse and hostile open world entirely playable solo or in up to four-player co-op. Players will discover Auroa, a mysterious island where the most technically advanced facilities meet wild and untamed nature. Home to drone creators, tech giant Skell Technology, Auroa has fallen into the wrong hands and all contact has been lost.",
+      "metacritic": 53,
+      "released": "2019-10-03",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xro.jpg",
+      "website": "https://ghost-recon.ubisoft.com/game/en-us/breakpoint",
+      "platforms": [
+        "Google Stadia",
+        "Xbox Series X|S",
+        "PlayStation 4",
+        "PC (Microsoft Windows)",
+        "Xbox One"
+      ],
+      "developers": [
+        "Ubisoft Paris"
+      ],
+      "publishers": [
+        "Ubisoft Entertainment"
+      ],
+      "genres": [
+        "Shooter",
+        "Tactical",
+        "Adventure"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc6t2f.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc6t2h.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc6t2e.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc6k0o.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc6k0j.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc6k0k.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc6k0l.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc6k0n.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc6k0m.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc6k0p.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc6t2g.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc6t2i.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sctkdd.jpg"
+      ]
+    },
+    {
+      "id": 345365,
+      "slug": "bound-destiny-2-destinys-requiem",
+      "name": "Bound Destiny 2: Destiny's Requiem",
+      "description_raw": "Heroes both old and new must battle against a foe threatening to upend life as they know it. The sequel to Fire Emblem: Bound Destiny takes the series in a bold new direction, featuring tighter and more responsive gameplay. Now more than ever, the lives of the party are in your hands.",
+      "metacritic": null,
+      "released": "2023-12-05",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co9v5i.jpg",
+      "website": "https://feuniverse.us/t/fe8-2-3-complete-bound-destiny-trilogy/26815",
+      "platforms": [
+        "Game Boy Advance"
+      ],
+      "developers": [],
+      "publishers": [],
+      "genres": [
+        "Turn-based strategy (TBS)"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scwzgb.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scwzga.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scwzg9.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scwzg8.jpg"
+      ]
+    },
+    {
+      "id": 164698,
+      "slug": "assassins-creed-bundle-assassins-creed-valhalla-assassins-creed-odyssey-and-assassins-creed-origins",
+      "name": "Assassin's Creed Bundle: Assassin's Creed Valhalla, Assassin's Creed Odyssey, and Assassin's Creed Origins",
+      "description_raw": "A bundle including three Assassin's Creed titles: Assassin's Creed Valhalla, Assassin's Creed Odyssey, and Assassin's Creed Origins.",
+      "metacritic": null,
+      "released": "2020-11-11",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co3ka7.jpg",
+      "website": null,
+      "platforms": [
+        "Xbox Series X|S",
+        "Xbox One"
+      ],
+      "developers": [],
+      "publishers": [
+        "Ubisoft Entertainment"
+      ],
+      "genres": [
+        "Role-playing (RPG)",
+        "Adventure"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/scco2c.jpg"
+      ]
+    },
+    {
+      "id": 133004,
+      "slug": "assassins-creed-valhalla",
+      "name": "Assassin's Creed Valhalla",
+      "description_raw": "In Assassin's Creed Valhalla, become Eivor, a legendary Viking raider on a quest for glory. Explore a dynamic and beautiful open world set against the brutal backdrop of England’s Dark Ages. Raid your enemies, grow your settlement, and build your political power in the quest to earn a place among the gods in Valhalla.",
+      "metacritic": 85,
+      "released": "2020-11-09",
+      "background_image": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2ed3.jpg",
+      "website": "https://www.ubisoft.com/en-us/game/assassins-creed/valhalla",
+      "platforms": [
+        "Google Stadia",
+        "Xbox Series X|S",
+        "PlayStation 4",
+        "PC (Microsoft Windows)",
+        "PlayStation 5",
+        "Xbox One"
+      ],
+      "developers": [
+        "Ubisoft Montreal"
+      ],
+      "publishers": [
+        "Ubisoft Entertainment"
+      ],
+      "genres": [
+        "Role-playing (RPG)",
+        "Adventure"
+      ],
+      "short_screenshots": [
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8gf9.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8gfa.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8gfb.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8gfc.jpg",
+        "https://images.igdb.com/igdb/image/upload/t_screenshot_med/sc8gfd.jpg"
       ]
     }
   ]
