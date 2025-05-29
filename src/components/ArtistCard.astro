@@ -6,7 +6,7 @@ const artistName = artist.disambiguation
 const imageUrl =
   artist.image_url ||
   `https://via.placeholder.com/500x750.png?text=${encodeURIComponent(artist.name)}`;
-const displayOrigin = artist.area?.name || artist.country || 'N/A';
+const displayOrigin = artist.area?.name || artist.country || 'Origin Unknown';
 ---
 
 <div class="mt-8">
@@ -17,7 +17,7 @@ const displayOrigin = artist.area?.name || artist.country || 'N/A';
     <div class="relative w-full h-full">
       <img
         src={imageUrl}
-        alt={`${artistName} Poster`}
+        alt={`${artistName} portrait`}
         width="500"
         height="750"
         loading="lazy"
@@ -64,28 +64,6 @@ const displayOrigin = artist.area?.name || artist.country || 'N/A';
 </div>
 
 <script>
-  // Image loading skeleton script (same as MovieCard and TvShowCard)
-  document.addEventListener('DOMContentLoaded', () => {
-    const images = document.querySelectorAll('.thumbnail');
-    images.forEach((img) => {
-      const pulseDiv = img.nextElementSibling;
-      if (pulseDiv && pulseDiv.classList.contains('animate-pulse')) {
-        pulseDiv.style.display = 'block';
-      }
-
-      if (img.complete) {
-        if (pulseDiv) pulseDiv.style.display = 'none';
-      } else {
-        img.addEventListener('load', () => {
-          if (pulseDiv) pulseDiv.style.display = 'none';
-        });
-        img.addEventListener('error', () => {
-          // Keep placeholder or show error
-          if (pulseDiv) pulseDiv.style.display = 'none';
-          // Optionally, you could change the src to a 'not found' image here
-          // img.src = '/path/to/image-not-found.png';
-        });
-      }
-    });
-  });
+  import { setupImageLoading } from '../scripts/imageLoading.js';
+  document.addEventListener('DOMContentLoaded', setupImageLoading);
 </script>
