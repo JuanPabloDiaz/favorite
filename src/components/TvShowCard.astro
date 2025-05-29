@@ -3,13 +3,20 @@ const { show } = Astro.props;
 ---
 
 <div class="mt-8">
-  <a href={`/tv/${show.id}`}>
-    <img
-      src={`https://image.tmdb.org/t/p/w500${show.poster_path}`}
-      alt={`${show.name} Poster`}
-      class="thumbnail rounded-lg shadow-sm shadow-slate-600 hover:opacity-75 transition ease-in-out duration-300 hover:shadow-slate-50"
-      id={`movie-poster-${show.id}`}
-    />
+  <a href={`/tv/${show.id}`} class="block aspect-[2/3] bg-gray-800 rounded-lg overflow-hidden">
+    <div class="relative w-full h-full">
+      <img
+        src={`https://image.tmdb.org/t/p/w500${show.poster_path}`}
+        alt={`${show.name} Poster`}
+        width="500"
+        height="750"
+        loading="lazy"
+        decoding="async"
+        class="thumbnail w-full h-full object-cover rounded-lg shadow-sm shadow-slate-600 hover:opacity-75 transition ease-in-out duration-300 hover:shadow-slate-50"
+        id={`tv-poster-${show.id}`}
+      />
+      <div class="absolute inset-0 bg-gray-800 animate-pulse" style="display: none;"></div>
+    </div>
   </a>
   <div class="mt-2">
     <a href={`/tv/${show.id}`} class="text-lg mt-2 hover:text-gray-300">{show.name}</a>
