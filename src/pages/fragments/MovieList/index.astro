@@ -3,6 +3,9 @@ import MovieCard from '../../../components/MovieCard.astro';
 // import myFavMovies from "../../../data/myFavMovies.json";
 import myFavMoviesByGenre from '../../../data/myFavMoviesByGenre.json';
 
+// DEBUG: Verifica si la variable de entorno está presente
+console.log('TMDB_API_KEY:', import.meta.env.TMDB_API_KEY);
+
 const popularMoviesResponse = await fetch(
   'https://api.themoviedb.org/3/movie/popular?api_key=' + import.meta.env.TMDB_API_KEY
 );
