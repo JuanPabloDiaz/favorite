@@ -3,8 +3,7 @@ import MovieCard from '../../../components/MovieCard.astro';
 // import myFavMovies from "../../../data/myFavMovies.json";
 import myFavMoviesByGenre from '../../../data/myFavMoviesByGenre.json';
 
-// DEBUG: Verifica si la variable de entorno está presente
-console.log('TMDB_API_KEY:', import.meta.env.TMDB_API_KEY);
+const hasApiKey = !!import.meta.env.TMDB_API_KEY;
 
 const popularMoviesResponse = await fetch(
   'https://api.themoviedb.org/3/movie/popular?api_key=' + import.meta.env.TMDB_API_KEY
@@ -42,6 +41,16 @@ for (const Genre of Genres) {
 ---
 
 <main class="container mx-auto px-4 pt-16 mb-16">
+
+  {typeof window === "undefined" && (
+  <div style="background: #222; color: #ffb300; padding: 1em; margin-bottom: 1em;">
+    <strong>Debug:</strong>
+    {hasApiKey
+      ? "TMDB_API_KEY está presente en este entorno."
+      : "TMDB_API_KEY NO está presente en este entorno."}
+  </div>
+)}
+
   <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">
     Juan's Favorite Movies
   </h2>
