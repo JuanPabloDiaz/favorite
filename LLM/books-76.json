@@ -1,0 +1,76 @@
+{"id":1,"title":"5 am club","author":"Robin Sharma","category":["self-help"]}
+{"id":2,"title":"Grit","author":"Angela Duckworth","category":["self-help","business"]}
+{"id":3,"title":"Good to great","author":"Jim Collins","category":["business"]}
+{"id":4,"title":"The lean startup","author":"Eric Ries","category":["business"]}
+{"id":5,"title":"High effective management","author":"Andrew S. Grove","category":["business"]}
+{"id":6,"title":"Atomic Habits","author":"James Clear","category":["self-help"]}
+{"id":7,"title":"Never split the difference","author":"Chris Voss","category":["business"]}
+{"id":8,"title":"Sonho grande","author":"Cristiane Correa","category":["business","biography"]}
+{"id":9,"title":"Dream Big","author":"Bob Goff","category":["self-help"]}
+{"id":10,"title":"The Almanack of Naval Ravikant","author":"Eric Jorgenson","category":["self-help","business"]}
+{"id":11,"title":"I Will Teach You to Be Rich","author":"Ramit Sethi","category":["finance","self-help"]}
+{"id":12,"title":"The Subtle Art of Not Giving a F*ck","author":"Mark Manson","category":["self-help"]}
+{"id":13,"title":"Influence, New and expanded","author":"Robert B. Cialdini","category":["self-help"]}
+{"id":14,"title":"How to Win Friends and Influence People","author":"Dale Carnegie","category":["self-help"]}
+{"id":15,"title":"Sapiens","author":"Yuval Noah Harari","category":["technology"]}
+{"id":16,"title":"La estupidez colectiva","author":"Julian Torres Gomez","category":["self-help","business"]}
+{"id":17,"title":"Rich Dad Poor Dad","author":"Robert T. Kiyosaki","category":["finance"]}
+{"id":18,"title":"Blitzscaling","author":"Reid Hoffman","category":["business","self-help"]}
+{"id":19,"title":"Zero to One","author":"Peter Thiel","category":["business","self-help"]}
+{"id":20,"title":"Learning Spark: Lightning-Fast Data Analytics","author":"Denny Lee, Brooke Wenig, Tathagata Das, Jules S. Damji","category":["technology"]}
+{"id":21,"title":"Getting to Yes","author":"Roger Fisher, William Ury","category":["business"]}
+{"id":22,"title":"You Can Negotiate Anything: How to Get What You Want","author":"Herb Cohen","category":["business"]}
+{"id":23,"title":"Homo Deus","author":"Yuval Noah Harari","category":["technology"]}
+{"id":24,"title":"The 7 habits of highly effective people","author":"Stephen R. Covey","category":["self-help"]}
+{"id":25,"title":"The ride of a lifetime","author":"Robert Iger","category":["business","biography"]}
+{"id":26,"title":"Elon Musk","author":"Ashlee Vance, Francisco López Martín","category":["biography"]}
+{"id":27,"title":"Orlando Ayala, el Colombiano que le hablaba al oído a bill gates.","author":"Julio Cesar Guzman","category":["biography"]}
+{"id":28,"title":"The Four Agreements","author":"Don Miguel Ruiz","category":["self-help"]}
+{"id":29,"title":"Limitless","author":"Jim Kwik","category":["self-help"]}
+{"id":30,"title":"Designing Data-Intensive Applications","author":"Martin Kleppmann","category":["technology"]}
+{"id":31,"title":"Next.js Quick Start Guide: Server-side rendering done right","author":"Kirill Konshin","category":["technology"]}
+{"id":32,"title":"Control Your Mind and Master Your Feelings","author":"Eric Robertson","category":["self-help"]}
+{"id":33,"title":"The Psychology of Money","author":"Morgan Housel","category":["finance"]}
+{"id":34,"title":"Love Yourself Like Your Life Depends On It","author":"Kamal Ravikant","category":["self-help"]}
+{"id":35,"title":"The Seven Spiritual Laws of Success","author":"Deepak Chopra","category":["self-help"]}
+{"id":36,"title":"El hombre más rico de Babilonia","author":"George Hill","category":["finance"]}
+{"id":37,"title":"Can't Hurt Me","author":"David Goggins","category":["self-help","biography"]}
+{"id":38,"title":"The Secret","author":"Rhonda Byrne","category":["self-help"]}
+{"id":39,"title":"Steve Jobs","author":"Walter Isaacson","category":["biography","technology"]}
+{"id":40,"title":"Chip War","author":"Chris Miller","category":["technology"]}
+{"id":41,"title":"The Coming Wave","author":"Mustafa Suleyman, Michael Bhaskar","category":["technology"]}
+{"id":42,"title":"Hit Refresh","author":"Satya Nadella","category":["business","biography","technology"]}
+{"id":43,"title":"Don't Believe Everything You Think","author":"Joseph Nguyen","category":["self-help"]}
+{"id":44,"title":"Man's Search for Meaning","author":"Viktor E. Frankl","category":["self-help","biography"]}
+{"id":45,"title":"One Hundred Years of Solitude","author":"Gabriel García Márquez","category":["fiction"]}
+{"id":46,"title":"How to Talk to Anyone","author":"Leil Lowndes","category":["self-help"]}
+{"id":47,"title":"Let Them Theory","author":"Mel Robbins","category":["self-help"]}
+{"id":48,"title":"Python for Everybody","author":"Charles R. Severance","category":["technology"]}
+{"id":49,"title":"Breathe","author":"James Nestor","category":["self-help"]}
+{"id":50,"title":"You Don’t Know JS","author":"Kyle Simpson","category":["technology"]}
+{"id":51,"title":"Bournville","author":"Jonathan Coe","category":["fiction"]}
+{"id":52,"title":"Birnam Wood","author":"Eleanor Catton","category":["fiction","thriller"]}
+{"id":53,"title":"El hombre en busca de sentido","author":"Viktor E. Frankl","category":["self-help"]}
+{"id":54,"title":"The Books of Jacob","author":"Olga Tokarczuk","category":["fiction"]}
+{"id":55,"title":"The Art of Gathering","author":"Priya Parker","category":["self-help"]}
+{"id":56,"title":"The Five: The Untold Lives of the Women Killed by Jack the Ripper","author":"Hallie Rubenhold","category":["history"]}
+{"id":57,"title":"La sorprendente ciencia de las reuniones","author":"Steven G. Rogelberg","category":["self-help","business"]}
+{"id":58,"title":"Co-Intelligence: Living and Working with AI","author":"Ethan Mollick","category":["technology","business"]}
+{"id":59,"title":"Trillion Dollar Coach","author":"Eric Schmidt, Jonathan Rosenberg, Alan Eagle","category":["business"]}
+{"id":60,"title":"Building The Data Lakehouse","author":"Bill Inmon, Mary Levins, Ranjeet Srivastava","category":["technology"]}
+{"id":61,"title":"JavaScript and jQuery","author":"Jon Duckett","category":["technology"]}
+{"id":62,"title":"Pro Git","author":"Scott Chacon, Ben Straub","category":["technology"]}
+{"id":63,"title":"The Manager's Path","author":"Camille Fournier","category":["technology"]}
+{"id":64,"title":"The Art of Agile Development","author":"James Shore","category":["technology"]}
+{"id":65,"title":"Buy Back Your Time","author":"Dan Martell","category":["business","self-help"]}
+{"id":66,"title":"Kitchen Confidential","author":"Anthony Bourdain","category":["biography"]}
+{"id":67,"title":"El Poder de Estar Solo","author":"Brian Alba","category":["self-help"]}
+{"id":68,"title":"Thinking, Fast and Slow","author":"Daniel Kahneman","category":["self-help","finance"]}
+{"id":69,"title":"Elon Musk","author":"Walter Isaacson","category":["biography","technology"]}
+{"id":70,"title":"Think Like a Monk","author":"Jay Shetty","category":["self-help"]}
+{"id":71,"title":"Crying in H Mart: A Memoir","author":"Michelle Zauner","category":["biography"]}
+{"id":72,"title":"The Code Breaker","author":"Walter Isaacson","category":["biography"]}
+{"id":73,"title":"Love in the Time of Cholera","author":"Gabriel García Márquez","category":["fiction"]}
+{"id":74,"title":"Memories of My Melancholy Whores","author":"Gabriel García Márquez","category":["fiction"]}
+{"id":75,"title":"Chronicle of a Death Foretold","author":"Gabriel García Márquez","category":["fiction"]}
+{"id":76,"title":"How to Be Fine","author":"Jolenta Greenberg, Kristen Meinzer","category":["self-help"]}
