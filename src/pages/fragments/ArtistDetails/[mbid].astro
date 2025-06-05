@@ -24,7 +24,6 @@ const imageUrl =
   artist?.image_url ||
   `https://via.placeholder.com/500x750.png?text=${encodeURIComponent(artist?.name || 'Unknown Artist')}`;
 const displayOrigin = artist?.area?.name || artist?.country || 'Origin Unknown';
-
 let displayGenres = 'Genres not available';
 if (artist?.genres && artist.genres.length > 0) {
   displayGenres = artist.genres.map((g) => g.name).join(', ');
@@ -75,17 +74,32 @@ if (artist?.genres && artist.genres.length > 0) {
 
               <div class="mt-8">
                 <h4 class="text-lg font-semibold text-gray-300">Biography</h4>
-                <p class="text-gray-300 mt-2">Biography not available.</p>
+                <p class="text-gray-300 mt-2">
+                  {artist['life-span']?.begin && `Born: ${artist['life-span'].begin}`}
+                  <br />
+                  {artist['life-span']?.end && `Died: ${artist['life-span'].end}`}
+                  <br />
+                  {artist['begin-area']?.name &&
+                    `From: ${artist['begin-area'].name}, ${displayOrigin || 'Unknown Country'}`}
+                </p>
               </div>
 
               <div class="mt-8">
                 <h4 class="text-lg font-semibold text-gray-300">Discography Highlights</h4>
-                <p class="text-gray-300 mt-2">Discography information is not yet available.</p>
-              </div>
-
-              <div class="mt-8">
-                <h4 class="text-lg font-semibold text-gray-300">External Links</h4>
-                <p class="text-gray-300 mt-2">External links are not yet available.</p>
+                {artist['release-groups']?.length > 0 ? (
+                  <ul class="list-disc list-inside text-gray-300 mt-2">
+                    {artist['release-groups']
+                      .filter((r) => r['primary-type'] === 'Album')
+                      .slice(0, 5)
+                      .map((r) => (
+                        <li>
+                          {r.title} ({r['first-release-date']})
+                        </li>
+                      ))}
+                  </ul>
+                ) : (
+                  <p class="text-gray-300 mt-2">No discography found.</p>
+                )}
               </div>
             </div>
           </div>
