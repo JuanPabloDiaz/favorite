@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "format": "prettier --write \"src/**/*.{js,astro,css}\"",
+    "clean": "rm -rf dist .astro node_modules package-lock.json .vercel && npm install",
     "fetch-movies": "node scripts/fetch-tmdb.js",
     "fetch-music": "node scripts/fetch-musicbrainz.js",
     "fetch-podcasts": "node scripts/fetch-podcasts.js",
@@ -14,7 +15,6 @@
     "fetch-data": "npm run fetch-movies && npm run fetch-music && npm run fetch-podcasts && npm run fetch-games && npm run fetch-books"
   },
   "devDependencies": {
-    "@astrojs/cloudflare": "^10.4.0",
     "@astrojs/sitemap": "^3.4.0",
     "@astrojs/tailwind": "^5.1.0",
     "astro": "^5.9.0",
@@ -23,5 +23,8 @@
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "wrangler": "^4.17.0"
+  },
+  "dependencies": {
+    "@astrojs/vercel": "^8.1.5"
   }
 }
