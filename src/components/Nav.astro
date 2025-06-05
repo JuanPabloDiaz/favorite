@@ -24,11 +24,15 @@ const links = [
           <span class="text-orange-500">Favorite</span>
         </a>
       </li>
-      {links.map((link) => (
-        <li class="md:ml-6 mt-3 md:mt-0">
-          <a href={link.href} class="hover:text-gray-300">{link.label}</a>
-        </li>
-      ))}
+      {
+        links.map((link) => (
+          <li class="md:ml-6 mt-3 md:mt-0">
+            <a href={link.href} class="hover:text-gray-300">
+              {link.label}
+            </a>
+          </li>
+        ))
+      }
       <li>
         <SearchBar />
       </li>

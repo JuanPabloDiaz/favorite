@@ -1,19 +1,6 @@
 {
   "allPodcasts": [
     {
-      "id": "e3794af26c2140e2ac74d00395e59201",
-      "title": "Darknet Diaries",
-      "image": "https://cdn-images-3.listennotes.com/podcasts/darknet-diaries-jack-rhysider-wVK8nefUm5S-ztuNyvC2F_O.300x300.jpg",
-      "publisher": "Jack Rhysider",
-      "genres": [],
-      "episode_count": 159,
-      "description": "\n      <p>Explore true stories of the dark side of the Internet with host Jack Rhysider as he takes you on a journey through the chilling world of hacking, data breaches, and cyber crime.</p><p>¿Hablas español? Escucha en español aquí ➔ <a href=\"https://darknetdiaries.com/es/\">https://darknetdiaries.com/es/</a></p>\n    ",
-      "website": "https://darknetdiaries.com/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
-      "listennotes_url": "https://www.listennotes.com/c/e3794af26c2140e2ac74d00395e59201/",
-      "latest_pub_date_ms": 1748934000000,
-      "explicit_content": false
-    },
-    {
       "id": "40b72ce8610649529542575dedf06c86",
       "title": "All-In with Chamath, Jason, Sacks & Friedberg",
       "image": "https://cdn-images-3.listennotes.com/podcasts/all-in-with-chamath-jason-sacks-friedberg-PbT-1XEWOoz-0eWaLuirNTJ.300x300.jpg",
@@ -50,6 +37,45 @@
       "website": "https://coffeeandcodingpod.com?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "listennotes_url": "https://www.listennotes.com/c/780bf5920c334864b36bb1ca30a6ddfa/",
       "latest_pub_date_ms": 1679475600000,
+      "explicit_content": false
+    },
+    {
+      "id": "2c504316f10f491491d1d8b9b4d1ab7b",
+      "title": "Colombianadas",
+      "image": "https://cdn-images-3.listennotes.com/podcasts/colombianadas-blu-radio-Z-ou6GYxjAV-OE6-uFLKs4X.300x300.jpg",
+      "publisher": "BLU RADIO",
+      "genres": [],
+      "episode_count": 13,
+      "description": "ALTERNAR CON HUMOR LAS CARACTERÍSTICAS PROPIAS QUE IDENTIFICAN A LOS COLOMBIANOS. LA TRIVALIZACIÓN DE SUS COSTUMBRES, DIALECTOS, MANERAS DE SER, LOS REGIONALISMOS.",
+      "website": "https://audioboom.com/channels/4773565-colombianadas?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "listennotes_url": "https://www.listennotes.com/c/2c504316f10f491491d1d8b9b4d1ab7b/",
+      "latest_pub_date_ms": 1482175037000,
+      "explicit_content": false
+    },
+    {
+      "id": "3f6d343b77434c2b91b4ebd9189e4119",
+      "title": "Complete Developer Podcast",
+      "image": "https://cdn-images-3.listennotes.com/podcasts/complete-developer-podcast-bj-burns-and-W2SVAvzmrZ_-pOQ4BuJXS6C.300x300.jpg",
+      "publisher": "BJ Burns and Will Gant",
+      "genres": [],
+      "episode_count": 331,
+      "description": "A podcast by coders for coders about all aspects of life as a developer.<br /><hr><p style='color:grey; font-size:0.75em;'> Hosted on Acast. See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for more information.</p>",
+      "website": "https://completedeveloperpodcast.com?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "listennotes_url": "https://www.listennotes.com/c/3f6d343b77434c2b91b4ebd9189e4119/",
+      "latest_pub_date_ms": 1689853540000,
+      "explicit_content": false
+    },
+    {
+      "id": "004a70a05509456b85845ee1840375a4",
+      "title": "Cracks Podcast con Oso Trava",
+      "image": "https://cdn-images-3.listennotes.com/podcasts/cracks-podcast-con-oso-trava-oso-trava-xQ2-EFT1yju-TNZyiUj1nPI.300x300.jpg",
+      "publisher": "Oso Trava",
+      "genres": [],
+      "episode_count": 335,
+      "description": "Cracks es un podcast de entrevistas con enfoque de negocios y mentalidad que le enseñará a cualquiera que aspire a la grandeza los hábitos y trucos que usan los mejores en deportes, negocios, tecnología y medios para lograr el éxito. El podcast es presentado por Oso Trava, emprendedor y fundador de InstaFit, quien ha sido nombrado emprendedor del año por la revista Expansión en 2010 y 2018 e incluido entre las 30 promesas de los negocios de Forbes en 2019. Oso va profundo con la urgencia de alguien que quiere aplicar lo que aprende inmediatamente a su vida, lo que hace al programa energético, divertido y súper útil.",
+      "website": "http://www.cracks.la?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "listennotes_url": "https://www.listennotes.com/c/004a70a05509456b85845ee1840375a4/",
+      "latest_pub_date_ms": 1748822400000,
       "explicit_content": false
     },
     {
@@ -310,6 +336,45 @@
       "website": "https://www.se-radio.net?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
       "listennotes_url": "https://www.listennotes.com/c/ef3023f84bcc42a3aa8bd91a1a6e9b56/",
       "latest_pub_date_ms": 1748563020000,
+      "explicit_content": false
+    },
+    {
+      "id": "822d62b35aa043c99297f06e0cac7937",
+      "title": "Stuff They Don't Want You To Know",
+      "image": "https://cdn-images-3.listennotes.com/podcasts/stuff-they-dont-want-you-to-know-Wm-FP4vo0MG-gAqQ83D1_X2.300x300.jpg",
+      "publisher": "iHeartPodcasts",
+      "genres": [],
+      "episode_count": 1783,
+      "description": "<p>From UFOs to psychic powers and government cover-ups, history is riddled with unexplained events. You can turn back now or learn the Stuff They Don't Want You To Know ... an audio podcast from iHeartRadio.</p>",
+      "website": "https://www.iheart.com/podcast/182-stuff-they-dont-want-you-t-26941221/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "listennotes_url": "https://www.listennotes.com/c/822d62b35aa043c99297f06e0cac7937/",
+      "latest_pub_date_ms": 1749068400000,
+      "explicit_content": false
+    },
+    {
+      "id": "b53125292b4e423d93dc1f16f20a7ed2",
+      "title": "Stuff You Should Know",
+      "image": "https://cdn-images-3.listennotes.com/podcasts/stuff-you-should-know-iheartpodcasts-LhMPCutfFDc-o3M1PutdeRk.300x300.jpg",
+      "publisher": "iHeartPodcasts",
+      "genres": [],
+      "episode_count": 2557,
+      "description": "If you've ever wanted to know about champagne, satanism, the Stonewall Uprising, chaos theory, LSD, El Nino, true crime and Rosa Parks, then look no further. Josh and Chuck have you covered.",
+      "website": "https://www.iheart.com/podcast/105-stuff-you-should-know-26940277/?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "listennotes_url": "https://www.listennotes.com/c/b53125292b4e423d93dc1f16f20a7ed2/",
+      "latest_pub_date_ms": 1749114000000,
+      "explicit_content": false
+    },
+    {
+      "id": "25b2d694e6c24c24b68bfa35afd0a3f0",
+      "title": "Taren's MōTTIV Method Podcast",
+      "image": "https://cdn-images-3.listennotes.com/podcasts/tarens-mōttiv-method-podcast-taren-gesell-hpQ-qXjCZYU-otDlCFvGJHZ.300x300.jpg",
+      "publisher": "Taren Gesell",
+      "genres": [],
+      "episode_count": 345,
+      "description": "The Taren's MōTTIV Method Podcast is the place to go if you're an age group triathlete, runner, cyclist, swimrunner, or any other type of endurance athlete. Every Friday on the Taren's MōTTIV Method Podcast you'll hear fun, engaging and informative endurance-related conversations led by Taren, proving that ordinary people CAN accomplish extraordinary things.\n\nFor more resources from MōTTIV including blogs, training plans and beginner's guides go to https://mymottiv.com/",
+      "website": "http://mymottiv.com?utm_source=listennotes.com&utm_campaign=Listen+Notes&utm_medium=website",
+      "listennotes_url": "https://www.listennotes.com/c/25b2d694e6c24c24b68bfa35afd0a3f0/",
+      "latest_pub_date_ms": 1737045301000,
       "explicit_content": false
     },
     {
