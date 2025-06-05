@@ -1,0 +1,139 @@
+{
+  "topArtists": {
+    "numUniqueArtists": 4862,
+    "topArtists": [
+      {
+        "artistUri": "spotify:artist:0eRbECAGCLLiTyVXPBRexU"
+      },
+      {
+        "artistUri": "spotify:artist:1bZNv4q3OxYq7mmnLha7Tu"
+      },
+      {
+        "artistUri": "spotify:artist:3TVXtAsR1Inumwj472S9r4"
+      },
+      {
+        "artistUri": "spotify:artist:2LRoIwlKmHjgvigdNGBHNo"
+      },
+      {
+        "artistUri": "spotify:artist:790FomKkXshlbRYZFtlgla"
+      }
+    ],
+    "topArtistMilliseconds": 158283353,
+    "topArtistFanPercentage": 1.276082E-4
+  },
+  "topPodcasts": {
+    "topPodcastsUri": [
+      "spotify:show:3pXx5SXzXwJxnf4A5pWN2A",
+      "spotify:show:122imavATqSE7eCyXIcqZL",
+      "spotify:show:2BIaSb6824vyALYHBWDeJF",
+      "spotify:show:3a36uQneX1imRuopaknUqw",
+      "spotify:show:0J74zdNxUVWHq4gLoq8MqX"
+    ],
+    "topPodcastMilliseconds": 144835897,
+    "topPodcastPercentage": 0.0,
+    "totalPodcastMilliseconds": 1204147369
+  },
+  "topTracks": {
+    "topTracks": [
+      "spotify:track:6v4ABPB255HDSWyIj3S9Wn",
+      "spotify:track:4QmpT4quTUvjUH128wow4w",
+      "spotify:track:4nQY6t7CherF0cM2pZfrje",
+      "spotify:track:0RDUnNaGubiseI1W9T3YTf",
+      "spotify:track:1L8ObNUDCh7k6GwDIbfx9Q"
+    ],
+    "topTrackPlayCount": 32,
+    "topTrackFirstPlayedDate": "2024-04-09",
+    "distinctTracksPlayed": 9908
+  },
+  "yearlyMetrics": {
+    "totalMsListened": 5407579644,
+    "mostListenedDay": "2024-03-15",
+    "mostListenedDayMinutes": 1036.8885,
+    "percentGreaterThanWorldwideUsers": 98.920265
+  },
+  "musicEvolution": {
+    "eras": [
+      {
+        "key": "0",
+        "peakMonth": 3,
+        "color": "blue",
+        "genre": "reggae",
+        "mood": "surf crush",
+        "descriptor": "old school dancehall",
+        "pivotalArtists": [
+          "spotify:artist:2QsynagSdAqZj3U9HgDzjD",
+          "spotify:artist:2vaWvC8suCFkRXejDOK7EE",
+          "spotify:artist:6UL7BodGc5iVmQGlMwHR0g"
+        ],
+        "tracks": [
+          {
+            "trackName": "Could You Be Loved",
+            "trackUri": "spotify:track:5O4erNlJ74PIF6kGol1ZrC"
+          },
+          {
+            "trackName": "I Shot The Sheriff",
+            "trackUri": "spotify:track:5uBKhKWTJ4E47rcLQqu3YH"
+          },
+          {
+            "trackName": "Your House",
+            "trackUri": "spotify:track:6PbtTwGUPPbnT7nRTA1gS3"
+          }
+        ]
+      },
+      {
+        "key": "1",
+        "peakMonth": 5,
+        "color": "green-blue",
+        "genre": "melodic techno",
+        "mood": "cyberpunk",
+        "descriptor": "tulum",
+        "pivotalArtists": [
+          "spotify:artist:4iBwchw0U0GZv5RfVYSMxN",
+          "spotify:artist:1UL813H5aj3e8ekE5RqWqc",
+          "spotify:artist:40IR4uaLi49xYhygk9YL6Y"
+        ],
+        "tracks": [
+          {
+            "trackName": "Welcome To The Opera (with Grimes)",
+            "trackUri": "spotify:track:7hV8vZMezoQdSdvsi70Ioa"
+          },
+          {
+            "trackName": "Ares",
+            "trackUri": "spotify:track:2GlBzXw3XQmsHhargtOKi8"
+          },
+          {
+            "trackName": "Time - feat. Jules Buckley",
+            "trackUri": "spotify:track:4d2Gndzn9dnmUC8jIzI9d4"
+          }
+        ]
+      },
+      {
+        "key": "2",
+        "peakMonth": 8,
+        "color": "red",
+        "genre": "reggaeton",
+        "mood": "heatwave",
+        "descriptor": "crossover",
+        "pivotalArtists": [
+          "spotify:artist:790FomKkXshlbRYZFtlgla",
+          "spotify:artist:2LRoIwlKmHjgvigdNGBHNo",
+          "spotify:artist:4q3ewBCX7sLwd24euuV69X"
+        ],
+        "tracks": [
+          {
+            "trackName": "Si Antes Te Hubiera Conocido",
+            "trackUri": "spotify:track:6WatFBLVB0x077xWeoVc2k"
+          },
+          {
+            "trackName": "LUNA",
+            "trackUri": "spotify:track:7bywjHOc0wSjGGbj04XbVi"
+          },
+          {
+            "trackName": "FRIKI",
+            "trackUri": "spotify:track:2WrqTrNIHqfcMCgmEo0A7E"
+          }
+        ]
+      }
+    ]
+  }
+}

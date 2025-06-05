@@ -1,8 +1,12 @@
 const fs = require('fs').promises;
 const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
 
-const USER_AGENT = 'JuanFavArtists/1.0 ( juandavid@hey.com )'; // Replace with actual app name and contact
+const USER_AGENT = 'JuanFavArtists/1.0 ( juandavid@hey.com )';
 const DELAY_MS = 1000; // 1 second delay for API calls
+
+// There are 356 artists in mySpotifyLibrary.json
+// Limit the number of artists to fetch
+const ARTIST_LIMIT = 50;
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -124,10 +128,12 @@ async function fetchCoverArt(artistDetails) {
 async function main() {
   let myFavArtists;
   try {
-    const artistsFileContent = await fs.readFile('src/data/myFavArtists.json', 'utf-8');
-    myFavArtists = JSON.parse(artistsFileContent);
+    const artistsFileContent = await fs.readFile('src/data/mySpotifyLibrary.json', 'utf-8');
+    const spotifyData = JSON.parse(artistsFileContent);
+    myFavArtists = spotifyData.artists.map((artist) => ({ name: artist.name }));
+    myFavArtists = myFavArtists.slice(0, ARTIST_LIMIT);
   } catch (error) {
-    console.error('Error reading or parsing src/data/myFavArtists.json:', error);
+    console.error('Error reading or parsing src/data/mySpotifyLibrary.json:', error);
     return;
   }
 
