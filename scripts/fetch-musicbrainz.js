@@ -6,7 +6,7 @@ const DELAY_MS = 1000; // 1 second delay for API calls
 
 // There are 356 artists in mySpotifyLibrary.json
 // Limit the number of artists to fetch
-const ARTIST_LIMIT = 50;
+const ARTIST_LIMIT = 100;
 
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 

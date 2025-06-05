@@ -1,6 +1,16 @@
 ---
 import Logo from './Logo.astro';
 import SearchBar from './SearchBar.astro';
+
+const links = [
+  { href: '/', label: 'Movies' },
+  { href: '/tv', label: 'TV Shows' },
+  { href: '/games', label: 'Games' },
+  { href: '/books', label: 'Books' },
+  { href: '/artists', label: 'Artists' },
+  { href: '/podcasts', label: 'Podcasts' },
+  { href: '/about', label: 'About' },
+];
 ---
 
 <nav class="nav border-b border-gray-800 sticky top-0 z-30 bg-gray-900">
@@ -14,27 +24,11 @@ import SearchBar from './SearchBar.astro';
           <span class="text-orange-500">Favorite</span>
         </a>
       </li>
-      <li class="md:ml-16 mt-3 md:mt-0">
-        <a href="/" class="hover:text-gray-300">Movies</a>
-      </li>
-      <li class="md:ml-6 mt-3 md:mt-0">
-        <a href="/tv" class="hover:text-gray-300">TV Shows</a>
-      </li>
-      <li class="md:ml-6 mt-3 md:mt-0">
-        <a href="/artists" class="hover:text-gray-300">Artists</a>
-      </li>
-      <li class="md:ml-6 mt-3 md:mt-0">
-        <a href="/podcasts" class="hover:text-gray-300">Podcasts</a>
-      </li>
-      <li class="md:ml-6 mt-3 md:mt-0">
-        <a href="/games" class="hover:text-gray-300">Games</a>
-      </li>
-      <li class="md:ml-6 mt-3 md:mt-0">
-        <a href="/books" class="hover:text-gray-300">Books</a>
-      </li>
-      <li class="md:ml-6 mt-3 md:mt-0">
-        <a href="/about" class="hover:text-gray-300">About</a>
-      </li>
+      {links.map((link) => (
+        <li class="md:ml-6 mt-3 md:mt-0">
+          <a href={link.href} class="hover:text-gray-300">{link.label}</a>
+        </li>
+      ))}
       <li>
         <SearchBar />
       </li>
