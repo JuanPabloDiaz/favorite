@@ -27,9 +27,7 @@ const { className = '', width = 'full', height = '4' } = Astro.props;
     }, 300);
   }
 
-  // Cuando el DOM esté listo
   document.addEventListener('DOMContentLoaded', () => {
-    // Asegurarse de que los skeletons estén visibles y el contenido oculto inicialmente
     const skeletons = document.querySelectorAll('[data-skeleton]');
     const content = document.querySelectorAll('[data-content]');
 
@@ -42,6 +40,5 @@ const { className = '', width = 'full', height = '4' } = Astro.props;
     });
   });
 
-  // Cuando la página esté completamente cargada
   window.addEventListener('load', toggleLoadingState);
 </script>

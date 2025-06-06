@@ -1,5 +1,5 @@
 ---
-const { book } = Astro.props; // Expect a book object as a prop
+const { book } = Astro.props;
 
 const placeholderImageUrl = 'https://via.placeholder.com/500x750.png?text=No+Cover+Art';
 
@@ -114,8 +114,6 @@ const displayPageCount = book.page_count ? `${book.page_count} pages` : null;
 </div>
 
 <script>
-  // Ensure imageLoading.js setup is consistent with other cards.
-  // GameCard.astro (and PodcastCard.astro) uses this direct import.
   import { setupImageLoading } from '@scripts/imageLoading.js';
   document.addEventListener('DOMContentLoaded', setupImageLoading);
 </script>

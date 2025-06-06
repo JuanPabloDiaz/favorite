@@ -11,7 +11,7 @@ async function isDomainAccessible(domain) {
 // Function to get the active domain
 export async function getActiveDomain() {
   const primaryDomain = 'fav.jpdiaz.dev';
-  const backupDomain = 'juan-favorites.pages.dev';
+  const backupDomain = 'juan-favorites.vercel.app';
 
   return (await isDomainAccessible(primaryDomain)) ? primaryDomain : backupDomain;
 }
@@ -19,7 +19,7 @@ export async function getActiveDomain() {
 export const metadata = {
   name: "Juan's Favorites",
   primaryDomain: 'fav.jpdiaz.dev',
-  backupDomain: 'juan-favorites.pages.dev',
+  backupDomain: 'juan-favorites.vercel.app',
   // These will be updated dynamically
   domain: 'fav.jpdiaz.dev',
   baseUrl: 'https://fav.jpdiaz.dev',
