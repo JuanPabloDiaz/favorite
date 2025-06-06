@@ -4,9 +4,19 @@ const currentYear = new Date().getFullYear();
 const yearDisplay = startYear === currentYear ? `${currentYear}` : `${startYear} - ${currentYear}`;
 ---
 
-<footer class="border border-t border-gray-800">
-  <div class="container mx-auto text-sm px-4 py-6">
-    &copy; {yearDisplay} All rights reserved.
-    <a href="https://jpdiaz.dev" target="_blank" class="underline hover:text-gray-300">Juan Diaz</a>
-  </div>
+<footer class="p-6 text-center text-sm border border-t border-gray-800">
+	<div class="flex flex-col items-center justify-center md:flex-row">
+    &copy; {yearDisplay} All rights reserved
+    <span class="mx-1 hidden md:block">•</span>
+		<p class="flex items-center justify-center">
+			Developed by
+			<a
+				aria-label="Website developed by Juan Diaz"
+				href="https://jpdiaz.dev"
+				class="pl-1 font-bold hover:underline hover:underline-offset-4 text-orange-400 hover:underline transition duration-300"
+			>
+				Juan Diaz
+			</a>
+		</p>
+	</div>
 </footer>
