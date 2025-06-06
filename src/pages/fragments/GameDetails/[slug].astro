@@ -1,4 +1,5 @@
 ---
+import Modal from '@components/Modal.astro';
 import { SITE_TITLE } from '@consts'; // Assuming you have a site title constant
 
 const { slug } = Astro.params; // Get the game slug from the URL
@@ -155,23 +156,37 @@ const formatDate = (dateString) => {
 
       {/* Short Screenshots Section */}
       {game.short_screenshots && game.short_screenshots.length > 0 && (
-        <div class="screenshots-section border-b border-gray-800">
-          <div class="container mx-auto px-4 py-16">
-            <h2 class="text-3xl font-semibold mb-8">Screenshots</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-              {game.short_screenshots.map((screenshot) => (
-                <div class="aspect-video bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-                  <img
+      <div class="movie-images" x-data="{ isOpen: false, image: ''}">
+    <div class="container mx-auto px-4 py-16">
+      <h2 class="text-4xl font-semibold">Images</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        {
+          game.short_screenshots.map((screenshot) => (
+            <div class="mt-8">
+              <a
+                @click.prevent={`
+                            isOpen = true
+                            image='${screenshot}'
+                        `}
+                href="#"
+              >
+                <img
                     src={screenshot || screenshotPlaceholder}
-                    alt="Game screenshot"
-                    class="w-full h-full object-cover hover:opacity-80 transition-opacity duration-150"
                     loading="lazy"
-                  />
-                </div>
-              ))}
+                  alt={game.name}
+                  class="hover:opacity-75 transition ease-in-out duration-150 rounded-lg"
+                />
+              </a>
             </div>
-          </div>
-        </div>
+          ))
+        }
+      </div>
+
+      <Modal open="isOpen" close="isOpen = false">
+        <img :src="image" alt="Game Screenshot Poster" class="max-w-full h-auto block mx-auto max-h-[90vh]" />
+      </Modal>
+    </div>
+  </div>
       )}
       {/* Add other sections like "More Like This" if data is available and desired */}
     </>
