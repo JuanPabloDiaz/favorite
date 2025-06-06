@@ -40,22 +40,22 @@ if (artist?.genres && artist.genres.length > 0) {
         <div class="artist-info border-b border-gray-800">
           {' '}
           {/* Adapted class name from movie-info */}
-          <div class="container mx-auto px-4 py-16 flex flex-col md:flex-row">
+          <div class="container mx-auto flex flex-col px-4 py-16 md:flex-row">
             <div class="flex-none">
               <img
                 src={imageUrl}
                 alt={`${artistName} main image`}
-                class="w-64 md:w-96 rounded-lg shadow-lg"
+                class="w-64 rounded-lg shadow-lg md:w-96"
                 width="500"
                 height="750"
               />
             </div>
             <div class="md:ml-24">
               <h2 class="text-4xl font-semibold">{artistName}</h2>
-              <div class="flex flex-wrap items-center text-gray-400 text-sm mt-2">
+              <div class="mt-2 flex flex-wrap items-center text-sm text-gray-400">
                 {artist.rating && artist.rating.value && (
                   <>
-                    <svg class="fill-current text-orange-500 w-4" viewBox="0 0 24 24">
+                    <svg class="w-4 fill-current text-orange-500" viewBox="0 0 24 24">
                       <g data-name="Layer 2">
                         <path
                           d="M17.56 21a1 1 0 01-.46-.11L12 18.22l-5.1 2.67a1 1 0 01-1.45-1.06l1-5.63-4.12-4a1 1 0 01-.25-1 1 1 0 01.81-.68l5.7-.83 2.51-5.13a1 1 0 011.8 0l2.54 5.12 5.7.83a1 1 0 01.81.68 1 1 0 01-.25 1l-4.12 4 1 5.63a1 1 0 01-.4 1 1 1 0 01-.62.18z"
@@ -74,7 +74,7 @@ if (artist?.genres && artist.genres.length > 0) {
 
               <div class="mt-8">
                 <h4 class="text-lg font-semibold text-gray-300">Biography</h4>
-                <p class="text-gray-300 mt-2">
+                <p class="mt-2 text-gray-300">
                   {artist['life-span']?.begin && `Born: ${artist['life-span'].begin}`}
                   <br />
                   {artist['life-span']?.end && `Died: ${artist['life-span'].end}`}
@@ -87,7 +87,7 @@ if (artist?.genres && artist.genres.length > 0) {
               <div class="mt-8">
                 <h4 class="text-lg font-semibold text-gray-300">Discography Highlights</h4>
                 {artist['release-groups']?.length > 0 ? (
-                  <ul class="list-disc list-inside text-gray-300 mt-2">
+                  <ul class="mt-2 list-inside list-disc text-gray-300">
                     {artist['release-groups']
                       .filter((r) => r['primary-type'] === 'Album')
                       .slice(0, 5)
@@ -98,7 +98,7 @@ if (artist?.genres && artist.genres.length > 0) {
                       ))}
                   </ul>
                 ) : (
-                  <p class="text-gray-300 mt-2">No discography found.</p>
+                  <p class="mt-2 text-gray-300">No discography found.</p>
                 )}
               </div>
             </div>
@@ -106,16 +106,16 @@ if (artist?.genres && artist.genres.length > 0) {
         </div>
       ) : (
         <div class="container mx-auto px-4 py-16">
-          <p class="text-2xl text-center">Artist not found.</p>
-          <p class="text-center mt-4">
+          <p class="text-center text-2xl">Artist not found.</p>
+          <p class="mt-4 text-center">
             The artist you are looking for with MBID <span class="font-mono">{mbid}</span> could not
             be found in our records. This might be a temporary issue, or the artist may not be in
             our current favorites list.
           </p>
-          <div class="text-center mt-8">
+          <div class="mt-8 text-center">
             <a
               href="/artists"
-              class="px-6 py-3 bg-orange-500 text-white font-semibold rounded-lg hover:bg-orange-600 transition duration-300"
+              class="rounded-lg bg-orange-500 px-6 py-3 font-semibold text-white transition duration-300 hover:bg-orange-600"
             >
               Back to Artists List
             </a>

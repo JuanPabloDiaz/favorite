@@ -19,10 +19,10 @@ const podcastUrl = `/podcasts/${podcastSlug}`;
 <div class="mt-8">
   <a
     href={podcastUrl}
-    class="block aspect-[2/3] bg-gray-800 rounded-lg overflow-hidden"
+    class="block aspect-[2/3] overflow-hidden rounded-lg bg-gray-800"
     title={podcastTitle}
   >
-    <div class="relative w-full h-full">
+    <div class="relative h-full w-full">
       <img
         src={imageUrl}
         alt={`Cover art for ${podcastTitle}`}
@@ -30,29 +30,29 @@ const podcastUrl = `/podcasts/${podcastSlug}`;
         height="750"
         loading="lazy"
         decoding="async"
-        class="thumbnail w-full h-full object-cover rounded-lg shadow-sm shadow-slate-600 hover:opacity-75 transition ease-in-out duration-300 hover:shadow-slate-50"
+        class="thumbnail h-full w-full rounded-lg object-cover shadow-sm shadow-slate-600 transition duration-300 ease-in-out hover:opacity-75 hover:shadow-slate-50"
         id={`podcast-poster-${podcast.id}`}
       />
-      <div class="absolute inset-0 bg-gray-800 animate-pulse" style="display: none;"></div>
+      <div class="absolute inset-0 animate-pulse bg-gray-800" style="display: none;"></div>
     </div>
   </a>
   <div class="mt-2">
-    <a href={podcastUrl} class="text-lg mt-2 hover:text-gray-300" title={podcastTitle}
+    <a href={podcastUrl} class="mt-2 text-lg hover:text-gray-300" title={podcastTitle}
       >{podcastTitle}</a
     >
-    <div class="flex items-center text-gray-400 text-sm mt-1">
+    <div class="mt-1 flex items-center text-sm text-gray-400">
       <span>{displayPublisher}</span>
     </div>
     {
       podcast.genres && podcast.genres.length > 0 && (
-        <div class="text-gray-400 text-sm mt-1 truncate" title={podcast.genres.join(', ')}>
+        <div class="mt-1 truncate text-sm text-gray-400" title={podcast.genres.join(', ')}>
           {podcast.genres.join(', ')}
         </div>
       )
     }
     {
       podcast.episode_count != null && ( // Check for null or undefined specifically
-        <div class="text-gray-400 text-sm mt-1">
+        <div class="mt-1 text-sm text-gray-400">
           <span>{podcast.episode_count} episodes</span>
         </div>
       )

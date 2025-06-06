@@ -8,13 +8,13 @@ const { open, close } = Astro.props;
 ---
 
 <div
-  class="bg-black/50 backdrop-blur fixed inset-0 p-4 flex shadow-lg overflow-y-auto z-40"
+  class="fixed inset-0 z-40 flex overflow-y-auto bg-black/50 p-4 shadow-lg backdrop-blur"
   @click.self={close}
   x-show={open}
   x-transition.opacity
 >
   <div class="m-auto w-full max-w-5xl">
-    <div class="bg-gray-900 rounded">
+    <div class="rounded bg-gray-900">
       <div class="flex justify-end pr-4 pt-2">
         <button
           @click={close}

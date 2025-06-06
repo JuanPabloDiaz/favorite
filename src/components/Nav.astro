@@ -13,11 +13,11 @@ const links = [
 ];
 ---
 
-<nav class="nav border-b border-gray-800 sticky top-0 z-30 bg-gray-900">
-  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 py-6">
-    <ul class="flex flex-col md:flex-row items-center">
+<nav class="nav sticky top-0 z-30 border-b border-gray-800 bg-gray-900">
+  <div class="container mx-auto flex flex-col items-center justify-between px-4 py-6 md:flex-row">
+    <ul class="flex flex-col items-center md:flex-row">
       <li>
-        <a href="/" class="flex items-center font-bold text-xl">
+        <a href="/" class="flex items-center text-xl font-bold">
           <!-- <Logo /> -->
           <span>Juan's</span>
           &nbsp;
@@ -26,7 +26,7 @@ const links = [
       </li>
       {
         links.map((link) => (
-          <li class="md:ml-6 mt-3 md:mt-0">
+          <li class="mt-3 md:ml-6 md:mt-0">
             <a href={link.href} class="hover:text-gray-300">
               {link.label}
             </a>

@@ -10,18 +10,18 @@ const Genres = Object.keys(myFavMoviesByGenre);
 // Note: We're now using pre-fetched movie details from our local JSON
 ---
 
-<main class="container mx-auto px-4 pt-16 mb-16">
-  <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">
+<main class="container mx-auto mb-16 px-4 pt-16">
+  <h2 class="text-lg font-semibold uppercase tracking-wider text-orange-500">
     Juan's Favorite Movies
   </h2>
   <section class="">
     {
       Genres.map((Genre) => (
         <article>
-          <h2 class="uppercase tracking-wider text-orange-400 text-sm font-semibold pt-3 border-b-4 border-zinc-500 w-2/6">
+          <h2 class="w-2/6 border-b-4 border-zinc-500 pt-3 text-sm font-semibold uppercase tracking-wider text-orange-400">
             {Genre}
           </h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
             {movieDetails[Genre].map((movie) => (
               <MovieCard movie={movie} />
             ))}

@@ -19,12 +19,12 @@ if (Array.isArray(podcastDetails)) {
     {
       /* Re-use existing class name for styling if appropriate, or use a new one like "popular-podcasts" if styles are specific */
     }
-    <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">
+    <h2 class="text-lg font-semibold uppercase tracking-wider text-orange-500">
       Favorite Podcasts
     </h2>
     {
       fetchError && (
-        <div class="text-red-500 bg-red-100 border border-red-400 rounded p-4 my-4">
+        <div class="my-4 rounded border border-red-400 bg-red-100 p-4 text-red-500">
           <p>
             <strong>Error loading podcasts:</strong>
           </p>
@@ -34,7 +34,7 @@ if (Array.isArray(podcastDetails)) {
     }
     {
       allPodcasts.length === 0 && !fetchError && (
-        <div class="text-gray-400 bg-gray-800 border border-gray-700 rounded p-4 my-4">
+        <div class="my-4 rounded border border-gray-700 bg-gray-800 p-4 text-gray-400">
           <p>
             No podcasts found. Please run `npm run fetch-data` to populate the list, or add podcasts
             to `src/data/myFavPodcasts.json` and then run the fetch command.
@@ -42,7 +42,7 @@ if (Array.isArray(podcastDetails)) {
         </div>
       )
     }
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
       {allPodcasts.map((podcast) => <PodcastCard podcast={podcast} />)}
     </div>
   </div>

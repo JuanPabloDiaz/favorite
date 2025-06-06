@@ -48,19 +48,19 @@ const video = movie.videos.results.slice(0, 6);
 
 <div class="movie-info border-b border-gray-800">
   <div class="movie-info border-b border-gray-800">
-    <div class="container mx-auto px-4 py-16 flex flex-col md:flex-row">
+    <div class="container mx-auto flex flex-col px-4 py-16 md:flex-row">
       <div class="flex-none">
         <img
           src={movie.poster_path}
           alt={`${movie.title} Poster`}
-          class="movie-poster w-64 lg:w-96 rounded-lg"
+          class="movie-poster w-64 rounded-lg lg:w-96"
           id="movie-poster"
         />
       </div>
       <div class="md:ml-24">
-        <h2 class="text-4xl mt-4 md:mt-0 mb-2 font-semibold">{movie.title}</h2>
-        <div class="flex flex-wrap items-center text-gray-400 text-sm">
-          <svg class="fill-current text-orange-500 w-4" viewBox="0 0 24 24"
+        <h2 class="mb-2 mt-4 text-4xl font-semibold md:mt-0">{movie.title}</h2>
+        <div class="flex flex-wrap items-center text-sm text-gray-400">
+          <svg class="w-4 fill-current text-orange-500" viewBox="0 0 24 24"
             ><g data-name="Layer 2"
               ><path
                 d="M17.56 21a1 1 0 01-.46-.11L12 18.22l-5.1 2.67a1 1 0 01-1.45-1.06l1-5.63-4.12-4a1 1 0 01-.25-1 1 1 0 01.81-.68l5.7-.83 2.51-5.13a1 1 0 011.8 0l2.54 5.12 5.7.83a1 1 0 01.81.68 1 1 0 01-.25 1l-4.12 4 1 5.63a1 1 0 01-.4 1 1 1 0 01-.62.18z"
@@ -74,18 +74,18 @@ const video = movie.videos.results.slice(0, 6);
           <span>{movie.genres}</span>
         </div>
 
-        <p class="text-gray-300 mt-8">
+        <p class="mt-8 text-gray-300">
           {movie.overview}
         </p>
 
         <div class="mt-12">
-          <h4 class="text-white font-semibold">Featured Crew</h4>
-          <div class="flex mt-4">
+          <h4 class="font-semibold text-white">Featured Crew</h4>
+          <div class="mt-4 flex">
             {
               movie.crew.map((crew) => (
                 <div class="mr-8">
                   <div>{crew.name}</div>
-                  <div class="text-gray-400 text-sm">{crew.job}</div>
+                  <div class="text-sm text-gray-400">{crew.job}</div>
                 </div>
               ))
             }
@@ -99,7 +99,7 @@ const video = movie.videos.results.slice(0, 6);
                 <div class="mt-12">
                   <button
                     @click="isOpen = true"
-                    class="flex items-center bg-orange-500 text-gray-900 rounded font-semibold px-5 py-4 hover:bg-orange-600 transition ease-in-out duration-150"
+                    class="flex items-center rounded bg-orange-500 px-5 py-4 font-semibold text-gray-900 transition duration-150 ease-in-out hover:bg-orange-600"
                   >
                     <svg class="w-6 fill-current" viewBox="0 0 24 24">
                       <>
@@ -112,11 +112,11 @@ const video = movie.videos.results.slice(0, 6);
                 </div>
                 <Modal open="isOpen" close="isOpen = false">
                   <div
-                    class="responsive-container overflow-hidden relative"
+                    class="responsive-container relative overflow-hidden"
                     style="padding-top: 56.25%"
                   >
                     <iframe
-                      class="responsive-iframe absolute top-0 left-0 w-full h-full"
+                      class="responsive-iframe absolute left-0 top-0 h-full w-full"
                       src={`https://www.youtube.com/embed/${movie.videos.results[0].key}`}
                       style="border:0;"
                       allow="autoplay; encrypted-media"
@@ -136,7 +136,7 @@ const video = movie.videos.results.slice(0, 6);
   <div class="movie-cast border-b border-gray-800">
     <div class="container mx-auto px-4 py-16">
       <h2 class="text-4xl font-semibold">Cast</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         {
           movie.cast.map((cast) => (
             <div class="mt-8">
@@ -145,11 +145,11 @@ const video = movie.videos.results.slice(0, 6);
                   id={`person-photo-${cast.id}`}
                   src={cast.profile_path}
                   alt={cast.name}
-                  class="thumbnail hover:opacity-75 transition ease-in-out duration-150 rounded-lg"
+                  class="thumbnail rounded-lg transition duration-150 ease-in-out hover:opacity-75"
                 />
               </a>
               <div class="mt-2">
-                <a href={`/people/${cast.id}`} class="text-lg mt-2 hover:text-gray:300">
+                <a href={`/people/${cast.id}`} class="hover:text-gray:300 mt-2 text-lg">
                   {cast.name}
                 </a>
                 <div class="text-sm text-gray-400">{cast.character}</div>
@@ -165,7 +165,7 @@ const video = movie.videos.results.slice(0, 6);
   <div class="movie-images" x-data="{ isOpen: false, image: ''}">
     <div class="container mx-auto px-4 py-16">
       <h2 class="text-4xl font-semibold">Images</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
         {
           movie.images.map((image) => (
             <div class="mt-8">
@@ -180,7 +180,7 @@ const video = movie.videos.results.slice(0, 6);
                   src={`https://image.tmdb.org/t/p/w500${image.file_path}`}
                   loading="lazy"
                   alt={movie.name}
-                  class="hover:opacity-75 transition ease-in-out duration-150 rounded-lg"
+                  class="rounded-lg transition duration-150 ease-in-out hover:opacity-75"
                 />
               </a>
             </div>
@@ -198,7 +198,7 @@ const video = movie.videos.results.slice(0, 6);
   <div class="movie-videos" x-data="{ isOpen: false, video: ''}">
     <div class="container mx-auto px-4 py-16">
       <h2 class="text-4xl font-semibold">Videos</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
         {
           video.map((v, index) => (
             <div class="mt-8">
@@ -212,7 +212,7 @@ const video = movie.videos.results.slice(0, 6);
                 <img
                   src={`https://img.youtube.com/vi/${v.key}/0.jpg`}
                   alt={v.name}
-                  class="hover:opacity-75 transition ease-in-out duration-150 rounded-lg"
+                  class="rounded-lg transition duration-150 ease-in-out hover:opacity-75"
                 />
               </a>
             </div>
@@ -228,7 +228,7 @@ const video = movie.videos.results.slice(0, 6);
       <h2 class="text-4xl font-semibold">More Like This</h2>
 
       <div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           {
             movie.morelike.map((morelike) => (
               <div class="mt-8">
@@ -236,16 +236,16 @@ const video = movie.videos.results.slice(0, 6);
                   <img
                     src={morelike.poster_path}
                     alt={morelike.title}
-                    class="thumbnail hover:opacity-75 transition ease-in-out duration-150 rounded-lg"
+                    class="thumbnail rounded-lg transition duration-150 ease-in-out hover:opacity-75"
                   />
                 </a>
                 <div class="mt-2">
-                  <a href={`/movies/${morelike.id}`} class="text-lg mt-2 hover:text-gray-300">
+                  <a href={`/movies/${morelike.id}`} class="mt-2 text-lg hover:text-gray-300">
                     {morelike.title}
                   </a>
-                  <div class="flex items ">
+                  <div class="items flex">
                     <div class="text-sm text-gray-400">{morelike.release_date}</div>
-                    <div class="text-sm text-gray-400 ml-2">{morelike.vote_average}</div>
+                    <div class="ml-2 text-sm text-gray-400">{morelike.vote_average}</div>
                   </div>
                 </div>
               </div>

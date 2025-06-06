@@ -2,29 +2,23 @@
 
 ---
 
-<div class="relative mt-3 md:mt-0 md:ml-4">
-  <form
-    role="search"
-    action="/search"
-    method="GET"
-    class="flex items-center"
-    aria-label="Search"
-  >
+<div class="relative mt-3 md:ml-4 md:mt-0">
+  <form role="search" action="/search" method="GET" class="flex items-center" aria-label="Search">
     <label for="search-input" class="sr-only">Search</label>
     <input
       id="search-input"
       type="search"
       name="query"
-      class="bg-gray-800 rounded-full w-64 px-4 pl-12 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500 text-sm"
+      class="w-64 rounded-full bg-gray-800 px-4 py-2 pl-12 text-sm focus:outline-none focus:ring-2 focus:ring-orange-500"
       placeholder="Search..."
       aria-label="Search"
     />
     <button
       type="submit"
-      class="absolute left-2 p-2 hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 rounded-full"
+      class="absolute left-2 rounded-full p-2 hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500"
       aria-label="Submit search"
     >
-      <svg class="fill-current w-5 h-5 text-gray-500" viewBox="0 0 24 24" aria-hidden="true">
+      <svg class="h-5 w-5 fill-current text-gray-500" viewBox="0 0 24 24" aria-hidden="true">
         <path
           class="heroicon-ui"
           d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"

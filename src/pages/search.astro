@@ -42,17 +42,17 @@ const uniqueTvResults = [...new Map(tvResults.map((t) => [t.id, t])).values()];
 >
   <main class="container mx-auto px-4 pt-16">
     <div class="search-results">
-      <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold mb-4">
+      <h2 class="mb-4 text-lg font-semibold uppercase tracking-wider text-orange-500">
         Search results for: "{query}"
       </h2>
 
       {
         uniqueMovieResults.length > 0 && (
           <section class="movies mb-8">
-            <h3 class="text-lg font-semibold text-gray-300 mb-4">
+            <h3 class="mb-4 text-lg font-semibold text-gray-300">
               Movies ({uniqueMovieResults.length})
             </h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
               {uniqueMovieResults.map((movie) => (
                 <MovieCard movie={movie} />
               ))}
@@ -64,10 +64,10 @@ const uniqueTvResults = [...new Map(tvResults.map((t) => [t.id, t])).values()];
       {
         uniqueTvResults.length > 0 && (
           <section class="tv-shows">
-            <h3 class="text-lg font-semibold text-gray-300 mb-4">
+            <h3 class="mb-4 text-lg font-semibold text-gray-300">
               TV Shows ({uniqueTvResults.length})
             </h3>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
               {uniqueTvResults.map((show) => (
                 <TvShowCard show={show} />
               ))}
@@ -78,7 +78,7 @@ const uniqueTvResults = [...new Map(tvResults.map((t) => [t.id, t])).values()];
 
       {
         uniqueMovieResults.length === 0 && uniqueTvResults.length === 0 && (
-          <p class="text-gray-300 text-center py-8">
+          <p class="py-8 text-center text-gray-300">
             No results found for "{query}". Try another search.
           </p>
         )

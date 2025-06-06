@@ -57,8 +57,8 @@ const canonicalURL = new URL(Astro.url.pathname, metadata.baseUrl);
       import '@scripts/spa-navigation.js';
     </script>
   </head>
-  <body class="font-sans bg-gray-900 text-white">
-    <main class="h-screen overflow-hidden flex flex-col">
+  <body class="bg-gray-900 font-sans text-white">
+    <main class="flex h-screen flex-col overflow-hidden">
       <Nav />
       <div id="container" class="h-full flex-1 overflow-y-auto">
         <div id="content">

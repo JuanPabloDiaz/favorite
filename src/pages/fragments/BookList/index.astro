@@ -43,10 +43,10 @@ try {
 <div class="container mx-auto px-4 pt-16">
   <div class="favorite-books">
     {/* Changed class name for specificity */}
-    <h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">Favorite Books</h2>
+    <h2 class="text-lg font-semibold uppercase tracking-wider text-orange-500">Favorite Books</h2>
     {
       fetchError && (
-        <div class="text-red-500 bg-red-100 border border-red-400 rounded p-4 my-4 text-sm">
+        <div class="my-4 rounded border border-red-400 bg-red-100 p-4 text-sm text-red-500">
           <p>
             <strong>Error loading books:</strong>
           </p>
@@ -61,12 +61,12 @@ try {
     }
     {
       allBooks.length === 0 && !fetchError && (
-        <div class="text-gray-400 bg-gray-800 border border-gray-700 rounded p-4 my-4 text-sm">
+        <div class="my-4 rounded border border-gray-700 bg-gray-800 p-4 text-sm text-gray-400">
           <p>
             No books found in <code>src/data/books/bookDetails.json</code>.
           </p>
           <p class="mt-2">To see your favorite books here, please:</p>
-          <ol class="list-decimal list-inside mt-1">
+          <ol class="mt-1 list-inside list-decimal">
             <li>
               Ensure you have added books to <code>src/data/myFavBooks.json</code>.
             </li>
@@ -78,7 +78,7 @@ try {
         </div>
       )
     }
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
       {allBooks.map((book) => <BookCard book={book} />)}
     </div>
   </div>
