@@ -1,6 +1,29 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import MovieDetails from '@pages/fragments/MovieDetails/[id].astro';
+import type { GetStaticPaths } from 'astro';
+import movieData from '@data/movieDetails.json';
+
+// This is required for static site generation
+export const getStaticPaths = (() => {
+  const allMovies = [];
+  
+  // Collect all movies from all genres
+  Object.keys(movieData).forEach(genre => {
+    if (Array.isArray(movieData[genre])) {
+      allMovies.push(...movieData[genre]);
+    }
+  });
+
+  // Remove duplicates by movie ID
+  const uniqueMovies = [...new Map(allMovies.map(movie => [movie.id, movie])).values()];
+  
+  return uniqueMovies.map((movie) => ({
+    params: { id: String(movie.id) },
+  }));
+}) satisfies GetStaticPaths;
+
+const { id } = Astro.params;
 ---
 
 <Layout title="Juan's Favorites">

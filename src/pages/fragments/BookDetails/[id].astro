@@ -1,4 +1,23 @@
 ---
+import type { GetStaticPaths } from 'astro';
+import booksData from '@data/myFavBooks.json';
+
+// Generate static paths for all books in the data file
+export const getStaticPaths = (() => {
+  try {
+    if (Array.isArray(booksData)) {
+      return booksData.map(book => ({
+        params: { id: book.api_id || String(book._id) },
+        props: { bookData: book },
+      }));
+    }
+    return [];
+  } catch (error) {
+    console.error("Error in getStaticPaths for book details fragment:", error);
+    return []; // Fallback to empty paths if error or no data
+  }
+}) satisfies GetStaticPaths;
+
 const { id } = Astro.params; // Get the book's OpenLibrary Work ID from the URL
 let book = null;
 let fetchError = null;

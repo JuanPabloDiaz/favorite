@@ -1,12 +1,10 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
-import vercel from '@astrojs/vercel';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://fav.jpdiaz.dev',
-  output: 'server', // Puedes cambiar a "static" si no usas SSR
-  adapter: vercel(),
+  output: 'static', // Changed from 'server' to prevent excessive serverless function calls
   integrations: [
     tailwind(),
     sitemap({

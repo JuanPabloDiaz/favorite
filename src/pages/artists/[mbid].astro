@@ -1,6 +1,18 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import ArtistDetails from '@pages/fragments/ArtistDetails/[mbid].astro';
+import type { GetStaticPaths } from 'astro';
+import artistsData from '@data/artistDetails.json';
+
+// This is required for static site generation
+export async function getStaticPaths() {
+  const artistEntries = artistsData.allArtists || [];
+  return artistEntries.map((artist) => ({
+    params: { mbid: artist.id },
+  }));
+}
+
+const { mbid } = Astro.params;
 ---
 
 <Layout title="Juan's Favorites — Artist"><ArtistDetails /></Layout>
