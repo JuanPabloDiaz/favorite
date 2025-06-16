@@ -1,40 +1,70 @@
 ---
 import Modal from '@components/Modal.astro';
+import movieDetailsJson from '@data/movieDetails.json';
 
+// For static site generation, pre-define all movie IDs
+export async function getStaticPaths() {
+  try {
+    const allMovies = [];
+    
+    // Movie data is organized by genre categories
+    if (movieDetailsJson) {
+      // Iterate through each genre category
+      Object.keys(movieDetailsJson).forEach(genre => {
+        if (Array.isArray(movieDetailsJson[genre])) {
+          // Add all movies from this genre to our collection
+          movieDetailsJson[genre].forEach(movie => {
+            if (movie.id) {
+              allMovies.push(movie);
+            }
+          });
+        }
+      });
+    }
+    
+    // Generate paths for all movies
+    return allMovies.map(movie => ({
+      params: { id: String(movie.id) },
+      props: { movieData: movie } // Pass the movie data as props
+    }));
+  } catch (error) {
+    console.error('Error in getStaticPaths for MovieDetails:', error);
+    return []; // Fallback to empty paths if error
+  }
+}
+
+// Get parameters from Astro
 const { id } = Astro.params;
-const url = `https://api.themoviedb.org/3/movie/${id}?append_to_response=credits,videos,images,recommendations&api_key=${
-  import.meta.env.TMDB_API_KEY
-}`;
+const movieData = Astro.props.movieData;
 
-const response = await fetch(url);
-const data = await response.json();
+// Format movie data for display
 const movie = {
-  ...data,
-  poster_path: data.poster_path
-    ? 'https://image.tmdb.org/t/p/w500/' + data.poster_path
+  ...movieData,
+  poster_path: movieData.poster_path
+    ? 'https://image.tmdb.org/t/p/w500/' + movieData.poster_path
     : 'https://via.placeholder.com/500x750',
-  vote_average: (data.vote_average * 10).toFixed(2) + '%',
-  release_date: new Date(data.release_date).toLocaleDateString('en-us', {
+  vote_average: (movieData.vote_average * 10).toFixed(2) + '%',
+  release_date: new Date(movieData.release_date).toLocaleDateString('en-us', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
   }),
-  genres: data.genres.map((g) => g.name).join(', '),
-  crew: data.credits.crew.slice(0, 3),
-  cast: data.credits.cast.slice(0, 5).map((c) => ({
+  genres: movieData.genres.map((g) => g.name).join(', '),
+  crew: movieData.credits?.crew?.slice(0, 3) || [],
+  cast: movieData.credits?.cast?.slice(0, 5).map((c) => ({
     ...c,
     profile_path: c.profile_path
       ? 'https://image.tmdb.org/t/p/w300/' + c.profile_path
       : 'https://via.placeholder.com/300x450',
-  })),
-  morelike: data.recommendations.results.slice(0, 5).map((m) => ({
+  })) || [],
+  morelike: movieData.recommendations?.results?.slice(0, 5).map((m) => ({
     ...m,
     poster_path: m.poster_path
       ? 'https://image.tmdb.org/t/p/w500/' + m.poster_path
       : 'https://via.placeholder.com/500x750',
-  })),
-  images: data.images.backdrops.slice(0, 6),
-  videos: data.videos,
+  })) || [],
+  images: movieData.images?.backdrops?.slice(0, 6) || [],
+  videos: movieData.videos || { results: [] },
 };
 // console.log("more like this", movie.recommendations.results.slice(0, 5));
 // console.log("video", movie.videos.results.slice(0, 1));

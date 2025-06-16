@@ -1,26 +1,36 @@
 ---
+import podcastDetailsJson from '@data/podcastDetails.json';
+
+// For static site generation, define all podcast IDs to pre-render
+export async function getStaticPaths() {
+  try {
+    // Extract all podcast IDs from the JSON data
+    if (podcastDetailsJson && podcastDetailsJson.allPodcasts) {
+      return podcastDetailsJson.allPodcasts.map(podcast => ({
+        params: { id: podcast.id },
+        props: { podcastData: podcast } // Pass podcast data as props to avoid fetching again
+      }));
+    } else {
+      console.error('Podcast data is missing or malformed in podcastDetails.json');
+      return [];
+    }
+  } catch (error) {
+    console.error('Error processing podcast data for getStaticPaths:', error);
+    return [];
+  }
+}
+
 const { id } = Astro.params; // Get the podcast ID from the URL
-let podcast = null;
+const { podcastData } = Astro.props; // Get the podcast data passed from getStaticPaths
+
+// Use the passed data directly instead of fetching
+let podcast = podcastData;
 let fetchError = null;
 
-try {
-  const results = await Astro.glob('@data/podcastDetails.json');
-  if (results && results.length > 0) {
-    const podcastJsonData = results[0].default || results[0];
-    if (podcastJsonData && podcastJsonData.allPodcasts) {
-      podcast = podcastJsonData.allPodcasts.find(p => p.id.toString() === id.toString());
-      if (!podcast) {
-        fetchError = `Podcast with ID "${id}" not found.`;
-      }
-    } else {
-      fetchError = 'Podcast data is not in the expected format or "allPodcasts" key is missing in imported JSON.';
-    }
-  } else {
-    fetchError = 'Podcast data file not found via Astro.glob.';
-  }
-} catch (error) {
-  console.error(`Error loading or processing podcastDetails.json for podcast ${id} via Astro.glob:`, error);
-  fetchError = `Failed to load podcast data. Details: ${error.message}`;
+// Set fetchError if data is somehow missing
+if (!podcast) {
+  fetchError = `Podcast with ID "${id}" not found.`;
+  console.error(`Podcast data missing for ID: ${id} in static props`);
 }
 
 // Placeholder for missing image
