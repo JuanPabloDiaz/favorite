@@ -1,43 +1,67 @@
 ---
 import Modal from '@components/Modal.astro';
+import tvShowDetailsJson from '@data/tvShowDetails.json';
+
+// For static site generation, define all TV show IDs to pre-render
+export async function getStaticPaths() {
+  try {
+    const tvShowIds = new Set();
+    
+    // Extract TV show IDs from the JSON data
+    if (tvShowDetailsJson && tvShowDetailsJson.regular) {
+      return tvShowDetailsJson.regular.map(show => ({
+        params: { id: String(show.id) },
+        props: { showData: show } // Pass TV show data as props to avoid fetching again
+      }));
+    } else {
+      console.error('TV show data is missing or malformed in tvShowDetails.json');
+      return [];
+    }
+  } catch (error) {
+    console.error('Error processing TV show data for getStaticPaths:', error);
+    return [];
+  }
+}
 
 const { id } = Astro.params;
-const url = `https://api.themoviedb.org/3/tv/${id}?append_to_response=credits,videos,images,recommendations&api_key=${
-  import.meta.env.TMDB_API_KEY
-}`;
+const { showData } = Astro.props; // Get the TV show data passed from getStaticPaths
 
-const response = await fetch(url);
-const data = await response.json();
+// Process the static show data for display
+// Add a type assertion to allow any properties to be accessed
+const typedShowData = showData as any;
+
 const show = {
-  ...data,
-  poster_path: data.poster_path
-    ? 'https://image.tmdb.org/t/p/w500/' + data.poster_path
+  ...typedShowData,
+  poster_path: typedShowData.poster_path
+    ? 'https://image.tmdb.org/t/p/w500/' + typedShowData.poster_path
     : 'https://via.placeholder.com/500x750',
-  vote_average: (data.vote_average * 10).toFixed(2) + '%',
-  first_air_date: new Date(data.first_air_date).toLocaleDateString('en-us', {
+  vote_average: (typedShowData.vote_average * 10).toFixed(2) + '%',
+  first_air_date: new Date(typedShowData.first_air_date).toLocaleDateString('en-us', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
   }),
-  genres: data.genres.map((g) => g.name).join(', '),
-  cast: data.credits.cast.slice(0, 5).map((c) => ({
+  genres: typedShowData.genres?.map((g) => g.name).join(', ') || 'N/A',
+  // Safely access nested properties with optional chaining
+  cast: typedShowData.credits?.cast?.slice(0, 5).map((c) => ({
     ...c,
     profile_path: c.profile_path
       ? 'https://image.tmdb.org/t/p/w300/' + c.profile_path
       : 'https://via.placeholder.com/300x450',
-  })),
-  images: data.images.backdrops.slice(0, 9),
-  morelike: data.recommendations.results.slice(0, 5).map((m) => ({
+  })) || [],
+  images: typedShowData.images?.backdrops?.slice(0, 9) || [],
+  morelike: typedShowData.recommendations?.results?.slice(0, 5).map((m) => ({
     ...m,
     poster_path: m.poster_path
       ? 'https://image.tmdb.org/t/p/w500/' + m.poster_path
       : 'https://via.placeholder.com/500x750',
-  })),
-
-  // videos: data.videos,
+  })) || [],
+  videos: typedShowData.videos || { results: [] },
+  // Ensure that created_by exists with a default
+  created_by: typedShowData.created_by || []
 };
-// console.log("more like this", show.recommendations.results.slice(0, 5));
-// console.log("video", movie.videos.results.slice(0, 1));
+// console.log("more like this", show.morelike);
+// console.log("video", show.videos?.results?.slice(0, 1));
 ---
 
 <div class="tv-info border-b border-gray-800">
@@ -86,7 +110,7 @@ const show = {
 
       <div x-data="{ isOpen: false }">
         {
-          show.videos.results.length && (
+          show.videos?.results?.length && (
             <>
               <div class="mt-12">
                 <button
@@ -208,11 +232,11 @@ const show = {
               </a>
               <div class="mt-2">
                 <a href={`/tv/${morelike.id}`} class="mt-2 text-lg hover:text-gray-300">
-                  {morelike.title}
+                  {morelike.name || morelike.title || 'Unknown Title'}
                 </a>
                 <div class="items flex">
-                  <div class="text-sm text-gray-400">{morelike.release_date}</div>
-                  <div class="ml-2 text-sm text-gray-400">{morelike.vote_average}</div>
+                  <div class="text-sm text-gray-400">{morelike.release_date || morelike.first_air_date || 'N/A'}</div>
+                  <div class="ml-2 text-sm text-gray-400">{morelike.vote_average ? (morelike.vote_average * 10).toFixed(1) + '%' : 'N/A'}</div>
                 </div>
               </div>
             </div>

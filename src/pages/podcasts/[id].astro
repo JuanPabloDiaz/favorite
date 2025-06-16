@@ -10,6 +10,7 @@ export const getStaticPaths = (() => {
     if (podcastData && Array.isArray(podcastData.allPodcasts)) {
       return podcastData.allPodcasts.map(podcast => ({
         params: { id: podcast.id },
+        props: { podcastData: podcast } // Pass podcast data as props
       }));
     }
     return [];
@@ -18,8 +19,11 @@ export const getStaticPaths = (() => {
     return []; // Fallback to empty paths if error or no data
   }
 }) satisfies GetStaticPaths;
+
+const { id } = Astro.params;
+const { podcastData: podcast } = Astro.props; // Get podcast data from props
 ---
 
 <Layout title="Podcast Details — Juan's Favorites">
-  <PodcastDetailsFragment />
+  <PodcastDetailsFragment podcastData={podcast} />
 </Layout>

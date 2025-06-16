@@ -20,12 +20,14 @@ export const getStaticPaths = (() => {
   
   return uniqueMovies.map((movie) => ({
     params: { id: String(movie.id) },
+    props: { movieData: movie } // Pass the movie data as props
   }));
 }) satisfies GetStaticPaths;
 
 const { id } = Astro.params;
+const { movieData: movieDetails } = Astro.props; // Get movie data from props
 ---
 
 <Layout title="Juan's Favorites">
-  <MovieDetails />
+  <MovieDetails movieData={movieDetails} />
 </Layout>

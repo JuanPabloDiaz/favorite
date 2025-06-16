@@ -19,12 +19,14 @@ export const getStaticPaths = (() => {
   
   return allShows.map((show) => ({
     params: { id: String(show.id) },
+    props: { showData: show } // Pass the show data as props
   }));
 }) satisfies GetStaticPaths;
 
 const { id } = Astro.params;
+const { showData } = Astro.props; // Get show data from props
 ---
 
 <Layout title="Juan's Favorites — TV">
-  <TvDetails />
+  <TvDetails showData={showData} />
 </Layout>
