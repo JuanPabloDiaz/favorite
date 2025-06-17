@@ -1,4 +1,6 @@
 User-agent: *
+Disallow: /_render
+Disallow: /api/
 Allow: /
 
 Sitemap: https://fav.jpdiaz.dev/sitemap-index.xml

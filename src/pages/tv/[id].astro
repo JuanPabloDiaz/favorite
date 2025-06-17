@@ -1,8 +1,32 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import TvDetails from '@pages/fragments/TvDetails/[id].astro';
+import type { GetStaticPaths } from 'astro';
+import tvData from '@data/tvShowDetails.json';
+
+// This is required for static site generation
+export const getStaticPaths = (() => {
+  const allShows = [];
+  
+  // Combine regular and spanish shows
+  if (Array.isArray(tvData.regular)) {
+    allShows.push(...tvData.regular);
+  }
+  
+  if (Array.isArray(tvData.spanish)) {
+    allShows.push(...tvData.spanish);
+  }
+  
+  return allShows.map((show) => ({
+    params: { id: String(show.id) },
+    props: { showData: show } // Pass the show data as props
+  }));
+}) satisfies GetStaticPaths;
+
+const { id } = Astro.params;
+const { showData } = Astro.props; // Get show data from props
 ---
 
 <Layout title="Juan's Favorites — TV">
-  <TvDetails />
+  <TvDetails showData={showData} />
 </Layout>

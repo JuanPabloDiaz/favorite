@@ -1,6 +1,25 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import GameDetailsFragment from '@pages/fragments/GameDetails/[slug].astro';
+import gameData from '@data/gameDetails.json';
+
+// For static site generation, pre-define all game slugs
+export async function getStaticPaths() {
+  try {
+    // Generate paths for all games
+    if (gameData && gameData.allGames && Array.isArray(gameData.allGames)) {
+      return gameData.allGames.map(game => ({
+        params: { slug: game.slug }
+      }));
+    } else {
+      console.error('Error in getStaticPaths for games: gameData.allGames is not an array');
+      return [];
+    }
+  } catch (error) {
+    console.error('Error in getStaticPaths for games:', error);
+    return []; // Fallback to empty paths if error
+  }
+}
 ---
 
 <Layout title="Game Details — Juan's Favorites">

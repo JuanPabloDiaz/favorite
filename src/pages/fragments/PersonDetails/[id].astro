@@ -1,4 +1,44 @@
 ---
+import movieDetailsJson from '@data/movieDetails.json';
+
+// For static site generation, pre-define all person IDs
+export async function getStaticPaths() {
+  try {
+    const personIds = new Set();
+    
+    // Movie data is organized by genre categories
+    if (movieDetailsJson) {
+      // Iterate through each genre category
+      Object.keys(movieDetailsJson).forEach(genre => {
+        if (Array.isArray(movieDetailsJson[genre])) {
+          // Add all person IDs from cast and crew
+          movieDetailsJson[genre].forEach(movie => {
+            if (movie.credits) {
+              // Add cast members
+              movie.credits.cast?.forEach(castMember => {
+                if (castMember.id) personIds.add(String(castMember.id));
+              });
+              
+              // Add crew members
+              movie.credits.crew?.forEach(crewMember => {
+                if (crewMember.id) personIds.add(String(crewMember.id));
+              });
+            }
+          });
+        }
+      });
+    }
+    
+    // Generate paths for all unique person IDs
+    return Array.from(personIds).map(id => ({
+      params: { id }
+    }));
+  } catch (error) {
+    console.error('Error in getStaticPaths for PersonDetails:', error);
+    return []; // Fallback to empty paths if error
+  }
+}
+
 const { id } = Astro.params;
 const profileUrl = `https://api.themoviedb.org/3/person/${id}?append_to_response=external_ids,combined_credits&api_key=${
   import.meta.env.TMDB_API_KEY

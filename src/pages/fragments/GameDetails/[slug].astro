@@ -1,36 +1,35 @@
 ---
 import Modal from '@components/Modal.astro';
+import gameData from '@data/gameDetails.json';
 
+// For static site generation, pre-define all game slugs
+export async function getStaticPaths() {
+  try {
+    // Generate paths for all games
+    if (gameData && gameData.allGames && Array.isArray(gameData.allGames)) {
+      return gameData.allGames.map(game => ({
+        params: { slug: game.slug },
+        props: { gameData: game } // Pass the game data as props
+      }));
+    } else {
+      console.error('Error in getStaticPaths for game details fragment: gameData.allGames is not an array');
+      return [];
+    }
+  } catch (error) {
+    console.error('Error in getStaticPaths for game details fragment:', error);
+    return []; // Fallback to empty paths if error
+  }
+}
+
+// Get slug and game data from params and props
 const { slug } = Astro.params; // Get the game slug from the URL
-let game = null;
+// Use game data passed from getStaticPaths function
+let game = Astro.props.gameData;
 let fetchError = null;
 
-try {
-  const results = await Astro.glob('@data/gameDetails.json');
-  if (results && results.length > 0) {
-    const gameJsonData = results[0].default || results[0];
-    if (gameJsonData && gameJsonData.allGames) {
-      game = gameJsonData.allGames.find((g) => g.slug === slug);
-      if (!game) {
-        fetchError = `Game with slug "${slug}" not found.`;
-      } else {
-        // Dynamically set page title - this is an experimental way and might not work as expected
-        // A more common way is to pass title to Layout from the page itself.
-        // For fragments, this is less direct.
-        // Astro.props.title = `${game.name} — ${SITE_TITLE}`; // This won't work directly
-        // If htmx is used for fragment swaps, one might set HX-Set-Title header.
-        // For now, title is set in src/pages/games/[slug].astro
-      }
-    } else {
-      fetchError =
-        'Game data is not in the expected format or "allGames" key is missing in imported JSON.';
-    }
-  } else {
-    fetchError = 'Game data file (gameDetails.json) not found. Please run `npm run fetch-games`.';
-  }
-} catch (error) {
-  console.error(`Error loading or processing gameDetails.json for game slug "${slug}":`, error);
-  fetchError = `Failed to load game data. Details: ${error.message}`;
+// Fallback error handling if props weren't passed correctly
+if (!game) {
+  fetchError = `Game data not available for slug "${slug}". This may be an issue with static generation.`;
 }
 
 const placeholderImageUrl = 'https://via.placeholder.com/500x750.png?text=No+Cover+Art'; // For main cover

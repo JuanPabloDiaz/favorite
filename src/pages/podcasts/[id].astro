@@ -1,8 +1,29 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import PodcastDetailsFragment from '@pages/fragments/PodcastDetails/[id].astro';
+import type { GetStaticPaths } from 'astro';
+import podcastData from '@data/podcastDetails.json';
+
+// This is required for static site generation
+export const getStaticPaths = (() => {
+  try {
+    if (podcastData && Array.isArray(podcastData.allPodcasts)) {
+      return podcastData.allPodcasts.map(podcast => ({
+        params: { id: podcast.id },
+        props: { podcastData: podcast } // Pass podcast data as props
+      }));
+    }
+    return [];
+  } catch (error) {
+    console.error("Error in getStaticPaths for podcasts:", error);
+    return []; // Fallback to empty paths if error or no data
+  }
+}) satisfies GetStaticPaths;
+
+const { id } = Astro.params;
+const { podcastData: podcast } = Astro.props; // Get podcast data from props
 ---
 
 <Layout title="Podcast Details — Juan's Favorites">
-  <PodcastDetailsFragment />
+  <PodcastDetailsFragment podcastData={podcast} />
 </Layout>

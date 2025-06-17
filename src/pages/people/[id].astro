@@ -1,6 +1,53 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import PersonDetails from '@pages/fragments/PersonDetails/[id].astro';
+import movieData from '@data/movieDetails.json';
+
+// For static site generation, we need to pre-define all the people IDs
+// We'll extract person IDs from the movieDetails.json credits
+export async function getStaticPaths() {
+  // This set will store unique person IDs
+  const personIds = new Set();
+  
+  try {
+    // Movie data is organized by genre categories
+    if (movieData) {
+      // Iterate through each genre category
+      Object.keys(movieData).forEach(genre => {
+        if (Array.isArray(movieData[genre])) {
+          // Iterate through each movie in this genre
+          movieData[genre].forEach(movie => {
+            // Add person IDs from cast if available
+            if (movie.credits?.cast) {
+              movie.credits.cast.forEach(castMember => {
+                if (castMember.id) {
+                  personIds.add(String(castMember.id));
+                }
+              });
+            }
+            
+            // Add person IDs from crew if available
+            if (movie.credits?.crew) {
+              movie.credits.crew.forEach(crewMember => {
+                if (crewMember.id) {
+                  personIds.add(String(crewMember.id));
+                }
+              });
+            }
+          });
+        }
+      });
+    }
+    
+    // Convert the Set to an array of path objects
+    return Array.from(personIds).map(id => ({
+      params: { id },
+    }));
+  } catch (error) {
+    console.error("Error in getStaticPaths for people:", error);
+    return []; // Fallback to empty paths if error
+  }
+}
 ---
 
 <Layout title="People - Juan's Favorites">
